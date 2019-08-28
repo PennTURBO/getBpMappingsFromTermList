@@ -23,6 +23,10 @@ cfg = __import__(cfgArg)
 
 # there's nothing in place here to determine if the terms in the source term file are present in the source ontology
 # or even that the source ontology abbreviation is legal, that the source terms are legal...
+
+# minimal error checking on retreiving resutls from bioportal API
+# ctl-c not being honoroed
+
 # having the input sorted makes it easier to pick back up after a network error
 
 REST_URL = "http://data.bioontology.org"
@@ -34,15 +38,14 @@ def getJson(headerlessUrl):
     try:
       temp1 = opener.open(headerlessUrl)
     except KeyboardInterrupt:
+      print("I see you trying to do ctl-c")
       return
     except:
-      print("error")
+      print("http error when querying for " + headerlessUrl)
       return
-    print("no url opening error")
     temp2 = temp1.read()
     temp3 = temp2.decode('utf-8')
     temp4 = json.loads(temp3)
-    #print(temp4)
     return temp4
     # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
 
@@ -53,12 +56,12 @@ with open(cfg.sourceTermListFile) as fileHandle:
    inputLine = fileHandle.readline()
    while inputLine:
        strippedLine = inputLine.rstrip('\n')
-       print(strippedLine, file=sys.stderr)
+       print("looking up" , strippedLine, file=sys.stderr)
        encodedLine = urllib.parse.quote_plus(strippedLine)
        builtUrl = REST_URL+"/ontologies/" + cfg.sourceOntoAbbr + "/classes/"+ encodedLine + "/mappings?pagesize=" + str(PAGE_SIZE )
        returnedPage = getJson(builtUrl)
-	   if returnedPage is None:
-	     print("no result")
+       if returnedPage is None:
+         print("no result for " , strippedLine)
        else:
          for something in returnedPage:
              mapMeth = something['source']
@@ -69,7 +72,6 @@ with open(cfg.sourceTermListFile) as fileHandle:
                  mappedOnt = mapStruct['links']['ontology']
                  sourceId = sourceStruct['@id']
                  mappedId = mapStruct['@id']
-#               f.write(sourceId)
                # bioportal's loom method can also result in what appears to be a same-uri match
                #   we just plain don't want to save same-uri mappings!
                  if sourceId != mappedId:
@@ -111,26 +113,6 @@ f.close()
 # urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
 
 # Also
-
-# http://purl.obolibrary.org/obo/CHEBI_41597
-# Traceback (most recent call last):
-  # File "getBpMappingsFromTermList.py", line 44, in <module>
-    # returnedPage = getJson(builtUrl)
-  # File "getBpMappingsFromTermList.py", line 32, in getJson
-    # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
-  # File "/usr/lib/python3.6/urllib/request.py", line 532, in open
-    # response = meth(req, response)
-  # File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
-    # 'http', request, response, code, msg, hdrs)
-  # File "/usr/lib/python3.6/urllib/request.py", line 570, in error
-    # return self._call_chain(*args)
-  # File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
-    # result = func(*args)
-  # File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
-    # raise HTTPError(req.full_url, code, msg, hdrs, fp)
-# urllib.error.HTTPError: HTTP Error 404: Not Found
-
-# now:
 # http://purl.obolibrary.org/obo/CHEBI_41597
 # Traceback (most recent call last):
   # File "getBpMappingsFromTermList.py", line 52, in <module>
