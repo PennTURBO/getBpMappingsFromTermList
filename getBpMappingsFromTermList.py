@@ -31,11 +31,15 @@ PAGE_SIZE = 500
 def getJson(headerlessUrl):
     opener = urllib.request.build_opener()
     opener.addheaders = [('Authorization', 'apikey token=' + cfg.API_KEY)]
-	temp1 = opener.open(headerlessUrl)
-	return json.loads(temp1).read().decode('utf-8'))
+    temp1 = opener.open(headerlessUrl)
+    temp2 = temp1.read()
+    temp3 = temp2.decode('utf-8')
+    temp4 = json.loads(temp3)
+#    print(temp4)
+    return temp4
     # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
 
-f = open(cfg.outputFile, "w")
+f = open(cfg.outputFile, "w", buffering = 1)
 
 with open(cfg.sourceTermListFile) as fileHandle:
    next(fileHandle)
@@ -55,6 +59,7 @@ with open(cfg.sourceTermListFile) as fileHandle:
                mappedOnt = mapStruct['links']['ontology']
                sourceId = sourceStruct['@id']
                mappedId = mapStruct['@id']
+#               f.write(sourceId)
                # bioportal's loom method can also result in what appears to be a same-uri match
                #   we just plain don't want to save same-uri mappings!
                if sourceId != mappedId:
