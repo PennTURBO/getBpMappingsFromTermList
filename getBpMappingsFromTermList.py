@@ -54,24 +54,27 @@ with open(cfg.sourceTermListFile) as fileHandle:
        encodedLine = urllib.parse.quote_plus(strippedLine)
        builtUrl = REST_URL+"/ontologies/" + cfg.sourceOntoAbbr + "/classes/"+ encodedLine + "/mappings?pagesize=" + str(PAGE_SIZE )
        returnedPage = getJson(builtUrl)
-       for something in returnedPage:
-           mapMeth = something['source']
-           if mapMeth != 'SAME_URI':
-               sourceStruct = something['classes'][0]
-               mapStruct = something['classes'][1]
-               sourceOnt = sourceStruct['links']['ontology']
-               mappedOnt = mapStruct['links']['ontology']
-               sourceId = sourceStruct['@id']
-               mappedId = mapStruct['@id']
+	   if returnedPage is None:
+	     print("no result")
+       else:
+         for something in returnedPage:
+             mapMeth = something['source']
+             if mapMeth != 'SAME_URI':
+                 sourceStruct = something['classes'][0]
+                 mapStruct = something['classes'][1]
+                 sourceOnt = sourceStruct['links']['ontology']
+                 mappedOnt = mapStruct['links']['ontology']
+                 sourceId = sourceStruct['@id']
+                 mappedId = mapStruct['@id']
 #               f.write(sourceId)
                # bioportal's loom method can also result in what appears to be a same-uri match
                #   we just plain don't want to save same-uri mappings!
-               if sourceId != mappedId:
-                   if ((mappedOnt in cfg.destOntoUriList) or (not cfg.constrainDestOnto)):
-                       mapRes = "\t".join([sourceOnt, sourceId, mapMeth, mappedOnt, mappedId])
-                       print(mapRes, file=sys.stderr)
-                       f.write(mapRes)
-                       f.write("\n")
+                 if sourceId != mappedId:
+                     if ((mappedOnt in cfg.destOntoUriList) or (not cfg.constrainDestOnto)):
+                         mapRes = "\t".join([sourceOnt, sourceId, mapMeth, mappedOnt, mappedId])
+                         print(mapRes, file=sys.stderr)
+                         f.write(mapRes)
+                         f.write("\n")
        inputLine = fileHandle.readline()
 f.close()
 
