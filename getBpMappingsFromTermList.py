@@ -31,12 +31,16 @@ PAGE_SIZE = 500
 def getJson(headerlessUrl):
     opener = urllib.request.build_opener()
     opener.addheaders = [('Authorization', 'apikey token=' + cfg.API_KEY)]
-    temp1 = opener.open(headerlessUrl)
-    temp2 = temp1.read()
-    temp3 = temp2.decode('utf-8')
-    temp4 = json.loads(temp3)
-#    print(temp4)
-    return temp4
+	try:
+      temp1 = opener.open(headerlessUrl)
+	except KeyboardInterrupt:
+      temp2 = temp1.read()
+      temp3 = temp2.decode('utf-8')
+      temp4 = json.loads(temp3)
+      #print(temp4)
+      return temp4
+	except:
+      return
     # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
 
 f = open(cfg.outputFile, "w", buffering = 1)
@@ -120,4 +124,22 @@ f.close()
     # raise HTTPError(req.full_url, code, msg, hdrs, fp)
 # urllib.error.HTTPError: HTTP Error 404: Not Found
 
+# now:
+# http://purl.obolibrary.org/obo/CHEBI_41597
+# Traceback (most recent call last):
+  # File "getBpMappingsFromTermList.py", line 52, in <module>
+    # returnedPage = getJson(builtUrl)
+  # File "getBpMappingsFromTermList.py", line 34, in getJson
+    # temp1 = opener.open(headerlessUrl)
+  # File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    # response = meth(req, response)
+  # File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    # 'http', request, response, code, msg, hdrs)
+  # File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    # return self._call_chain(*args)
+  # File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    # result = func(*args)
+  # File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    # raise HTTPError(req.full_url, code, msg, hdrs, fp)
+# urllib.error.HTTPError: HTTP Error 404: Not Found
 
