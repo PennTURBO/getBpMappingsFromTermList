@@ -31,16 +31,19 @@ PAGE_SIZE = 500
 def getJson(headerlessUrl):
     opener = urllib.request.build_opener()
     opener.addheaders = [('Authorization', 'apikey token=' + cfg.API_KEY)]
-	try:
+    try:
       temp1 = opener.open(headerlessUrl)
-	except KeyboardInterrupt:
-      temp2 = temp1.read()
-      temp3 = temp2.decode('utf-8')
-      temp4 = json.loads(temp3)
-      #print(temp4)
-      return temp4
-	except:
+    except KeyboardInterrupt:
       return
+    except:
+      print("error")
+      return
+    print("no url opening error")
+    temp2 = temp1.read()
+    temp3 = temp2.decode('utf-8')
+    temp4 = json.loads(temp3)
+    #print(temp4)
+    return temp4
     # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
 
 f = open(cfg.outputFile, "w", buffering = 1)
