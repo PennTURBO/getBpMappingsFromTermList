@@ -73,8 +73,7 @@ f.close()
 
 # ran from roughly Aug 27 16:00 UTC to Aug 27 21:33 UTC
 # got from CHEBI_1 to CHEBI_4074
-# so go back to previously successful http://purl.obolibrary.org/obo/CHEBI_40585
-# or one "later"? http://purl.obolibrary.org/obo/CHEBI_40586
+# so set last visited to previously successful http://purl.obolibrary.org/obo/CHEBI_40585
 
 # add error handling... https://stackoverflow.com/questions/9446387/how-to-retry-urllib2-request-when-fails ?
 
