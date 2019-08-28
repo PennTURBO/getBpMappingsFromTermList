@@ -24,8 +24,8 @@ cfg = __import__(cfgArg)
 # there's nothing in place here to determine if the terms in the source term file are present in the source ontology
 # or even that the source ontology abbreviation is legal, that the source terms are legal...
 
-# minimal error checking on retreiving resutls from bioportal API
-# ctl-c not being honoroed
+# minimal error checking on retrieving results from bioportal API
+# ctl-c not being honored
 
 # having the input sorted makes it easier to pick back up after a network error
 
@@ -87,7 +87,7 @@ f.close()
 # got from CHEBI_1 to CHEBI_4074
 # so set last visited to previously successful http://purl.obolibrary.org/obo/CHEBI_40585
 
-# add error handling... https://stackoverflow.com/questions/9446387/how-to-retry-urllib2-request-when-fails ?
+# add retry error handling... https://stackoverflow.com/questions/9446387/how-to-retry-urllib2-request-when-fails ?
 
 # this went faster overall when, instead of /ontologies/:ontology/classes/:cls/mappings,
 #  I used the /ontologies/:ontology/mappings method 
