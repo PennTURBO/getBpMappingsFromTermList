@@ -31,7 +31,9 @@ PAGE_SIZE = 500
 def getJson(headerlessUrl):
     opener = urllib.request.build_opener()
     opener.addheaders = [('Authorization', 'apikey token=' + cfg.API_KEY)]
-    return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
+	temp1 = opener.open(headerlessUrl)
+	return json.loads(temp1).read().decode('utf-8'))
+    # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
 
 f = open(cfg.outputFile, "w")
 
@@ -67,8 +69,10 @@ f.close()
 # ran from roughly Aug 27 16:00 UTC to Aug 27 21:33 UTC
 # got from CHEBI_1 to CHEBI_4074
 
-# add error handling
-# this went faster overall when I used the /ontologies/:ontology/mappings method
+# add error handling... https://stackoverflow.com/questions/9446387/how-to-retry-urllib2-request-when-fails ?
+
+# this went faster overall when, instead of /ontologies/:ontology/classes/:cls/mappings,
+#  I used the /ontologies/:ontology/mappings method 
 #  which takes a source ontology as input but doesn't require a list of terms
 # but I found that harder to parse and harder for recovering from interrupted runs
 
@@ -89,4 +93,25 @@ f.close()
   # File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
     # raise HTTPError(req.full_url, code, msg, hdrs, fp)
 # urllib.error.HTTPError: HTTP Error 504: Gateway Time-out
+
+# Also
+
+# http://purl.obolibrary.org/obo/CHEBI_41597
+# Traceback (most recent call last):
+  # File "getBpMappingsFromTermList.py", line 44, in <module>
+    # returnedPage = getJson(builtUrl)
+  # File "getBpMappingsFromTermList.py", line 32, in getJson
+    # return json.loads(opener.open(headerlessUrl).read().decode('utf-8'))
+  # File "/usr/lib/python3.6/urllib/request.py", line 532, in open
+    # response = meth(req, response)
+  # File "/usr/lib/python3.6/urllib/request.py", line 642, in http_response
+    # 'http', request, response, code, msg, hdrs)
+  # File "/usr/lib/python3.6/urllib/request.py", line 570, in error
+    # return self._call_chain(*args)
+  # File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    # result = func(*args)
+  # File "/usr/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    # raise HTTPError(req.full_url, code, msg, hdrs, fp)
+# urllib.error.HTTPError: HTTP Error 404: Not Found
+
 
