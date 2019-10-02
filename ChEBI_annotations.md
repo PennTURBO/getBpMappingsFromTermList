@@ -8,7 +8,7 @@ Both of those rules may be mostly irrelevant, if the label matrixes are going to
          owl:onProperty obo:BFO_0000071 ;
          owl:someValuesFrom ?ingredient .
 
-The following query retrieves all labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concationation of the synonyms. I haven't been able to get group  concationation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
+The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concationation of the synonyms. I haven't been able to get group  concationation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
 
 ```
 PREFIX obo: <http://purl.obolibrary.org/obo/>
