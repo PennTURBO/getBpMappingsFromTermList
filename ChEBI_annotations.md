@@ -6,7 +6,7 @@ The full `chebi.owl` has includes the following annotations
 - `obo:IAO_0000231`
     - 'has obsolescence reason'... always takes `obo:IAO_0000227` as it's object
 - `obo:IAO_0100001`
-     - 'term replaced by'.... possibly many
+     - 'term replaced by' (possibly many)
 
 The synonyms always have a supporting axiom
 
