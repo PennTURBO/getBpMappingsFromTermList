@@ -8,13 +8,85 @@ The full `chebi.owl` has includes the following annotations
 - `obo:IAO_0100001`
      - 'term replaced by' (possibly many)
 
-The synonyms always have a supporting axiom
+The synonyms always have a supporting axiom. They can assert a synonym type or a database cross reference. The data base cross references are sources or authorities, not the identifying values used by those third party authorities.
 
-oboInOwl:hasSynonymType
-chebi2:IUPAC_NAME
-chebi2:BRAND_NAME
-chebi2:INN
+There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`
 
+| ?eVsR                                                            | ?st                                               | ?dbxr                  | ?count |
+|------------------------------------------------------------------|---------------------------------------------------|------------------------|--------|
+| oboInOwl:hasRelatedSynonym |                                                   | ChEBI                  | 67720  |
+| oboInOwl:hasExactSynonym   | chebi:IUPAC_NAME |                        | 46351  |
+| oboInOwl:hasExactSynonym   |                                                   | IUPAC                  | 44880  |
+| oboInOwl:hasRelatedSynonym |                                                   | ChemIDplus             | 29163  |
+| oboInOwl:hasRelatedSynonym |                                                   | HMDB                   | 23174  |
+| oboInOwl:hasRelatedSynonym |                                                   | KEGG_COMPOUND          | 11494  |
+| oboInOwl:hasRelatedSynonym |                                                   | SUBMITTER              | 11442  |
+| oboInOwl:hasRelatedSynonym |                                                   | UniProt                | 9248   |
+| oboInOwl:hasExactSynonym   |                                                   | KEGG_COMPOUND          | 8515   |
+| oboInOwl:hasRelatedSynonym |                                                   | IUPAC                  | 7498   |
+| oboInOwl:hasRelatedSynonym |                                                   | DrugCentral            | 6359   |
+| oboInOwl:hasRelatedSynonym |                                                   | NIST_Chemistry_WebBook | 5677   |
+| oboInOwl:hasRelatedSynonym | chebi:INN        |                        | 4943   |
+| oboInOwl:hasExactSynonym   |                                                   | UniProt                | 3332   |
+| oboInOwl:hasRelatedSynonym |                                                   | LIPID_MAPS             | 2678   |
+| oboInOwl:hasRelatedSynonym | chebi:BRAND_NAME |                        | 2500   |
+| oboInOwl:hasExactSynonym   |                                                   | HMDB                   | 1727   |
+| oboInOwl:hasRelatedSynonym |                                                   | DrugBank               | 1448   |
+| oboInOwl:hasExactSynonym   |                                                   | ChEBI                  | 1435   |
+| oboInOwl:hasRelatedSynonym |                                                   | WHO_MedNet             | 1279   |
+| oboInOwl:hasRelatedSynonym |                                                   | PDBeChem               | 1225   |
+| oboInOwl:hasRelatedSynonym |                                                   | KEGG_DRUG              | 1205   |
+| oboInOwl:hasRelatedSynonym |                                                   | JCBN                   | 1013   |
+| oboInOwl:hasRelatedSynonym |                                                   | MetaCyc                | 890    |
+| oboInOwl:hasExactSynonym   |                                                   | ChemIDplus             | 666    |
+| oboInOwl:hasRelatedSynonym |                                                   | Alan_Wood's_Pesticides | 519    |
+| oboInOwl:hasRelatedSynonym |                                                   | KEGG_GLYCAN            | 420    |
+| oboInOwl:hasExactSynonym   |                                                   | PDBeChem               | 420    |
+| oboInOwl:hasRelatedSynonym |                                                   | ChEMBL                 | 360    |
+| oboInOwl:hasRelatedSynonym |                                                   | MolBase                | 261    |
+| oboInOwl:hasRelatedSynonym |                                                   | UM-BBD                 | 251    |
+| oboInOwl:hasExactSynonym   |                                                   | JCBN                   | 214    |
+| oboInOwl:hasRelatedSynonym |                                                   | CBN                    | 213    |
+| oboInOwl:hasRelatedSynonym |                                                   | KNApSAcK               | 187    |
+| oboInOwl:hasExactSynonym   |                                                   | SUBMITTER              | 166    |
+| oboInOwl:hasRelatedSynonym |                                                   | SMID                   | 157    |
+| oboInOwl:hasRelatedSynonym |                                                   | IUBMB                  | 143    |
+| oboInOwl:hasRelatedSynonym |                                                   | Patent                 | 120    |
+| oboInOwl:hasExactSynonym   |                                                   | NIST_Chemistry_WebBook | 111    |
+| oboInOwl:hasExactSynonym   |                                                   | ChEMBL                 | 96     |
+| oboInOwl:hasExactSynonym   |                                                   | KEGG_DRUG              | 65     |
+| oboInOwl:hasRelatedSynonym |                                                   | IUPHAR                 | 61     |
+| oboInOwl:hasRelatedSynonym |                                                   | RESID                  | 61     |
+| oboInOwl:hasExactSynonym   |                                                   | DrugCentral            | 55     |
+| oboInOwl:hasExactSynonym   |                                                   | CBN                    | 39     |
+| oboInOwl:hasRelatedSynonym |                                                   | COMe                   | 33     |
+| oboInOwl:hasRelatedSynonym |                                                   | LINCS                  | 32     |
+| oboInOwl:hasRelatedSynonym |                                                   | PDB                    | 28     |
+| oboInOwl:hasExactSynonym   |                                                   | LIPID_MAPS             | 26     |
+| oboInOwl:hasRelatedSynonym |                                                   | EMBL                   | 23     |
+| oboInOwl:hasExactSynonym   |                                                   | IUBMB                  | 20     |
+| oboInOwl:hasExactSynonym   |                                                   | UM-BBD                 | 19     |
+| oboInOwl:hasExactSynonym   |                                                   | COMe                   | 10     |
+| oboInOwl:hasExactSynonym   |                                                   | KNApSAcK               | 10     |
+| oboInOwl:hasRelatedSynonym |                                                   | PPDB                   | 10     |
+| oboInOwl:hasExactSynonym   |                                                   | IUPHAR                 | 9      |
+| oboInOwl:hasRelatedSynonym |                                                   | EuroFIR                | 4      |
+| oboInOwl:hasExactSynonym   |                                                   | MetaCyc                | 4      |
+| oboInOwl:hasExactSynonym   |                                                   | WHO_MedNet             | 4      |
+| oboInOwl:hasExactSynonym   |                                                   | DrugBank               | 3      |
+| oboInOwl:hasExactSynonym   |                                                   | KEGG_GLYCAN            | 3      |
+| oboInOwl:hasExactSynonym   |                                                   | Alan_Wood's_Pesticides | 2      |
+| oboInOwl:hasRelatedSynonym |                                                   | FooDB                  | 2      |
+| oboInOwl:hasRelatedSynonym |                                                   | GlyTouCan              | 2      |
+| oboInOwl:hasExactSynonym   |                                                   | LINCS                  | 2      |
+| oboInOwl:hasExactSynonym   |                                                   | PDB                    | 2      |
+| oboInOwl:hasExactSynonym   |                                                   | Beilstein              | 1      |
+| oboInOwl:hasRelatedSynonym |                                                   | Beilstein              | 1      |
+| oboInOwl:hasRelatedSynonym |                                                   | EBI_Industry_Programme | 1      |
+| oboInOwl:hasExactSynonym   |                                                   | MolBase                | 1      |
+| oboInOwl:hasExactSynonym   |                                                   | Patent                 | 1      |
+| oboInOwl:hasRelatedSynonym |                                                   | PubChem                | 1      |
+| oboInOwl:hasRelatedSynonym |                                                   | VSDB                   | 1      |
 
 
 ## ChEBI Ontology Files
