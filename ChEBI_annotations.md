@@ -1,5 +1,13 @@
 For ChEBI, only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
 
+Could we possibly constrain even more? Molecular entity and chemical substance?
+
+- CHEBI:24431 chemical entity
+    - CHEBI:59999 chemical substance
+    - CHEBI:23367 molecular entity
+    - CHEBI:24433 group
+    - CHEBI:33250 atom
+
 For DrOn, only consider terms that are the granular part of an active ingredient.
 
 Both of those rules may be mostly irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
@@ -37,7 +45,7 @@ Both of those rules may be mostly irrelevant, if the label matrices are going to
         }
     }
     
-The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concatenation of the synonyms. I haven't been able to get group  concatenation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
+The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. We could further condense by lowercasing. I don't think it can be filtered by language, but the non-English labels might be enriched for one of the synonym authorities. The distinct group_concat query wouldn't run for me on a 16 GB server, but it did run in < 1 minute on a 128 GB server.
 
 ```
 PREFIX obo: <http://purl.obolibrary.org/obo/>
