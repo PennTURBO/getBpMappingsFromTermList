@@ -4,9 +4,38 @@ For DrOn, only consider terms that are the granular part of seomthing.
 
 Both of those rules may be mostly irrelevant, if the label matrixes are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
 
-    ?x rdf:type owl:Restriction ;
-         owl:onProperty obo:BFO_0000071 ;
-         owl:someValuesFrom ?ingredient .
+    PREFIX obo: <http://purl.obolibrary.org/obo/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
+    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
+    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
+    select 
+    distinct 
+    ?ingredient ?ingLab
+    where {
+        ?s_4 rdf:first ?s_4_b ;
+             rdf:rest ?s_5 .
+        ?s_4_b rdf:type owl:Restriction ;
+               owl:onProperty ibo: ;
+               owl:someValuesFrom actIng: .
+        ?s_5 rdf:first ?s_6 ;
+             rdf:rest ?s_7 .
+        ?s_7 rdf:rest rdf:nil;
+             rdf:first ?s_8 .
+        ?s_8 rdf:type owl:Restriction ;
+             owl:onProperty hgp: ;
+             owl:someValuesFrom ?ingredient .
+        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
+            ?ingredient rdfs:label ?ingLab   
+        }
+        minus {
+            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
+                ?ingredient rdfs:label ?chebiLab   
+            }  
+        }
+    }
 
 The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concationation of the synonyms. I haven't been able to get group  concationation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
 
