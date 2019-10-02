@@ -1,3 +1,41 @@
+For ChEBI, only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemcal entitiy). That is, don't examine the lables of roles, etc.
+
+For DrOn, only consider terms that are the granular part of seomthing.
+
+Both of those rules may be mostly irrelevant, if the label matrixes are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
+
+    ?x rdf:type owl:Restriction ;
+         owl:onProperty obo:BFO_0000071 ;
+         owl:someValuesFrom ?ingredient .
+
+The following query retrieves all labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concationation of the synonyms. I haven't been able to get group  concationation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
+
+```
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select ?s ?l ?deprecated
+(group_concat( ?es;
+        separator="|") as ?eses) 
+(group_concat( ?rs;
+        separator="|") as ?rses) 
+where {
+    ?s rdfs:subClassOf* obo:CHEBI_24431 ;
+                      rdfs:label ?l .
+    optional {
+        ?s oboInOwl:hasExactSynonym ?es .
+    }
+    optional {
+        ?s oboInOwl:hasRelatedSynonym ?rs .
+    }
+    optional {
+        ?s owl:deprecated  ?deprecated .
+    }
+}
+group by ?s ?l ?deprecated
+```
+
 The full `chebi.owl` has includes the following annotations
 - `rdfs:label` (one per class)
 - `oboInOwl:hasExactSynonym` (possibly many)
