@@ -1,16 +1,19 @@
 The full `chebi.owl` has includes the following annotations
 - `rdfs:label` (one per class)
 - `oboInOwl:hasExactSynonym` (possibly many)
-- `oboInOwl:hasRelatedSynonym` (possibly many)
+- `oboInOwl:hasRelatedSynonym` (possibly many, even as many as 50)
 - `owl:deprecated`
 - `obo:IAO_0000231`
     - 'has obsolescence reason'... always takes `obo:IAO_0000227` as it's object
 - `obo:IAO_0100001`
      - 'term replaced by' (possibly many)
 
-The synonyms always have a supporting axiom. They can assert a synonym type or a database cross reference. The data base cross references are sources or authorities, not the identifying values used by those third party authorities.
+For every synonym assertion, there will be a supporting axiom. The axioms can assert a synonym type or a database cross reference. The data base cross references are sources or authorities (like "KEGG"), not the identifying values used by those third party authorities (like "D00217").
 
 There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`
+
+Because ChEBI classes can have many related synonyms, and because some of the sources may not be very useful for mapping to DrOn, some triage might be beneficial.
+
 
 | ?eVsR                                                            | ?st                                               | ?dbxr                  | ?count |
 |------------------------------------------------------------------|---------------------------------------------------|------------------------|--------|
@@ -143,4 +146,69 @@ where {
         }
     } 
 }
+```
+
+## Creating complete tabulation of axiom sources
+
+```
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX chebi2: <http://purl.obolibrary.org/obo/chebi#>
+PREFIX : <http://purl.obolibrary.org/obo/chebi.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+select 
+#?s ?eVsR ?o ?dbxr ?st
+?eVsR ?st ?dbxr (count(?a) as ?count)
+where {
+    values ?eVsR {
+        oboInOwl:hasExactSynonym
+        oboInOwl:hasRelatedSynonym
+    }
+    ?s rdfs:subClassOf* obo:CHEBI_24431 ;
+                      ?eVsR ?o .
+    {
+        {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasDbXref ?dbxr .
+            #            filter (?dbxr != "IUPAC")
+        } 
+        union  {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasSynonymType ?st .
+            #            filter (?st != 	chebi2:IUPAC_NAME)
+        }
+    }
+}
+group by ?eVsR ?st ?dbxr
+order by desc (count(?a))
+```
+
+
+## Finding examples of synonyms from a specified authority
+
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX chebi: <http://purl.obolibrary.org/obo/chebi/>
+PREFIX chebi2: <http://purl.obolibrary.org/obo/chebi#>
+select ?authPred ?s ?eVsR ?o where {
+    values ?authPred {
+        oboInOwl:hasDbXref
+        oboInOwl:hasSynonymType
+    }
+    ?a rdf:type owl:Axiom ;
+       owl:annotatedSource ?s ;
+       owl:annotatedProperty ?eVsR ;
+       owl:annotatedTarget ?o ;
+       ?authPred "UniProt" .
+} limit 100
 ```
