@@ -1,8 +1,8 @@
-For ChEBI, only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemcal entitiy). That is, don't examine the lables of roles, etc.
+For ChEBI, only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
 
-For DrOn, only consider terms that are the granular part of seomthing.
+For DrOn, only consider terms that are the granular part of an active ingredient.
 
-Both of those rules may be mostly irrelevant, if the label matrixes are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
+Both of those rules may be mostly irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
 
     PREFIX obo: <http://purl.obolibrary.org/obo/>
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -36,8 +36,8 @@ Both of those rules may be mostly irrelevant, if the label matrixes are going to
             }  
         }
     }
-
-The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concationation of the synonyms. I haven't been able to get group  concationation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
+    
+The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. It would at the very least look better if `distinct` was applied to the group concatenation of the synonyms. I haven't been able to get group  concatenation + distinct to work yet. I think that's because the server I'm using only has 16 GB RAM.
 
 ```
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -184,7 +184,7 @@ All use base address `ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/`
 | chebi-in-bfo.owl    | 4 KB      | 10/1/2019     | 10:16:00 PM |
 | nightly             |           | 9/29/2019     | 8:13:00 PM  |
 
-## Search for synonym annotations lacking suporting axioms
+## Search for synonym annotations lacking supporting axioms
 
 ```
 PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
