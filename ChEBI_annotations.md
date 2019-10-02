@@ -279,3 +279,66 @@ select ?authPred ?s ?eVsR ?o where {
        ?authPred "UniProt" .
 } limit 100
 ```
+
+## Complete DrOn active ingredient + dose query
+
+    PREFIX obo: <http://purl.obolibrary.org/obo/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX hsv: <http://purl.obolibrary.org/obo/OBI_0001937>
+    PREFIX hmul: <http://purl.obolibrary.org/obo/IAO_0000039>
+    PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    prefix sma: <http://purl.obolibrary.org/obo/OBI_0000576>
+    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
+    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
+    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
+    select ?drug ?drugLab ?dosage 
+    #?measurementUnitLabel  
+    ?mmulLab 
+    ?ingredient ?ingLab
+    where {
+        ?drug rdfs:subClassOf ?s_1 ;
+              rdfs:label ?drugLab .
+        ?s_1 rdf:type owl:Restriction ;
+             owl:someValuesFrom ?s_2 ;
+             owl:onProperty ro:has_proper_part .
+        ?s_2 owl:intersectionOf ?s_3 .
+        ?s_3 rdf:first sma: ;
+             rdf:rest ?s_4 .
+        ?s_4 rdf:first ?s_4_b ;
+             rdf:rest ?s_5 .
+        ?s_4_b rdf:type owl:Restriction ;
+               owl:onProperty ibo: ;
+               owl:someValuesFrom actIng: .
+        ?s_5 rdf:first ?s_6 ;
+             rdf:rest ?s_7 .
+        ?s_7 rdf:rest rdf:nil;
+             rdf:first ?s_8 .
+        ?s_8 rdf:type owl:Restriction ;
+             owl:onProperty hgp: ;
+             owl:someValuesFrom ?ingredient .
+        ?s_6 rdf:type owl:Restriction ;
+             owl:someValuesFrom ?s_9 ;
+             owl:onProperty ibo: .
+        ?s_9 owl:intersectionOf ?s_10 ;
+             rdf:type owl:Class .
+        ?s_10 rdf:rest ?s_11 ;
+              rdf:first ?doseQual .
+        ?s_11 rdf:first ?s_12 ;
+              rdf:rest ?s_13 .
+        ?s_13 rdf:rest rdf:nil  ;
+              rdf:first ?s_14 .
+        ?s_14 rdf:type owl:Restriction ;
+              owl:onProperty hsv: ;
+              owl:hasValue ?dosage .
+        ?s_12 owl:onProperty hmul: ;
+              rdf:type owl:Restriction ;
+              owl:hasValue ?measurementUnitLabel .
+        optional {
+            ?measurementUnitLabel rdfs:label ?mmulLab
+        }
+        optional {
+            ?ingredient rdfs:label ?ingLab
+        }
+    } limit 100
