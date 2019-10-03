@@ -85,7 +85,10 @@ The full `chebi.owl` has includes the following annotations
 
 For every synonym assertion, there will be a supporting axiom. The axioms can assert a synonym type or a database cross reference. The data base cross references are sources or authorities (like "KEGG"), not the identifying values used by those third party authorities (like "D00217").
 
-There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`
+There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`. 
+
+It would probably be best to leave out the `chebi:BRAND_NAME` synonyms, too. While DrOn doesn't have terms for brands in the absence of a dose form (like "Tylenol"), ChEBI does assert that "Tylenol" is a `KEGG DRUG` synonym for `CHEBI:46195` ("paracetamol"). `KEGG COMPOUND` is the source of the "Acetaminophen" synonym that is asserted as the rdfs:label of `obo:CHEBI_46195` in `dron-ingredient.owl`. ("paracetamol" is asserted as the label in `dron-chebi.owl`)
+
 
 Because ChEBI classes can have many related synonyms, and because some of the sources may not be very useful for mapping to DrOn, some triage might be beneficial.
 
