@@ -1,0 +1,1730 @@
+?ingredient	?ingLab
+<http://purl.obolibrary.org/obo/DRON_00014000>	Alexitol sodium
+<http://purl.obolibrary.org/obo/DRON_00014612>	Carbenoxolone
+<http://purl.obolibrary.org/obo/DRON_00016544>	Cascara sagrada
+<http://purl.obolibrary.org/obo/DRON_00012605>	Bethanidine
+<http://purl.obolibrary.org/obo/DRON_00014061>	Lidoflazine
+<http://purl.obolibrary.org/obo/DRON_00014062>	Prenylamine
+<http://purl.obolibrary.org/obo/DRON_00014473>	bamethan
+<http://purl.obolibrary.org/obo/DRON_00014879>	Cyclandelate
+<http://purl.obolibrary.org/obo/DRON_00010713>	Ethamsylate
+<http://purl.obolibrary.org/obo/DRON_00010595>	Dextrothyroxine
+<http://purl.obolibrary.org/obo/DRON_00017033>	reproterol
+<http://purl.obolibrary.org/obo/DRON_00013651>	Isoetharine
+<http://purl.obolibrary.org/obo/DRON_00017119>	oxtriphylline
+<http://purl.obolibrary.org/obo/DRON_00017020>	diphenylpyraline
+<http://purl.obolibrary.org/obo/DRON_00010935>	ketazolam
+<http://purl.obolibrary.org/obo/DRON_00015244>	Medazepam
+<http://purl.obolibrary.org/obo/DRON_00017172>	Amobarbital
+<http://purl.obolibrary.org/obo/DRON_00014650>	Chlorprothixene
+<http://purl.obolibrary.org/obo/DRON_00013647>	Iprindole
+<http://purl.obolibrary.org/obo/DRON_00013648>	Iproniazid
+<http://purl.obolibrary.org/obo/DRON_00011652>	Thiethylperazine
+<http://purl.obolibrary.org/obo/DRON_00010962>	Levorphanol
+<http://purl.obolibrary.org/obo/DRON_00016917>	Meperidine
+<http://purl.obolibrary.org/obo/DRON_00014042>	Beclamide
+<http://purl.obolibrary.org/obo/DRON_00017022>	phenethicillin
+<http://purl.obolibrary.org/obo/DRON_00017007>	Talampicillin
+<http://purl.obolibrary.org/obo/DRON_00013655>	clomocycline
+<http://purl.obolibrary.org/obo/DRON_00010988>	Lymecycline
+<http://purl.obolibrary.org/obo/DRON_00015013>	Framycetin
+<http://purl.obolibrary.org/obo/DRON_00013949>	Calcium sulfaloxate
+<http://purl.obolibrary.org/obo/DRON_00015585>	phthalylsulfathiazole
+<http://purl.obolibrary.org/obo/DRON_00018229>	Sulfadimethoxine
+<http://purl.obolibrary.org/obo/DRON_00013954>	Sulfaguanidine
+<http://purl.obolibrary.org/obo/DRON_00015832>	sulfanilylurea
+<http://purl.obolibrary.org/obo/DRON_00012403>	Amodiaquine
+<http://purl.obolibrary.org/obo/DRON_00018225>	Pyrimethamine
+<http://purl.obolibrary.org/obo/DRON_00013657>	glibornuride
+<http://purl.obolibrary.org/obo/DRON_00013658>	glymidine
+<http://purl.obolibrary.org/obo/DRON_00015925>	Estriol
+<http://purl.obolibrary.org/obo/DRON_00013659>	quinestradol
+<http://purl.obolibrary.org/obo/DRON_00011484>	Quinestrol
+<http://purl.obolibrary.org/obo/DRON_00013863>	Thyrotropin-Releasing Hormone
+<http://purl.obolibrary.org/obo/DRON_00015398>	Natamycin
+<http://purl.obolibrary.org/obo/DRON_00010688>	Emepronium
+<http://purl.obolibrary.org/obo/DRON_00013662>	terodiline
+<http://purl.obolibrary.org/obo/DRON_00017083>	Ferrous glycine sulfate
+<http://purl.obolibrary.org/obo/DRON_00017761>	calcium lactate
+<http://purl.obolibrary.org/obo/DRON_00016887>	CHYMOTRYPSIN
+<http://purl.obolibrary.org/obo/DRON_00014098>	Papaveretum
+<http://purl.obolibrary.org/obo/DRON_00014060>	Rauwolfia Alkaloids
+<http://purl.obolibrary.org/obo/DRON_00017153>	Levamisole
+<http://purl.obolibrary.org/obo/DRON_00016263>	hydrotalcite
+<http://purl.obolibrary.org/obo/DRON_00013985>	pipenzolate
+<http://purl.obolibrary.org/obo/DRON_00011400>	poldine
+<http://purl.obolibrary.org/obo/DRON_00015789>	alverine
+<http://purl.obolibrary.org/obo/DRON_00013024>	lanatoside C
+<http://purl.obolibrary.org/obo/DRON_00015696>	Mefruside
+<http://purl.obolibrary.org/obo/DRON_00015993>	Xipamide
+<http://purl.obolibrary.org/obo/DRON_00015685>	piretanide
+<http://purl.obolibrary.org/obo/DRON_00015693>	benzthiazide
+<http://purl.obolibrary.org/obo/DRON_00016077>	Triamterene
+<http://purl.obolibrary.org/obo/DRON_00017941>	Hydrochlorothiazide
+<http://purl.obolibrary.org/obo/DRON_00016717>	Isosorbide
+<http://purl.obolibrary.org/obo/DRON_00016631>	pentaerythritol
+<http://purl.obolibrary.org/obo/DRON_00010788>	flosequinan
+<http://purl.obolibrary.org/obo/DRON_00016708>	Cinnarizine
+<http://purl.obolibrary.org/obo/DRON_00014100>	nicofuranose
+<http://purl.obolibrary.org/obo/DRON_00014068>	Moxisylyte
+<http://purl.obolibrary.org/obo/DRON_00015457>	Oxerutins
+<http://purl.obolibrary.org/obo/DRON_00011310>	Phenindione
+<http://purl.obolibrary.org/obo/DRON_00015976>	Tranexamic Acid
+<http://purl.obolibrary.org/obo/DRON_00010490>	ciprofibrate
+<http://purl.obolibrary.org/obo/DRON_00017464>	pirbuterol
+<http://purl.obolibrary.org/obo/DRON_00010261>	bambuterol
+<http://purl.obolibrary.org/obo/DRON_00017103>	Dimethindene
+<http://purl.obolibrary.org/obo/DRON_00017137>	mequitazine
+<http://purl.obolibrary.org/obo/DRON_00015563>	oxatomide
+<http://purl.obolibrary.org/obo/DRON_00015243>	mecysteine
+<http://purl.obolibrary.org/obo/DRON_00010798>	Flunitrazepam
+<http://purl.obolibrary.org/obo/DRON_00013980>	Temazepam
+<http://purl.obolibrary.org/obo/DRON_00015799>	Bromazepam
+<http://purl.obolibrary.org/obo/DRON_00013645>	cyclobarbital
+<http://purl.obolibrary.org/obo/DRON_00013646>	oxypertine
+<http://purl.obolibrary.org/obo/DRON_00015266>	periciazine
+<http://purl.obolibrary.org/obo/DRON_00011376>	Pimozide
+<http://purl.obolibrary.org/obo/DRON_00010126>	Isocarboxazid
+<http://purl.obolibrary.org/obo/DRON_00013858>	Pemoline
+<http://purl.obolibrary.org/obo/DRON_00014515>	BETAHISTINE
+<http://purl.obolibrary.org/obo/DRON_00018242>	Ondansetron
+<http://purl.obolibrary.org/obo/DRON_00017098>	Cyclizine
+<http://purl.obolibrary.org/obo/DRON_00012626>	dipipanone
+<http://purl.obolibrary.org/obo/DRON_00015525>	Phenazocine
+<http://purl.obolibrary.org/obo/DRON_00011389>	Piracetam
+<http://purl.obolibrary.org/obo/DRON_00013998>	methixene
+<http://purl.obolibrary.org/obo/DRON_00010975>	lofexidine
+<http://purl.obolibrary.org/obo/DRON_00014063>	Amdinocillin Pivoxil
+<http://purl.obolibrary.org/obo/DRON_00014064>	Pivampicillin
+<http://purl.obolibrary.org/obo/DRON_00010407>	Carbenicillin
+<http://purl.obolibrary.org/obo/DRON_00011511>	rosoxacin
+<http://purl.obolibrary.org/obo/DRON_00015364>	Sulfalene
+<http://purl.obolibrary.org/obo/DRON_00013973>	Diloxanide
+<http://purl.obolibrary.org/obo/DRON_00010157>	Albendazole
+<http://purl.obolibrary.org/obo/DRON_00012637>	gliquidone
+<http://purl.obolibrary.org/obo/DRON_00010409>	Carbimazole
+<http://purl.obolibrary.org/obo/DRON_00013663>	Stanozolol
+<http://purl.obolibrary.org/obo/DRON_00014051>	Cyclofenil
+<http://purl.obolibrary.org/obo/DRON_00011723>	trilostane
+<http://purl.obolibrary.org/obo/DRON_00018234>	Povidone-Iodine
+<http://purl.obolibrary.org/obo/DRON_00014909>	ethynodiol
+<http://purl.obolibrary.org/obo/DRON_00013859>	Mitobronitol
+<http://purl.obolibrary.org/obo/DRON_00013016>	treosulfan
+<http://purl.obolibrary.org/obo/DRON_00013860>	razoxane
+<http://purl.obolibrary.org/obo/DRON_00018251>	Ferrous fumarate
+<http://purl.obolibrary.org/obo/DRON_00018131>	ferrous sulfate
+<http://purl.obolibrary.org/obo/DRON_00016651>	ferrous gluconate
+<http://purl.obolibrary.org/obo/DRON_00017788>	Calcium Gluconate
+<http://purl.obolibrary.org/obo/DRON_00013867>	Durapatite
+<http://purl.obolibrary.org/obo/DRON_00011716>	Trientine
+<http://purl.obolibrary.org/obo/DRON_00016406>	Salsalate
+<http://purl.obolibrary.org/obo/DRON_00010751>	fenbufen
+<http://purl.obolibrary.org/obo/DRON_00014341>	acemetacin
+<http://purl.obolibrary.org/obo/DRON_00015902>	tenoxicam
+<http://purl.obolibrary.org/obo/DRON_00012647>	Meptazinol
+<http://purl.obolibrary.org/obo/DRON_00011401>	Poloxamer 188
+<http://purl.obolibrary.org/obo/DRON_00016751>	danthron
+<http://purl.obolibrary.org/obo/DRON_00017071>	Carbocysteine
+<http://purl.obolibrary.org/obo/DRON_00015735>	Nitrazepam
+<http://purl.obolibrary.org/obo/DRON_00011617>	temafloxacin
+<http://purl.obolibrary.org/obo/DRON_00015896>	ferrous succinate
+<http://purl.obolibrary.org/obo/DRON_00010944>	lacidipine
+<http://purl.obolibrary.org/obo/DRON_00017052>	Terfenadine
+<http://purl.obolibrary.org/obo/DRON_00010153>	acrivastine
+<http://purl.obolibrary.org/obo/DRON_00010507>	clobazam
+<http://purl.obolibrary.org/obo/DRON_00015867>	Sulpiride
+<http://purl.obolibrary.org/obo/DRON_00011665>	tibolone
+<http://purl.obolibrary.org/obo/DRON_00014001>	Alfacalcidol
+<http://purl.obolibrary.org/obo/DRON_00011289>	Penicillamine
+<http://purl.obolibrary.org/obo/DRON_00013467>	Auranofin
+<http://purl.obolibrary.org/obo/DRON_00013966>	Mesna
+<http://purl.obolibrary.org/obo/DRON_00017169>	Spiramycin
+<http://purl.obolibrary.org/obo/DRON_00010443>	Celiprolol
+<http://purl.obolibrary.org/obo/DRON_00015071>	Oxprenolol
+<http://purl.obolibrary.org/obo/DRON_00013305>	aceclofenac
+<http://purl.obolibrary.org/obo/DRON_00016419>	meloxicam
+<http://purl.obolibrary.org/obo/DRON_00017749>	dihydrocodeine
+<http://purl.obolibrary.org/obo/DRON_00011545>	sertindole
+<http://purl.obolibrary.org/obo/DRON_00011800>	zopiclone
+<http://purl.obolibrary.org/obo/DRON_00014085>	fosfestrol
+<http://purl.obolibrary.org/obo/DRON_00015961>	tolfenamic acid
+<http://purl.obolibrary.org/obo/DRON_00017695>	valsartan
+<http://purl.obolibrary.org/obo/DRON_00010566>	deflazacort
+<http://purl.obolibrary.org/obo/DRON_00014087>	reboxetine
+<http://purl.obolibrary.org/obo/DRON_00013598>	lercanidipine
+<http://purl.obolibrary.org/obo/DRON_00014319>	Amisulpride
+<http://purl.obolibrary.org/obo/DRON_00017860>	Domperidone
+<http://purl.obolibrary.org/obo/DRON_00015354>	mizolastine
+<http://purl.obolibrary.org/obo/DRON_00014307>	acetohydroxamic acid
+<http://purl.obolibrary.org/obo/DRON_00010174>	Altretamine
+<http://purl.obolibrary.org/obo/DRON_00010083>	Aminoglutethimide
+<http://purl.obolibrary.org/obo/DRON_00010087>	anisindione
+<http://purl.obolibrary.org/obo/DRON_00017043>	Astemizole
+<http://purl.obolibrary.org/obo/DRON_00010251>	Atovaquone
+<http://purl.obolibrary.org/obo/DRON_00017107>	azatadine
+<http://purl.obolibrary.org/obo/DRON_00010260>	bacampicillin
+<http://purl.obolibrary.org/obo/DRON_00013005>	Busulfan
+<http://purl.obolibrary.org/obo/DRON_00016213>	Calcifediol
+<http://purl.obolibrary.org/obo/DRON_00017900>	Cefixime
+<http://purl.obolibrary.org/obo/DRON_00014630>	Chlorambucil
+<http://purl.obolibrary.org/obo/DRON_00014637>	Chlormezanone
+<http://purl.obolibrary.org/obo/DRON_00014642>	Chlorotrianisene
+<http://purl.obolibrary.org/obo/DRON_00018204>	Guaifenesin
+<http://purl.obolibrary.org/obo/DRON_00017685>	Phenylpropanolamine
+<http://purl.obolibrary.org/obo/DRON_00012569>	phenindamine
+<http://purl.obolibrary.org/obo/DRON_00017763>	Methscopolamine
+<http://purl.obolibrary.org/obo/DRON_00010488>	Cinoxacin
+<http://purl.obolibrary.org/obo/DRON_00010513>	Clofazimine
+<http://purl.obolibrary.org/obo/DRON_00010574>	deserpidine
+<http://purl.obolibrary.org/obo/DRON_00010601>	Dichlorphenamide
+<http://purl.obolibrary.org/obo/DRON_00015853>	Dicumarol
+<http://purl.obolibrary.org/obo/DRON_00010619>	Dihydrotachysterol
+<http://purl.obolibrary.org/obo/DRON_00015048>	Deanol
+<http://purl.obolibrary.org/obo/DRON_00017201>	Tetrahydrocannabinol
+<http://purl.obolibrary.org/obo/DRON_00010692>	Enoxacin
+<http://purl.obolibrary.org/obo/DRON_00014872>	Estrogens, Conjugated (USP)
+<http://purl.obolibrary.org/obo/DRON_00014151>	Estrogens, Esterified (USP)
+<http://purl.obolibrary.org/obo/DRON_00012497>	ethaverine
+<http://purl.obolibrary.org/obo/DRON_00012430>	Ethchlorvynol
+<http://purl.obolibrary.org/obo/DRON_00010724>	Ethotoin
+<http://purl.obolibrary.org/obo/DRON_00010744>	Etretinate
+<http://purl.obolibrary.org/obo/DRON_00010756>	Fenfluramine
+<http://purl.obolibrary.org/obo/DRON_00014985>	Furazolidone
+<http://purl.obolibrary.org/obo/DRON_00017840>	Glycopyrrolate
+<http://purl.obolibrary.org/obo/DRON_00010855>	Guanabenz
+<http://purl.obolibrary.org/obo/DRON_00017687>	Guanfacine
+<http://purl.obolibrary.org/obo/DRON_00010861>	halazepam
+<http://purl.obolibrary.org/obo/DRON_00016705>	Hydroflumethiazide
+<http://purl.obolibrary.org/obo/DRON_00015111>	Indapamide
+<http://purl.obolibrary.org/obo/DRON_00018092>	Iodoquinol
+<http://purl.obolibrary.org/obo/DRON_00012645>	Isradipine
+<http://purl.obolibrary.org/obo/DRON_00010979>	Lomustine
+<http://purl.obolibrary.org/obo/DRON_00010983>	loracarbef
+<http://purl.obolibrary.org/obo/DRON_00017842>	Magnesium Salicylate
+<http://purl.obolibrary.org/obo/DRON_00017521>	phenyltoloxamine
+<http://purl.obolibrary.org/obo/DRON_00015970>	Mazindol
+<http://purl.obolibrary.org/obo/DRON_00017027>	Mepenzolate
+<http://purl.obolibrary.org/obo/DRON_00012152>	Mephenytoin
+<http://purl.obolibrary.org/obo/DRON_00016626>	Meprobamate
+<http://purl.obolibrary.org/obo/DRON_00011063>	metaxalone
+<http://purl.obolibrary.org/obo/DRON_00011070>	Methazolamide
+<http://purl.obolibrary.org/obo/DRON_00015318>	Methocarbamol
+<http://purl.obolibrary.org/obo/DRON_00014318>	Methoxsalen
+<http://purl.obolibrary.org/obo/DRON_00011089>	methsuximide
+<http://purl.obolibrary.org/obo/DRON_00015988>	Methyclothiazide
+<http://purl.obolibrary.org/obo/DRON_00015324>	Methysergide
+<http://purl.obolibrary.org/obo/DRON_00015990>	Metolazone
+<http://purl.obolibrary.org/obo/DRON_00018779>	Metyrosine
+<http://purl.obolibrary.org/obo/DRON_00012455>	Mitotane
+<http://purl.obolibrary.org/obo/DRON_00015957>	Niclosamide
+<http://purl.obolibrary.org/obo/DRON_00016130>	Nizatidine
+<http://purl.obolibrary.org/obo/DRON_00016670>	Mestranol
+<http://purl.obolibrary.org/obo/DRON_00012463>	paramethadione
+<http://purl.obolibrary.org/obo/DRON_00018086>	Pheniramine
+<http://purl.obolibrary.org/obo/DRON_00015655>	Polythiazide
+<http://purl.obolibrary.org/obo/DRON_00018176>	potassium citrate
+<http://purl.obolibrary.org/obo/DRON_00015645>	potassium perchlorate
+<http://purl.obolibrary.org/obo/DRON_00011431>	Probucol
+<http://purl.obolibrary.org/obo/DRON_00014428>	Probenecid
+<http://purl.obolibrary.org/obo/DRON_00012673>	Propantheline
+<http://purl.obolibrary.org/obo/DRON_00011480>	quazepam
+<http://purl.obolibrary.org/obo/DRON_00016707>	Rauwolfia preparation
+<http://purl.obolibrary.org/obo/DRON_00011501>	Rifabutin
+<http://purl.obolibrary.org/obo/DRON_00011589>	Succimer
+<http://purl.obolibrary.org/obo/DRON_00011596>	Sulfadoxine
+<http://purl.obolibrary.org/obo/DRON_00015855>	Sulfamethizole
+<http://purl.obolibrary.org/obo/DRON_00011632>	Testolactone
+<http://purl.obolibrary.org/obo/DRON_00012953>	thyroid (USP)
+<http://purl.obolibrary.org/obo/DRON_00013996>	tiopronin
+<http://purl.obolibrary.org/obo/DRON_00014059>	Tocainide
+<http://purl.obolibrary.org/obo/DRON_00012482>	Tolazamide
+<http://purl.obolibrary.org/obo/DRON_00011680>	Tolmetin
+<http://purl.obolibrary.org/obo/DRON_00014441>	Trichlormethiazide
+<http://purl.obolibrary.org/obo/DRON_00011821>	Trimethadione
+<http://purl.obolibrary.org/obo/DRON_00011739>	Trioxsalen
+<http://purl.obolibrary.org/obo/DRON_00016038>	Troleandomycin
+<http://purl.obolibrary.org/obo/DRON_00011761>	Uracil Mustard
+<http://purl.obolibrary.org/obo/DRON_00010749>	felbamate
+<http://purl.obolibrary.org/obo/DRON_00013004>	torsemide
+<http://purl.obolibrary.org/obo/DRON_00017590>	pamabrom
+<http://purl.obolibrary.org/obo/DRON_00020201>	Alfalfa preparation
+<http://purl.obolibrary.org/obo/DRON_00015363>	attapulgite
+<http://purl.obolibrary.org/obo/DRON_00017499>	Bee pollen
+<http://purl.obolibrary.org/obo/DRON_00015577>	bismuth subgallate
+<http://purl.obolibrary.org/obo/DRON_00010335>	Bran
+<http://purl.obolibrary.org/obo/DRON_00012928>	Saccharomyces cerevisiae
+<http://purl.obolibrary.org/obo/DRON_00012053>	Buchu
+<http://purl.obolibrary.org/obo/DRON_00018175>	Calcium Citrate
+<http://purl.obolibrary.org/obo/DRON_00017066>	Calcium iodide
+<http://purl.obolibrary.org/obo/DRON_00017846>	calcium phosphate
+<http://purl.obolibrary.org/obo/DRON_00012411>	Charcoal
+<http://purl.obolibrary.org/obo/DRON_00020102>	Garlic preparation
+<http://purl.obolibrary.org/obo/DRON_00012235>	Gelatin
+<http://purl.obolibrary.org/obo/DRON_00018889>	Ginseng Preparation
+<http://purl.obolibrary.org/obo/DRON_00016602>	Lactase
+<http://purl.obolibrary.org/obo/DRON_00018284>	Pancreatin
+<http://purl.obolibrary.org/obo/DRON_00012174>	Peppermint preparation
+<http://purl.obolibrary.org/obo/DRON_00012179>	placebo
+<http://purl.obolibrary.org/obo/DRON_00018385>	Plum Preparation
+<http://purl.obolibrary.org/obo/DRON_00018253>	Polysaccharide iron complex
+<http://purl.obolibrary.org/obo/DRON_00015612>	Potassium Aspartate
+<http://purl.obolibrary.org/obo/DRON_00016321>	Psyllium
+<http://purl.obolibrary.org/obo/DRON_00018143>	Simethicone
+<http://purl.obolibrary.org/obo/DRON_00012722>	SOY LECITHIN
+<http://purl.obolibrary.org/obo/DRON_00017800>	Zinc Gluconate
+<http://purl.obolibrary.org/obo/DRON_00017962>	OAT BRAN
+<http://purl.obolibrary.org/obo/DRON_00010495>	Citrulline
+<http://purl.obolibrary.org/obo/DRON_00018269>	CHROMIUM, CHELATED
+<http://purl.obolibrary.org/obo/DRON_00015206>	Aspartic Acid
+<http://purl.obolibrary.org/obo/DRON_00017988>	Histidine
+<http://purl.obolibrary.org/obo/DRON_00017989>	Isoleucine
+<http://purl.obolibrary.org/obo/DRON_00017867>	Proline
+<http://purl.obolibrary.org/obo/DRON_00017868>	Serine
+<http://purl.obolibrary.org/obo/DRON_00017497>	chlorophyllin copper complex
+<http://purl.obolibrary.org/obo/DRON_00015258>	Magnesium lactate
+<http://purl.obolibrary.org/obo/DRON_00015031>	Shark cartilage extract
+<http://purl.obolibrary.org/obo/DRON_00017863>	Alanine
+<http://purl.obolibrary.org/obo/DRON_00014745>	Cystine
+<http://purl.obolibrary.org/obo/DRON_00011850>	MAGNESIUM, CHELATED
+<http://purl.obolibrary.org/obo/DRON_00012093>	CHROMIUM ASPARTATE
+<http://purl.obolibrary.org/obo/DRON_00011013>	MANGANESE ASPARTATE
+<http://purl.obolibrary.org/obo/DRON_00012230>	ZINC ASPARTATE
+<http://purl.obolibrary.org/obo/DRON_00018040>	ZINC PICOLINATE
+<http://purl.obolibrary.org/obo/DRON_00012232>	ZINC, CHELATED
+<http://purl.obolibrary.org/obo/DRON_00018744>	Calcium Aspartate
+<http://purl.obolibrary.org/obo/DRON_00017806>	Magnesium Aspartate
+<http://purl.obolibrary.org/obo/DRON_00013779>	mycophenolate mofetil
+<http://purl.obolibrary.org/obo/DRON_00012168>	"1-octacosanol"
+<http://purl.obolibrary.org/obo/DRON_00016790>	Ginkgo biloba extract
+<http://purl.obolibrary.org/obo/DRON_00017173>	Floxacillin
+<http://purl.obolibrary.org/obo/DRON_00018267>	MANGANESE GLUCONATE
+<http://purl.obolibrary.org/obo/DRON_00018049>	Copper Gluconate
+<http://purl.obolibrary.org/obo/DRON_00017854>	Pyrantel
+<http://purl.obolibrary.org/obo/DRON_00017772>	Lamivudine
+<http://purl.obolibrary.org/obo/DRON_00017718>	valerian root extract
+<http://purl.obolibrary.org/obo/DRON_00011505>	Riluzole
+<http://purl.obolibrary.org/obo/DRON_00018283>	Bromelains
+<http://purl.obolibrary.org/obo/DRON_00013557>	bis(carboxyethyl)germanium sesquioxide
+<http://purl.obolibrary.org/obo/DRON_00018160>	alginic acid
+<http://purl.obolibrary.org/obo/DRON_00011253>	Oxymetholone
+<http://purl.obolibrary.org/obo/DRON_00018166>	Linseed Oil
+<http://purl.obolibrary.org/obo/DRON_00010583>	Dexfenfluramine
+<http://purl.obolibrary.org/obo/DRON_00016394>	trandolapril
+<http://purl.obolibrary.org/obo/DRON_00016766>	Golden seal root
+<http://purl.obolibrary.org/obo/DRON_00016989>	phenylbutyrate
+<http://purl.obolibrary.org/obo/DRON_00017985>	sennosides, USP
+<http://purl.obolibrary.org/obo/DRON_00018005>	Nevirapine
+<http://purl.obolibrary.org/obo/DRON_00017060>	Bromhexine
+<http://purl.obolibrary.org/obo/DRON_00013808>	Cyproterone
+<http://purl.obolibrary.org/obo/DRON_00013857>	distigmine
+<http://purl.obolibrary.org/obo/DRON_00015012>	Dothiepin
+<http://purl.obolibrary.org/obo/DRON_00011110>	Mianserin
+<http://purl.obolibrary.org/obo/DRON_00011120>	Moclobemide
+<http://purl.obolibrary.org/obo/DRON_00016704>	Pentosan Polysulfate
+<http://purl.obolibrary.org/obo/DRON_00011301>	Perhexiline
+<http://purl.obolibrary.org/obo/DRON_00011513>	Roxithromycin
+<http://purl.obolibrary.org/obo/DRON_00012978>	Vigabatrin
+<http://purl.obolibrary.org/obo/DRON_00016834>	Belladonna Alkaloids
+<http://purl.obolibrary.org/obo/DRON_00016259>	Benserazide
+<http://purl.obolibrary.org/obo/DRON_00016051>	coumarin
+<http://purl.obolibrary.org/obo/DRON_00017616>	Evening primrose oil
+<http://purl.obolibrary.org/obo/DRON_00010828>	Gestrinone
+<http://purl.obolibrary.org/obo/DRON_00015237>	mebeverine
+<http://purl.obolibrary.org/obo/DRON_00011023>	mebhydroline
+<http://purl.obolibrary.org/obo/DRON_00011061>	Mesterolone
+<http://purl.obolibrary.org/obo/DRON_00011074>	Methenolone
+<http://purl.obolibrary.org/obo/DRON_00012215>	sulthiame
+<http://purl.obolibrary.org/obo/DRON_00013946>	Tetrabenazine
+<http://purl.obolibrary.org/obo/DRON_00012224>	tropisetron
+<http://purl.obolibrary.org/obo/DRON_00017005>	Pyridostigmine
+<http://purl.obolibrary.org/obo/DRON_00017758>	Trimeprazine
+<http://purl.obolibrary.org/obo/DRON_00017498>	royal jelly
+<http://purl.obolibrary.org/obo/DRON_00016786>	Echinacea Preparation
+<http://purl.obolibrary.org/obo/DRON_00011189>	nilutamide
+<http://purl.obolibrary.org/obo/DRON_00012592>	acipimox
+<http://purl.obolibrary.org/obo/DRON_00013468>	Acitretin
+<http://purl.obolibrary.org/obo/DRON_00010301>	Bezafibrate
+<http://purl.obolibrary.org/obo/DRON_00016855>	bismuth subcitrate
+<http://purl.obolibrary.org/obo/DRON_00010483>	Cilazapril
+<http://purl.obolibrary.org/obo/DRON_00013013>	Clodronic Acid
+<http://purl.obolibrary.org/obo/DRON_00015695>	Clopamide
+<http://purl.obolibrary.org/obo/DRON_00011249>	Cyclopenthiazide
+<http://purl.obolibrary.org/obo/DRON_00016410>	Dinoprostone
+<http://purl.obolibrary.org/obo/DRON_00014865>	Dydrogesterone
+<http://purl.obolibrary.org/obo/DRON_00016203>	Flecainide
+<http://purl.obolibrary.org/obo/DRON_00012994>	Fleroxacin
+<http://purl.obolibrary.org/obo/DRON_00010986>	lormetazepam
+<http://purl.obolibrary.org/obo/DRON_00011064>	Metergoline
+<http://purl.obolibrary.org/obo/DRON_00015113>	Methotrimeprazine
+<http://purl.obolibrary.org/obo/DRON_00011108>	Metyrapone
+<http://purl.obolibrary.org/obo/DRON_00017834>	Midazolam
+<http://purl.obolibrary.org/obo/DRON_00015388>	Nefopam
+<http://purl.obolibrary.org/obo/DRON_00011177>	Nicorandil
+<http://purl.obolibrary.org/obo/DRON_00017158>	Nimorazole
+<http://purl.obolibrary.org/obo/DRON_00013011>	Ornidazole
+<http://purl.obolibrary.org/obo/DRON_00011490>	Pirenzepine
+<http://purl.obolibrary.org/obo/DRON_00012220>	Thiothixene
+<http://purl.obolibrary.org/obo/DRON_00014158>	Gliclazide
+<http://purl.obolibrary.org/obo/DRON_00018239>	Cranberry preparation
+<http://purl.obolibrary.org/obo/DRON_00018774>	Spirulina
+<http://purl.obolibrary.org/obo/DRON_00013555>	chromium nicotinic acid complex
+<http://purl.obolibrary.org/obo/DRON_00012101>	Creatine
+<http://purl.obolibrary.org/obo/DRON_00016895>	zileuton
+<http://purl.obolibrary.org/obo/DRON_00018205>	salmon oil
+<http://purl.obolibrary.org/obo/DRON_00014396>	Alprenolol
+<http://purl.obolibrary.org/obo/DRON_00012193>	Proscillaridin
+<http://purl.obolibrary.org/obo/DRON_00011751>	troglitazone
+<http://purl.obolibrary.org/obo/DRON_00011571>	sparfloxacin
+<http://purl.obolibrary.org/obo/DRON_00012125>	Garcinia cambogia preparation
+<http://purl.obolibrary.org/obo/DRON_00012226>	vanadyl sulfate
+<http://purl.obolibrary.org/obo/DRON_00012940>	dicalcium phosphate
+<http://purl.obolibrary.org/obo/DRON_00018360>	Cabbage preparation
+<http://purl.obolibrary.org/obo/DRON_00013909>	Squalene
+<http://purl.obolibrary.org/obo/DRON_00012191>	Pregnenolone
+<http://purl.obolibrary.org/obo/DRON_00010124>	irbesartan
+<http://purl.obolibrary.org/obo/DRON_00010845>	grepafloxacin
+<http://purl.obolibrary.org/obo/DRON_00016171>	Saquinavir
+<http://purl.obolibrary.org/obo/DRON_00012108>	DIDESMETHYLTOCOTRIENOL
+<http://purl.obolibrary.org/obo/DRON_00017618>	borage oil
+<http://purl.obolibrary.org/obo/DRON_00017643>	ST. JOHN'S WORT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00012026>	Androstenedione
+<http://purl.obolibrary.org/obo/DRON_00017922>	monofluorophosphate
+<http://purl.obolibrary.org/obo/DRON_00016788>	Grape Seed Extract
+<http://purl.obolibrary.org/obo/DRON_00012132>	grape extract
+<http://purl.obolibrary.org/obo/DRON_00018111>	Licorice
+<http://purl.obolibrary.org/obo/DRON_00018177>	Bilberry extract
+<http://purl.obolibrary.org/obo/DRON_00012314>	Hawthorn preparation
+<http://purl.obolibrary.org/obo/DRON_00014248>	bovine cartilage extract
+<http://purl.obolibrary.org/obo/DRON_00014194>	zolmitriptan
+<http://purl.obolibrary.org/obo/DRON_00019761>	Ginger extract
+<http://purl.obolibrary.org/obo/DRON_00019910>	Soybean preparation
+<http://purl.obolibrary.org/obo/DRON_00016802>	chlorophyllin
+<http://purl.obolibrary.org/obo/DRON_00018285>	Papain
+<http://purl.obolibrary.org/obo/DRON_00011676>	tolcapone
+<http://purl.obolibrary.org/obo/DRON_00017472>	repaglinide
+<http://purl.obolibrary.org/obo/DRON_00010402>	capecitabine
+<http://purl.obolibrary.org/obo/DRON_00013556>	crataegus extract
+<http://purl.obolibrary.org/obo/DRON_00018301>	Cat's Claw preparation
+<http://purl.obolibrary.org/obo/DRON_00018041>	Saw palmetto extract
+<http://purl.obolibrary.org/obo/DRON_00013689>	Passiflora incarnata extract
+<http://purl.obolibrary.org/obo/DRON_00012287>	CHAMOMILE FLOWERS
+<http://purl.obolibrary.org/obo/DRON_00016796>	pantethine
+<http://purl.obolibrary.org/obo/DRON_00015922>	Thalidomide
+<http://purl.obolibrary.org/obo/DRON_00018164>	potassium bromide
+<http://purl.obolibrary.org/obo/DRON_00017510>	nickel sulfate
+<http://purl.obolibrary.org/obo/DRON_00012273>	zinc bromide
+<http://purl.obolibrary.org/obo/DRON_00017187>	Secobarbital
+<http://purl.obolibrary.org/obo/DRON_00017221>	Endopeptidases
+<http://purl.obolibrary.org/obo/DRON_00017218>	Amylases
+<http://purl.obolibrary.org/obo/DRON_00016881>	CELLULASE
+<http://purl.obolibrary.org/obo/DRON_00015449>	Oxamniquine
+<http://purl.obolibrary.org/obo/DRON_00011302>	phenacemide
+<http://purl.obolibrary.org/obo/DRON_00011818>	phensuximide
+<http://purl.obolibrary.org/obo/DRON_00015754>	Diethylstilbestrol
+<http://purl.obolibrary.org/obo/DRON_00016250>	Digitoxin
+<http://purl.obolibrary.org/obo/DRON_00018133>	Bioflavonoids
+<http://purl.obolibrary.org/obo/DRON_00017080>	guaiacolsulfonic acid
+<http://purl.obolibrary.org/obo/DRON_00017855>	carbetapentane
+<http://purl.obolibrary.org/obo/DRON_00015259>	magaldrate
+<http://purl.obolibrary.org/obo/DRON_00016174>	caramiphen
+<http://purl.obolibrary.org/obo/DRON_00018161>	magnesium trisilicate
+<http://purl.obolibrary.org/obo/DRON_00017693>	efavirenz
+<http://purl.obolibrary.org/obo/DRON_00017709>	telmisartan
+<http://purl.obolibrary.org/obo/DRON_00014627>	celecoxib
+<http://purl.obolibrary.org/obo/DRON_00011121>	modafinil
+<http://purl.obolibrary.org/obo/DRON_00011113>	miglitol
+<http://purl.obolibrary.org/obo/DRON_00016298>	Levorotatory alkaloids of belladonna
+<http://purl.obolibrary.org/obo/DRON_00014092>	propiverine
+<http://purl.obolibrary.org/obo/DRON_00014094>	zotepine
+<http://purl.obolibrary.org/obo/DRON_00014288>	IRON BILE SALTS
+<http://purl.obolibrary.org/obo/DRON_00014296>	ethoheptazine
+<http://purl.obolibrary.org/obo/DRON_00014299>	zomepirac
+<http://purl.obolibrary.org/obo/DRON_00016664>	Magnesium salt
+<http://purl.obolibrary.org/obo/DRON_00013999>	Soy protein-iron complex
+<http://purl.obolibrary.org/obo/DRON_00012871>	Wheat germ oil
+<http://purl.obolibrary.org/obo/DRON_00016981>	Intrinsic factor
+<http://purl.obolibrary.org/obo/DRON_00016889>	Activated Charcoal
+<http://purl.obolibrary.org/obo/DRON_00013452>	Ipecac
+<http://purl.obolibrary.org/obo/DRON_00014402>	Adrenal cortex extract
+<http://purl.obolibrary.org/obo/DRON_00017492>	Glutathione
+<http://purl.obolibrary.org/obo/DRON_00017602>	Pyridoxal
+<http://purl.obolibrary.org/obo/DRON_00012298>	norgestimate
+<http://purl.obolibrary.org/obo/DRON_00012328>	octanoic acid
+<http://purl.obolibrary.org/obo/DRON_00015650>	MAGNESIUM GLUCONATE
+<http://purl.obolibrary.org/obo/DRON_00018446>	Yellow phenolphthalein
+<http://purl.obolibrary.org/obo/DRON_00017991>	Valine
+<http://purl.obolibrary.org/obo/DRON_00014170>	Desogestrel
+<http://purl.obolibrary.org/obo/DRON_00018543>	Prune preparation
+<http://purl.obolibrary.org/obo/DRON_00017974>	Diosmin
+<http://purl.obolibrary.org/obo/DRON_00013569>	Pygeum Africanum Preparation
+<http://purl.obolibrary.org/obo/DRON_00011111>	Mibefradil
+<http://purl.obolibrary.org/obo/DRON_00018660>	Kava preparation
+<http://purl.obolibrary.org/obo/DRON_00018911>	Pumpkin seed oil extract
+<http://purl.obolibrary.org/obo/DRON_00019101>	Milk thistle extract
+<http://purl.obolibrary.org/obo/DRON_00017796>	Chaste tree preparation
+<http://purl.obolibrary.org/obo/DRON_00012591>	isometheptene
+<http://purl.obolibrary.org/obo/DRON_00011504>	rifapentine
+<http://purl.obolibrary.org/obo/DRON_00018392>	BORON CITRATE
+<http://purl.obolibrary.org/obo/DRON_00016121>	abacavir
+<http://purl.obolibrary.org/obo/DRON_00012729>	Amprenavir
+<http://purl.obolibrary.org/obo/DRON_00013510>	trisulfapyrimidine
+<http://purl.obolibrary.org/obo/DRON_00010405>	Carbarson
+<http://purl.obolibrary.org/obo/DRON_00012429>	Estrogens
+<http://purl.obolibrary.org/obo/DRON_00011209>	Norethynodrel
+<http://purl.obolibrary.org/obo/DRON_00011660>	Thyroglobulin
+<http://purl.obolibrary.org/obo/DRON_00014853>	Erythrityl Tetranitrate
+<http://purl.obolibrary.org/obo/DRON_00015842>	Sodium Nitrite
+<http://purl.obolibrary.org/obo/DRON_00018564>	Veratrum Viride Preparation
+<http://purl.obolibrary.org/obo/DRON_00014756>	Cholestyramine Resin
+<http://purl.obolibrary.org/obo/DRON_00017159>	Noscapine
+<http://purl.obolibrary.org/obo/DRON_00017720>	Casanthranol
+<http://purl.obolibrary.org/obo/DRON_00018146>	Carboxymethylcellulose
+<http://purl.obolibrary.org/obo/DRON_00016663>	Poloxamer
+<http://purl.obolibrary.org/obo/DRON_00014797>	Anisotropine
+<http://purl.obolibrary.org/obo/DRON_00017109>	buclizine
+<http://purl.obolibrary.org/obo/DRON_00012951>	Bile Salts
+<http://purl.obolibrary.org/obo/DRON_00016795>	Ox bile extract
+<http://purl.obolibrary.org/obo/DRON_00010150>	acetophenazine
+<http://purl.obolibrary.org/obo/DRON_00012474>	Promazine
+<http://purl.obolibrary.org/obo/DRON_00012590>	acecarbromal
+<http://purl.obolibrary.org/obo/DRON_00015438>	Pentylenetetrazole
+<http://purl.obolibrary.org/obo/DRON_00014587>	calcium orotate
+<http://purl.obolibrary.org/obo/DRON_00014282>	bone meal
+<http://purl.obolibrary.org/obo/DRON_00017617>	magnesium orotate
+<http://purl.obolibrary.org/obo/DRON_00018252>	manganese sulfate
+<http://purl.obolibrary.org/obo/DRON_00011418>	Potassium Orotate
+<http://purl.obolibrary.org/obo/DRON_00016107>	Zinc Orotate
+<http://purl.obolibrary.org/obo/DRON_00013604>	Proteins
+<http://purl.obolibrary.org/obo/DRON_00017591>	linoleate
+<http://purl.obolibrary.org/obo/DRON_00018295>	ALFALFA OIL
+<http://purl.obolibrary.org/obo/DRON_00010822>	allyl sulfide
+<http://purl.obolibrary.org/obo/DRON_00016575>	Liver Extract
+<http://purl.obolibrary.org/obo/DRON_00012448>	LIVER,DESICCATED
+<http://purl.obolibrary.org/obo/DRON_00012636>	FERROUS ASPARTATE
+<http://purl.obolibrary.org/obo/DRON_00013616>	acetanilide
+<http://purl.obolibrary.org/obo/DRON_00012121>	Fiber
+<http://purl.obolibrary.org/obo/DRON_00014291>	dihydroxyaluminum aminoacetate
+<http://purl.obolibrary.org/obo/DRON_00016543>	Dehydrocholate
+<http://purl.obolibrary.org/obo/DRON_00017004>	Procyclidine
+<http://purl.obolibrary.org/obo/DRON_00017955>	Calcium ascorbate
+<http://purl.obolibrary.org/obo/DRON_00017115>	pyrvinium
+<http://purl.obolibrary.org/obo/DRON_00011382>	piperacetazine
+<http://purl.obolibrary.org/obo/DRON_00018329>	Carica Papaya preparation
+<http://purl.obolibrary.org/obo/DRON_00011634>	Novobiocin
+<http://purl.obolibrary.org/obo/DRON_00014871>	Medrogestone
+<http://purl.obolibrary.org/obo/DRON_00011424>	prenylamine lactate
+<http://purl.obolibrary.org/obo/DRON_00012675>	phenobarbital quinidine
+<http://purl.obolibrary.org/obo/DRON_00010565>	Debrisoquin
+<http://purl.obolibrary.org/obo/DRON_00012895>	ajmalicine
+<http://purl.obolibrary.org/obo/DRON_00014963>	fonazine
+<http://purl.obolibrary.org/obo/DRON_00014936>	Fenoterol
+<http://purl.obolibrary.org/obo/DRON_00011378>	pinaverium
+<http://purl.obolibrary.org/obo/DRON_00016028>	Trimebutine
+<http://purl.obolibrary.org/obo/DRON_00018210>	homatropine
+<http://purl.obolibrary.org/obo/DRON_00017183>	Isopropamide
+<http://purl.obolibrary.org/obo/DRON_00017825>	Meclizine
+<http://purl.obolibrary.org/obo/DRON_00012598>	Anethole Trithione
+<http://purl.obolibrary.org/obo/DRON_00018286>	Pepsin A
+<http://purl.obolibrary.org/obo/DRON_00016465>	Deoxycholate
+<http://purl.obolibrary.org/obo/DRON_00010801>	Flupenthixol
+<http://purl.obolibrary.org/obo/DRON_00014551>	butobarbital
+<http://purl.obolibrary.org/obo/DRON_00010972>	Lobeline
+<http://purl.obolibrary.org/obo/DRON_00010787>	floctafenine
+<http://purl.obolibrary.org/obo/DRON_00010226>	anileridine
+<http://purl.obolibrary.org/obo/DRON_00015292>	Mephenesin
+<http://purl.obolibrary.org/obo/DRON_00017030>	Pizotyline
+<http://purl.obolibrary.org/obo/DRON_00018566>	alpha-glucoheptonic acid, magnesium salt (2:1)
+<http://purl.obolibrary.org/obo/DRON_00010763>	Ferrous Ascorbate
+<http://purl.obolibrary.org/obo/DRON_00010143>	Acenocoumarol
+<http://purl.obolibrary.org/obo/DRON_00015520>	Pefloxacin
+<http://purl.obolibrary.org/obo/DRON_00013983>	quinfamide
+<http://purl.obolibrary.org/obo/DRON_00010815>	Fosfomycin
+<http://purl.obolibrary.org/obo/DRON_00011183>	nifuroxazide
+<http://purl.obolibrary.org/obo/DRON_00015944>	Thiamphenicol
+<http://purl.obolibrary.org/obo/DRON_00012691>	Sulfamoxole
+<http://purl.obolibrary.org/obo/DRON_00016671>	Chlormadinone
+<http://purl.obolibrary.org/obo/DRON_00014890>	Lynestrenol
+<http://purl.obolibrary.org/obo/DRON_00010167>	Allylestrenol
+<http://purl.obolibrary.org/obo/DRON_00010752>	Fendiline
+<http://purl.obolibrary.org/obo/DRON_00015200>	Ketanserin
+<http://purl.obolibrary.org/obo/DRON_00015440>	norfenefrine
+<http://purl.obolibrary.org/obo/DRON_00010285>	benzarone
+<http://purl.obolibrary.org/obo/DRON_00014565>	buflomedil
+<http://purl.obolibrary.org/obo/DRON_00015378>	Nafronyl
+<http://purl.obolibrary.org/obo/DRON_00017136>	isothipendyl
+<http://purl.obolibrary.org/obo/DRON_00010457>	chloropyramine
+<http://purl.obolibrary.org/obo/DRON_00017034>	Ketotifen
+<http://purl.obolibrary.org/obo/DRON_00017126>	dipropizine
+<http://purl.obolibrary.org/obo/DRON_00017131>	zipeprol
+<http://purl.obolibrary.org/obo/DRON_00017037>	Ambroxol
+<http://purl.obolibrary.org/obo/DRON_00013968>	Clenbuterol
+<http://purl.obolibrary.org/obo/DRON_00013060>	tulobuterol
+<http://purl.obolibrary.org/obo/DRON_00018211>	picosulfate sodium
+<http://purl.obolibrary.org/obo/DRON_00015626>	prifinium
+<http://purl.obolibrary.org/obo/DRON_00015644>	propinox
+<http://purl.obolibrary.org/obo/DRON_00010900>	Hymecromone
+<http://purl.obolibrary.org/obo/DRON_00013511>	silybin
+<http://purl.obolibrary.org/obo/DRON_00011181>	Nifuratel
+<http://purl.obolibrary.org/obo/DRON_00011638>	tetrazepam
+<http://purl.obolibrary.org/obo/DRON_00010369>	butriptyline
+<http://purl.obolibrary.org/obo/DRON_00010508>	clobenzorex
+<http://purl.obolibrary.org/obo/DRON_00015411>	Nicergoline
+<http://purl.obolibrary.org/obo/DRON_00017165>	Pyrithioxin
+<http://purl.obolibrary.org/obo/DRON_00016087>	Vincamine
+<http://purl.obolibrary.org/obo/DRON_00010834>	glucametacin
+<http://purl.obolibrary.org/obo/DRON_00010360>	bumadizone
+<http://purl.obolibrary.org/obo/DRON_00012689>	Tolperisone
+<http://purl.obolibrary.org/obo/DRON_00011544>	serratiopeptidase
+<http://purl.obolibrary.org/obo/DRON_00010577>	Deslanoside
+<http://purl.obolibrary.org/obo/DRON_00011910>	Biperiden
+<http://purl.obolibrary.org/obo/DRON_00015181>	secnidazole
+<http://purl.obolibrary.org/obo/DRON_00010515>	cloprednol
+<http://purl.obolibrary.org/obo/DRON_00016725>	Phenformin
+<http://purl.obolibrary.org/obo/DRON_00011686>	tolrestat
+<http://purl.obolibrary.org/obo/DRON_00014987>	Gallopamil
+<http://purl.obolibrary.org/obo/DRON_00010740>	etofamide
+<http://purl.obolibrary.org/obo/DRON_00015859>	sulfametrole
+<http://purl.obolibrary.org/obo/DRON_00016711>	Flunarizine
+<http://purl.obolibrary.org/obo/DRON_00010169>	aloglutamol
+<http://purl.obolibrary.org/obo/DRON_00017024>	belladonna extract, USP
+<http://purl.obolibrary.org/obo/DRON_00016481>	Pipemidate
+<http://purl.obolibrary.org/obo/DRON_00015414>	Nitrendipine
+<http://purl.obolibrary.org/obo/DRON_00011273>	Paramethasone
+<http://purl.obolibrary.org/obo/DRON_00014330>	Bencyclane
+<http://purl.obolibrary.org/obo/DRON_00011266>	Bile fluid
+<http://purl.obolibrary.org/obo/DRON_00018105>	tioconazole
+<http://purl.obolibrary.org/obo/DRON_00010725>	ethyl loflazepate
+<http://purl.obolibrary.org/obo/DRON_00011287>	Penfluridol
+<http://purl.obolibrary.org/obo/DRON_00010354>	brotizolam
+<http://purl.obolibrary.org/obo/DRON_00010200>	aminohydroxybutyric acid
+<http://purl.obolibrary.org/obo/DRON_00017641>	Dipyrone
+<http://purl.obolibrary.org/obo/DRON_00015408>	nimesulide
+<http://purl.obolibrary.org/obo/DRON_00011118>	Miocamycin
+<http://purl.obolibrary.org/obo/DRON_00011186>	nifurzide
+<http://purl.obolibrary.org/obo/DRON_00010826>	Gestodene
+<http://purl.obolibrary.org/obo/DRON_00015891>	buthiazide
+<http://purl.obolibrary.org/obo/DRON_00014915>	Etilefrine
+<http://purl.obolibrary.org/obo/DRON_00014844>	fominoben
+<http://purl.obolibrary.org/obo/DRON_00011383>	piperidolate
+<http://purl.obolibrary.org/obo/DRON_00010743>	amidoline
+<http://purl.obolibrary.org/obo/DRON_00015635>	Proglumide
+<http://purl.obolibrary.org/obo/DRON_00011770>	veralipride
+<http://purl.obolibrary.org/obo/DRON_00010651>	pramiverine
+<http://purl.obolibrary.org/obo/DRON_00010286>	Benzbromarone
+<http://purl.obolibrary.org/obo/DRON_00012797>	asiaticoside
+<http://purl.obolibrary.org/obo/DRON_00015994>	tribenoside
+<http://purl.obolibrary.org/obo/DRON_00018444>	Cerium oxalate
+<http://purl.obolibrary.org/obo/DRON_00015127>	bismuth subnitrate
+<http://purl.obolibrary.org/obo/DRON_00018617>	Asafetida extract
+<http://purl.obolibrary.org/obo/DRON_00015618>	calcium polycarbophil
+<http://purl.obolibrary.org/obo/DRON_00011653>	thiopropazate
+<http://purl.obolibrary.org/obo/DRON_00012852>	alloin
+<http://purl.obolibrary.org/obo/DRON_00011654>	thioproperazine
+<http://purl.obolibrary.org/obo/DRON_00017990>	Leucine
+<http://purl.obolibrary.org/obo/DRON_00010825>	Germanium
+<http://purl.obolibrary.org/obo/DRON_00017031>	dichloralphenazone
+<http://purl.obolibrary.org/obo/DRON_00012635>	Ethisterone
+<http://purl.obolibrary.org/obo/DRON_00018102>	magnesium citrate
+<http://purl.obolibrary.org/obo/DRON_00014399>	adiphenine
+<http://purl.obolibrary.org/obo/DRON_00011492>	Remoxipride
+<http://purl.obolibrary.org/obo/DRON_00016715>	Xanthinol
+<http://purl.obolibrary.org/obo/DRON_00017152>	Inosine Pranobex
+<http://purl.obolibrary.org/obo/DRON_00014833>	moroxydine
+<http://purl.obolibrary.org/obo/DRON_00011575>	spirapril
+<http://purl.obolibrary.org/obo/DRON_00011717>	Trifluperidol
+<http://purl.obolibrary.org/obo/DRON_00015315>	Carnitine
+<http://purl.obolibrary.org/obo/DRON_00014126>	Zuclopenthixol
+<http://purl.obolibrary.org/obo/DRON_00015652>	Potassium tartrate
+<http://purl.obolibrary.org/obo/DRON_00015338>	Methylergonovine
+<http://purl.obolibrary.org/obo/DRON_00017811>	Ketorolac
+<http://purl.obolibrary.org/obo/DRON_00014709>	Clonixin
+<http://purl.obolibrary.org/obo/DRON_00011047>	meprednisone
+<http://purl.obolibrary.org/obo/DRON_00015634>	proglumetacin
+<http://purl.obolibrary.org/obo/DRON_00013524>	lomifylline
+<http://purl.obolibrary.org/obo/DRON_00015692>	Dihydroergocristine
+<http://purl.obolibrary.org/obo/DRON_00015412>	idebenone
+<http://purl.obolibrary.org/obo/DRON_00010518>	clothiapine
+<http://purl.obolibrary.org/obo/DRON_00016531>	Cynara Preparation
+<http://purl.obolibrary.org/obo/DRON_00017111>	glubionate calcium
+<http://purl.obolibrary.org/obo/DRON_00017081>	Ethylmorphine
+<http://purl.obolibrary.org/obo/DRON_00014460>	brovanexine
+<http://purl.obolibrary.org/obo/DRON_00010616>	Dihydroergotoxine
+<http://purl.obolibrary.org/obo/DRON_00017909>	Mineral Oil
+<http://purl.obolibrary.org/obo/DRON_00010597>	diacetylrhein
+<http://purl.obolibrary.org/obo/DRON_00010302>	bifemelane
+<http://purl.obolibrary.org/obo/DRON_00015629>	pangamic acid
+<http://purl.obolibrary.org/obo/DRON_00016714>	DOBESILIC ACID
+<http://purl.obolibrary.org/obo/DRON_00011482>	quinagolide
+<http://purl.obolibrary.org/obo/DRON_00011422>	Prazepam
+<http://purl.obolibrary.org/obo/DRON_00010978>	lomefloxacin
+<http://purl.obolibrary.org/obo/DRON_00011099>	Medigoxin
+<http://purl.obolibrary.org/obo/DRON_00017896>	potassium bicarbonate
+<http://purl.obolibrary.org/obo/DRON_00018317>	GARLIC POWDER
+<http://purl.obolibrary.org/obo/DRON_00015162>	isoconazole
+<http://purl.obolibrary.org/obo/DRON_00016702>	troxerutin
+<http://purl.obolibrary.org/obo/DRON_00012838>	pamidronate
+<http://purl.obolibrary.org/obo/DRON_00017539>	Loratadine
+<http://purl.obolibrary.org/obo/DRON_00015971>	tiratricol
+<http://purl.obolibrary.org/obo/DRON_00011439>	prolintane
+<http://purl.obolibrary.org/obo/DRON_00014801>	camylofine
+<http://purl.obolibrary.org/obo/DRON_00019894>	Citicoline
+<http://purl.obolibrary.org/obo/DRON_00013529>	noradrenaline theophylline
+<http://purl.obolibrary.org/obo/DRON_00013530>	cafedrine
+<http://purl.obolibrary.org/obo/DRON_00010974>	Lofepramine
+<http://purl.obolibrary.org/obo/DRON_00011196>	Nisoldipine
+<http://purl.obolibrary.org/obo/DRON_00014774>	Dihydralazine
+<http://purl.obolibrary.org/obo/DRON_00010909>	Indoramin
+<http://purl.obolibrary.org/obo/DRON_00014611>	cathine
+<http://purl.obolibrary.org/obo/DRON_00010441>	ceftibuten
+<http://purl.obolibrary.org/obo/DRON_00018557>	Ginsenoside
+<http://purl.obolibrary.org/obo/DRON_00010981>	triazulenone
+<http://purl.obolibrary.org/obo/DRON_00018323>	Protamone
+<http://purl.obolibrary.org/obo/DRON_00015773>	roxatidine
+<http://purl.obolibrary.org/obo/DRON_00010195>	amineptin
+<http://purl.obolibrary.org/obo/DRON_00015500>	pentifylline
+<http://purl.obolibrary.org/obo/DRON_00017074>	Chlormethiazole
+<http://purl.obolibrary.org/obo/DRON_00016496>	Ursodeoxycholate
+<http://purl.obolibrary.org/obo/DRON_00017185>	Nicotinyl Alcohol
+<http://purl.obolibrary.org/obo/DRON_00017040>	isoaminile
+<http://purl.obolibrary.org/obo/DRON_00015427>	nitroxoline
+<http://purl.obolibrary.org/obo/DRON_00015943>	Tilidine
+<http://purl.obolibrary.org/obo/DRON_00017151>	Hexoprenaline
+<http://purl.obolibrary.org/obo/DRON_00014492>	Benperidol
+<http://purl.obolibrary.org/obo/DRON_00014488>	benorilate
+<http://purl.obolibrary.org/obo/DRON_00016079>	Viloxazine
+<http://purl.obolibrary.org/obo/DRON_00015286>	menadiol
+<http://purl.obolibrary.org/obo/DRON_00016710>	Heptaminol
+<http://purl.obolibrary.org/obo/DRON_00015767>	Silymarin
+<http://purl.obolibrary.org/obo/DRON_00014129>	Heroin
+<http://purl.obolibrary.org/obo/DRON_00017502>	Granisetron
+<http://purl.obolibrary.org/obo/DRON_00011132>	moxonidine
+<http://purl.obolibrary.org/obo/DRON_00010520>	cloxazolam
+<http://purl.obolibrary.org/obo/DRON_00015796>	clebopride
+<http://purl.obolibrary.org/obo/DRON_00012655>	nomegestrol
+<http://purl.obolibrary.org/obo/DRON_00017140>	oxeladin
+<http://purl.obolibrary.org/obo/DRON_00010237>	Apazone
+<http://purl.obolibrary.org/obo/DRON_00012706>	Bisacodyl
+<http://purl.obolibrary.org/obo/DRON_00011612>	talniflumate
+<http://purl.obolibrary.org/obo/DRON_00010191>	amezinium
+<http://purl.obolibrary.org/obo/DRON_00010966>	Lisuride
+<http://purl.obolibrary.org/obo/DRON_00013656>	Dextromoramide
+<http://purl.obolibrary.org/obo/DRON_00010164>	alizapride
+<http://purl.obolibrary.org/obo/DRON_00014118>	octylonium
+<http://purl.obolibrary.org/obo/DRON_00010530>	cortivazol
+<http://purl.obolibrary.org/obo/DRON_00011443>	Promegestone
+<http://purl.obolibrary.org/obo/DRON_00014464>	aniracetam
+<http://purl.obolibrary.org/obo/DRON_00015361>	Molsidomine
+<http://purl.obolibrary.org/obo/DRON_00010968>	lithium citrate
+<http://purl.obolibrary.org/obo/DRON_00016950>	Trospium
+<http://purl.obolibrary.org/obo/DRON_00010351>	bromperidol
+<http://purl.obolibrary.org/obo/DRON_00010178>	Aluminum aspirin
+<http://purl.obolibrary.org/obo/DRON_00011781>	vinpocetine
+<http://purl.obolibrary.org/obo/DRON_00010747>	febuprol
+<http://purl.obolibrary.org/obo/DRON_00015868>	sultamicillin
+<http://purl.obolibrary.org/obo/DRON_00015403>	Niflumic Acid
+<http://purl.obolibrary.org/obo/DRON_00012653>	Nicardipine
+<http://purl.obolibrary.org/obo/DRON_00018665>	Butethamate
+<http://purl.obolibrary.org/obo/DRON_00014932>	flubendazole
+<http://purl.obolibrary.org/obo/DRON_00012544>	Styramate
+<http://purl.obolibrary.org/obo/DRON_00010401>	Canthaxanthin
+<http://purl.obolibrary.org/obo/DRON_00015681>	propyphenazone
+<http://purl.obolibrary.org/obo/DRON_00015837>	tetroxoprim
+<http://purl.obolibrary.org/obo/DRON_00016082>	vinburnine
+<http://purl.obolibrary.org/obo/DRON_00010477>	chromocarb diethylamine
+<http://purl.obolibrary.org/obo/DRON_00015749>	Aloe Extract
+<http://purl.obolibrary.org/obo/DRON_00017084>	teferrol
+<http://purl.obolibrary.org/obo/DRON_00018324>	METHYLENEDIOXYCINNAMIC ACID
+<http://purl.obolibrary.org/obo/DRON_00017164>	Procaterol
+<http://purl.obolibrary.org/obo/DRON_00018028>	Sulfamethazine
+<http://purl.obolibrary.org/obo/DRON_00011784>	Xamoterol
+<http://purl.obolibrary.org/obo/DRON_00010449>	Cerivastatin sodium
+<http://purl.obolibrary.org/obo/DRON_00013930>	Hydroxyestrones
+<http://purl.obolibrary.org/obo/DRON_00012734>	Vitamin K 3
+<http://purl.obolibrary.org/obo/DRON_00018058>	phosphatidylserine
+<http://purl.obolibrary.org/obo/DRON_00018466>	IOPANOATE SODIUM
+<http://purl.obolibrary.org/obo/DRON_00010680>	ebastine
+<http://purl.obolibrary.org/obo/DRON_00010323>	BISMUTH HYDROXIDE
+<http://purl.obolibrary.org/obo/DRON_00017075>	ambroxol-theophylline-7-acetate
+<http://purl.obolibrary.org/obo/DRON_00016883>	fenipentol
+<http://purl.obolibrary.org/obo/DRON_00011563>	bismuth carbonate
+<http://purl.obolibrary.org/obo/DRON_00017812>	Castor Oil
+<http://purl.obolibrary.org/obo/DRON_00011719>	triflusal
+<http://purl.obolibrary.org/obo/DRON_00010275>	benfluorex
+<http://purl.obolibrary.org/obo/DRON_00015157>	ipriflavone
+<http://purl.obolibrary.org/obo/DRON_00015448>	oxaceprol
+<http://purl.obolibrary.org/obo/DRON_00014405>	Almitrine
+<http://purl.obolibrary.org/obo/DRON_00015892>	Tegafur
+<http://purl.obolibrary.org/obo/DRON_00011615>	Uracil
+<http://purl.obolibrary.org/obo/DRON_00016031>	Trimetazidine
+<http://purl.obolibrary.org/obo/DRON_00018556>	TRIMETHOXYBENZENE
+<http://purl.obolibrary.org/obo/DRON_00016032>	Phloroglucinol
+<http://purl.obolibrary.org/obo/DRON_00011664>	tianeptine
+<http://purl.obolibrary.org/obo/DRON_00010480>	cicloxilic acid
+<http://purl.obolibrary.org/obo/DRON_00015511>	Pentoxifylline
+<http://purl.obolibrary.org/obo/DRON_00013728>	cyclonium
+<http://purl.obolibrary.org/obo/DRON_00015300>	Vanadium
+<http://purl.obolibrary.org/obo/DRON_00014479>	Pyridinolcarbamate
+<http://purl.obolibrary.org/obo/DRON_00015631>	PROCYANIDOLIC OLIGOMER
+<http://purl.obolibrary.org/obo/DRON_00014939>	fenproporex
+<http://purl.obolibrary.org/obo/DRON_00018738>	Gotu Kola Extract
+<http://purl.obolibrary.org/obo/DRON_00018623>	Angelica sinensis preparation
+<http://purl.obolibrary.org/obo/DRON_00010783>	feverfew extract
+<http://purl.obolibrary.org/obo/DRON_00019388>	Horse Chestnut Preparation
+<http://purl.obolibrary.org/obo/DRON_00013762>	Black Cohosh Extract
+<http://purl.obolibrary.org/obo/DRON_00019218>	Green Tea Extract
+<http://purl.obolibrary.org/obo/DRON_00013304>	Wild yam extract
+<http://purl.obolibrary.org/obo/DRON_00011523>	Schizandra preparation
+<http://purl.obolibrary.org/obo/DRON_00018816>	Bearberry preparation
+<http://purl.obolibrary.org/obo/DRON_00015059>	Guarana preparation
+<http://purl.obolibrary.org/obo/DRON_00018314>	Euphrasia officinalis preparation
+<http://purl.obolibrary.org/obo/DRON_00017799>	Devil's claw preparation
+<http://purl.obolibrary.org/obo/DRON_00014621>	Cefatrizine
+<http://purl.obolibrary.org/obo/DRON_00017646>	Hops extract
+<http://purl.obolibrary.org/obo/DRON_00012696>	Salicin extract
+<http://purl.obolibrary.org/obo/DRON_00015946>	thiocolchicoside
+<http://purl.obolibrary.org/obo/DRON_00014104>	Ispaghula husk
+<http://purl.obolibrary.org/obo/DRON_00013437>	hemicellulase
+<http://purl.obolibrary.org/obo/DRON_00015147>	leucocyanidin
+<http://purl.obolibrary.org/obo/DRON_00016940>	Adenosine Triphosphate
+<http://purl.obolibrary.org/obo/DRON_00016331>	beta Sitosterol
+<http://purl.obolibrary.org/obo/DRON_00018268>	ZINC CITRATE
+<http://purl.obolibrary.org/obo/DRON_00012250>	GRAPEFRUIT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00012249>	Lipotropic Agents
+<http://purl.obolibrary.org/obo/DRON_00017784>	Shark liver oil
+<http://purl.obolibrary.org/obo/DRON_00016316>	plant stanol ester
+<http://purl.obolibrary.org/obo/DRON_00012188>	POTASSIUM,CHELATED
+<http://purl.obolibrary.org/obo/DRON_00017677>	red yeast rice
+<http://purl.obolibrary.org/obo/DRON_00012086>	chaste berry extract
+<http://purl.obolibrary.org/obo/DRON_00019023>	Maca preparation
+<http://purl.obolibrary.org/obo/DRON_00018370>	Elderberry preparation
+<http://purl.obolibrary.org/obo/DRON_00012229>	Yucca extract
+<http://purl.obolibrary.org/obo/DRON_00018167>	soy protein isolate
+<http://purl.obolibrary.org/obo/DRON_00016359>	Ginkgo Biloba Leaf Extract
+<http://purl.obolibrary.org/obo/DRON_00013840>	pine bark extract
+<http://purl.obolibrary.org/obo/DRON_00012051>	Black cohosh root extract
+<http://purl.obolibrary.org/obo/DRON_00012055>	BUTTON MUSHROOM EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018711>	Aloe vera preparation
+<http://purl.obolibrary.org/obo/DRON_00013975>	alosetron
+<http://purl.obolibrary.org/obo/DRON_00015753>	Plantago Seed
+<http://purl.obolibrary.org/obo/DRON_00017167>	Phytic Acid
+<http://purl.obolibrary.org/obo/DRON_00013695>	Yohimbe bark preparation
+<http://purl.obolibrary.org/obo/DRON_00012291>	Dandelion Extract
+<http://purl.obolibrary.org/obo/DRON_00018576>	Urtica preparation
+<http://purl.obolibrary.org/obo/DRON_00012290>	Damiana extract
+<http://purl.obolibrary.org/obo/DRON_00012075>	Cayenne
+<http://purl.obolibrary.org/obo/DRON_00015929>	Thymus Gland-Calf
+<http://purl.obolibrary.org/obo/DRON_00018416>	Banana Extract
+<http://purl.obolibrary.org/obo/DRON_00018415>	Watermelon Preparation
+<http://purl.obolibrary.org/obo/DRON_00010092>	ASTRAGALUS ROOT
+<http://purl.obolibrary.org/obo/DRON_00012297>	ENZYMES,DIGESTIVE (PLANT)
+<http://purl.obolibrary.org/obo/DRON_00018226>	Lactobacillus acidophilus
+<http://purl.obolibrary.org/obo/DRON_00016352>	fructooligosaccharide
+<http://purl.obolibrary.org/obo/DRON_00018400>	HORSE CHESTNUT SEED
+<http://purl.obolibrary.org/obo/DRON_00012946>	ECHINACEA ANGUSTIFOLIA Extract
+<http://purl.obolibrary.org/obo/DRON_00018659>	Passion flower extract
+<http://purl.obolibrary.org/obo/DRON_00018417>	Skullcap preparation
+<http://purl.obolibrary.org/obo/DRON_00018411>	Siberian ginseng preparation
+<http://purl.obolibrary.org/obo/DRON_00012364>	BIOFLAVONOID, LEMON
+<http://purl.obolibrary.org/obo/DRON_00012386>	Borage extract
+<http://purl.obolibrary.org/obo/DRON_00018824>	Red Clover Preparation
+<http://purl.obolibrary.org/obo/DRON_00012284>	Calcium Glucarate
+<http://purl.obolibrary.org/obo/DRON_00015086>	Lactobacillus
+<http://purl.obolibrary.org/obo/DRON_00018181>	Docosahexaenoate
+<http://purl.obolibrary.org/obo/DRON_00012357>	SIBERIAN GINSENG ROOT
+<http://purl.obolibrary.org/obo/DRON_00012126>	ginger root
+<http://purl.obolibrary.org/obo/DRON_00012309>	ginseng root
+<http://purl.obolibrary.org/obo/DRON_00017992>	Echinacea angustifolia root extract
+<http://purl.obolibrary.org/obo/DRON_00012281>	Burdock root extract
+<http://purl.obolibrary.org/obo/DRON_00017680>	Soybean Oil
+<http://purl.obolibrary.org/obo/DRON_00019760>	Echinacea purpurea extract
+<http://purl.obolibrary.org/obo/DRON_00010134>	Juniper extract
+<http://purl.obolibrary.org/obo/DRON_00016775>	KAVA ROOT
+<http://purl.obolibrary.org/obo/DRON_00012376>	Griffonia Preparation
+<http://purl.obolibrary.org/obo/DRON_00012945>	Gamboge
+<http://purl.obolibrary.org/obo/DRON_00010082>	AMERICAN GINSENG ROOT
+<http://purl.obolibrary.org/obo/DRON_00012349>	SIBERIAN GINSENG ROOT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018403>	KOREAN GINSENG ROOT
+<http://purl.obolibrary.org/obo/DRON_00016134>	Korean Ginseng Root Extract
+<http://purl.obolibrary.org/obo/DRON_00017993>	ECHINACEA PURPUREA ROOT
+<http://purl.obolibrary.org/obo/DRON_00018410>	sangre de grado
+<http://purl.obolibrary.org/obo/DRON_00016644>	Chitosan
+<http://purl.obolibrary.org/obo/DRON_00020035>	GUGGUL LIPIDS
+<http://purl.obolibrary.org/obo/DRON_00018908>	Echinacea Root Extract
+<http://purl.obolibrary.org/obo/DRON_00017963>	Black Pepper Preparation
+<http://purl.obolibrary.org/obo/DRON_00018369>	GOLDEN SEAL ROOT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018367>	ECHINACEA, AERIAL PARTS
+<http://purl.obolibrary.org/obo/DRON_00018382>	MILK THISTLE SEED
+<http://purl.obolibrary.org/obo/DRON_00018380>	HAWTHORN BERRY EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018379>	HAWTHORN BERRY
+<http://purl.obolibrary.org/obo/DRON_00016655>	gugulu extract
+<http://purl.obolibrary.org/obo/DRON_00014988>	gamma-oryzanol
+<http://purl.obolibrary.org/obo/DRON_00012134>	Grapefruit seed extract
+<http://purl.obolibrary.org/obo/DRON_00018358>	Grape Seed Proanthocyanidins
+<http://purl.obolibrary.org/obo/DRON_00018359>	Broccoli preparation
+<http://purl.obolibrary.org/obo/DRON_00018355>	Beets preparation
+<http://purl.obolibrary.org/obo/DRON_00020103>	Parsley extract
+<http://purl.obolibrary.org/obo/DRON_00018354>	BARLEY GRAIN
+<http://purl.obolibrary.org/obo/DRON_00018597>	Corn silk preparation
+<http://purl.obolibrary.org/obo/DRON_00012339>	Propolis
+<http://purl.obolibrary.org/obo/DRON_00018544>	Pau d'arco preparation
+<http://purl.obolibrary.org/obo/DRON_00017975>	BUTCHER'S BROOM Preparation
+<http://purl.obolibrary.org/obo/DRON_00018350>	ANAMU Preparation
+<http://purl.obolibrary.org/obo/DRON_00018799>	Papaya preparation
+<http://purl.obolibrary.org/obo/DRON_00016597>	Vitamin B Complex
+<http://purl.obolibrary.org/obo/DRON_00020291>	Apple pectin
+<http://purl.obolibrary.org/obo/DRON_00016128>	guar gum
+<http://purl.obolibrary.org/obo/DRON_00012102>	Dandelion root extract
+<http://purl.obolibrary.org/obo/DRON_00013693>	SARSAPARILLA Preparation
+<http://purl.obolibrary.org/obo/DRON_00017166>	Senna Leaves
+<http://purl.obolibrary.org/obo/DRON_00012936>	Fennel seed preparation
+<http://purl.obolibrary.org/obo/DRON_00018528>	Cordyceps sinensis preparation
+<http://purl.obolibrary.org/obo/DRON_00018919>	GREEN TEA LEAF EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00017500>	Korean ginseng preparation
+<http://purl.obolibrary.org/obo/DRON_00018386>	Watercress preparation
+<http://purl.obolibrary.org/obo/DRON_00013621>	Indinavir
+<http://purl.obolibrary.org/obo/DRON_00018732>	Magnesium malate
+<http://purl.obolibrary.org/obo/DRON_00018065>	Calcium Glycerophosphate
+<http://purl.obolibrary.org/obo/DRON_00015229>	glucomannan
+<http://purl.obolibrary.org/obo/DRON_00018112>	Pumpkin seed extract
+<http://purl.obolibrary.org/obo/DRON_00012187>	POTASSIUM SULFIDE
+<http://purl.obolibrary.org/obo/DRON_00017898>	Superoxide Dismutase
+<http://purl.obolibrary.org/obo/DRON_00013722>	Phosphatidylethanolamines
+<http://purl.obolibrary.org/obo/DRON_00013723>	Phosphatidylinositols
+<http://purl.obolibrary.org/obo/DRON_00018574>	Gymnema Sylvestre Preparation
+<http://purl.obolibrary.org/obo/DRON_00017512>	fumarate
+<http://purl.obolibrary.org/obo/DRON_00018364>	Damiana leaf preparation
+<http://purl.obolibrary.org/obo/DRON_00012931>	Eyebright preparation
+<http://purl.obolibrary.org/obo/DRON_00018139>	Lactose
+<http://purl.obolibrary.org/obo/DRON_00019100>	Kelp preparation
+<http://purl.obolibrary.org/obo/DRON_00019229>	FE HEME POLYPEPTIDE
+<http://purl.obolibrary.org/obo/DRON_00012324>	MILK THISTLE FRUIT
+<http://purl.obolibrary.org/obo/DRON_00018405>	MILK THISTLE FRUIT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018394>	ELDERBERRY FRUIT
+<http://purl.obolibrary.org/obo/DRON_00012316>	rennet
+<http://purl.obolibrary.org/obo/DRON_00012353>	SLIPPERY ELM BARK
+<http://purl.obolibrary.org/obo/DRON_00013570>	SOY GERM
+<http://purl.obolibrary.org/obo/DRON_00018348>	almotriptan
+<http://purl.obolibrary.org/obo/DRON_00018693>	imatinib
+<http://purl.obolibrary.org/obo/DRON_00017859>	drospirenone
+<http://purl.obolibrary.org/obo/DRON_00012853>	Ergot preparation
+<http://purl.obolibrary.org/obo/DRON_00018471>	apiole
+<http://purl.obolibrary.org/obo/DRON_00010172>	Alseroxylon
+<http://purl.obolibrary.org/obo/DRON_00012401>	basic aluminum carbonate gel
+<http://purl.obolibrary.org/obo/DRON_00010081>	Ambenonium
+<http://purl.obolibrary.org/obo/DRON_00013470>	aminosalicylic acid
+<http://purl.obolibrary.org/obo/DRON_00012495>	Antimony Potassium Tartrate
+<http://purl.obolibrary.org/obo/DRON_00018656>	DISODIUM PYROPHOSPHATE
+<http://purl.obolibrary.org/obo/DRON_00014030>	ammonium phosphate
+<http://purl.obolibrary.org/obo/DRON_00017219>	Lipase
+<http://purl.obolibrary.org/obo/DRON_00014465>	Antazoline
+<http://purl.obolibrary.org/obo/DRON_00018452>	Hyoscyamus extract
+<http://purl.obolibrary.org/obo/DRON_00017188>	aprobarbital
+<http://purl.obolibrary.org/obo/DRON_00016142>	Phenacetin
+<http://purl.obolibrary.org/obo/DRON_00016771>	cinnamedrine
+<http://purl.obolibrary.org/obo/DRON_00018149>	Kaolin
+<http://purl.obolibrary.org/obo/DRON_00014487>	Benactyzine
+<http://purl.obolibrary.org/obo/DRON_00010295>	Bepridil
+<http://purl.obolibrary.org/obo/DRON_00013784>	bexarotene
+<http://purl.obolibrary.org/obo/DRON_00018447>	Bryonia preparation
+<http://purl.obolibrary.org/obo/DRON_00018445>	Hydrastis preparation
+<http://purl.obolibrary.org/obo/DRON_00018433>	CALCIUM CREOSOTATE
+<http://purl.obolibrary.org/obo/DRON_00018525>	PEPTONE,DRIED
+<http://purl.obolibrary.org/obo/DRON_00018526>	CALCIUM IODIZED
+<http://purl.obolibrary.org/obo/DRON_00018616>	Nux Vomica extract
+<http://purl.obolibrary.org/obo/DRON_00020138>	Capsicum extract
+<http://purl.obolibrary.org/obo/DRON_00013678>	cevimeline
+<http://purl.obolibrary.org/obo/DRON_00013035>	Cryptenamine
+<http://purl.obolibrary.org/obo/DRON_00012398>	Cobalamins
+<http://purl.obolibrary.org/obo/DRON_00010538>	Cyclacillin
+<http://purl.obolibrary.org/obo/DRON_00015985>	cyclothiazide
+<http://purl.obolibrary.org/obo/DRON_00014142>	Cysteamine
+<http://purl.obolibrary.org/obo/DRON_00014028>	Digitalis preparation
+<http://purl.obolibrary.org/obo/DRON_00014792>	dihydroxyaluminum sodium carbonate
+<http://purl.obolibrary.org/obo/DRON_00010632>	diphenidol
+<http://purl.obolibrary.org/obo/DRON_00013587>	dirithromycin
+<http://purl.obolibrary.org/obo/DRON_00015316>	Racemethionine
+<http://purl.obolibrary.org/obo/DRON_00011897>	dofetilide
+<http://purl.obolibrary.org/obo/DRON_00016204>	Dolasetron
+<http://purl.obolibrary.org/obo/DRON_00013724>	Doxercalciferol
+<http://purl.obolibrary.org/obo/DRON_00013631>	eprosartan
+<http://purl.obolibrary.org/obo/DRON_00010708>	Estramustine
+<http://purl.obolibrary.org/obo/DRON_00017528>	estrogens, conjugated synthetic A
+<http://purl.obolibrary.org/obo/DRON_00010720>	ethinamate
+<http://purl.obolibrary.org/obo/DRON_00010723>	profenamine
+<http://purl.obolibrary.org/obo/DRON_00017181>	Ethylestrenol
+<http://purl.obolibrary.org/obo/DRON_00016623>	Flumethiazide
+<http://purl.obolibrary.org/obo/DRON_00012123>	fluvastatin
+<http://purl.obolibrary.org/obo/DRON_00017960>	gabapentin
+<http://purl.obolibrary.org/obo/DRON_00016731>	gatifloxacin
+<http://purl.obolibrary.org/obo/DRON_00016824>	Glipizide
+<http://purl.obolibrary.org/obo/DRON_00010837>	Glutethimide
+<http://purl.obolibrary.org/obo/DRON_00018073>	iodinated glycerol
+<http://purl.obolibrary.org/obo/DRON_00010856>	guanadrel
+<http://purl.obolibrary.org/obo/DRON_00013131>	Guanethidine
+<http://purl.obolibrary.org/obo/DRON_00012438>	Hexobarbital
+<http://purl.obolibrary.org/obo/DRON_00012439>	hexocyclium
+<http://purl.obolibrary.org/obo/DRON_00014309>	oxyphencyclimine
+<http://purl.obolibrary.org/obo/DRON_00016762>	Phenazopyridine
+<http://purl.obolibrary.org/obo/DRON_00010118>	iocetamic acid
+<http://purl.obolibrary.org/obo/DRON_00017504>	Levetiracetam
+<http://purl.obolibrary.org/obo/DRON_00013028>	linezolid
+<http://purl.obolibrary.org/obo/DRON_00016421>	lopinavir
+<http://purl.obolibrary.org/obo/DRON_00011715>	tridihexethyl
+<http://purl.obolibrary.org/obo/DRON_00011060>	Mesoridazine
+<http://purl.obolibrary.org/obo/DRON_00015312>	Methacycline
+<http://purl.obolibrary.org/obo/DRON_00011066>	Methandrostenolone
+<http://purl.obolibrary.org/obo/DRON_00011067>	methantheline
+<http://purl.obolibrary.org/obo/DRON_00011069>	metharbital
+<http://purl.obolibrary.org/obo/DRON_00017138>	methdilazine
+<http://purl.obolibrary.org/obo/DRON_00011277>	Pargyline
+<http://purl.obolibrary.org/obo/DRON_00011096>	Methyprylon
+<http://purl.obolibrary.org/obo/DRON_00011907>	Mifepristone
+<http://purl.obolibrary.org/obo/DRON_00011139>	nabilone
+<http://purl.obolibrary.org/obo/DRON_00015375>	nabumetone
+<http://purl.obolibrary.org/obo/DRON_00018346>	nateglinide
+<http://purl.obolibrary.org/obo/DRON_00013466>	Nelfinavir
+<http://purl.obolibrary.org/obo/DRON_00015426>	Nylidrin
+<http://purl.obolibrary.org/obo/DRON_00017663>	Opium
+<http://purl.obolibrary.org/obo/DRON_00018383>	Oseltamivir
+<http://purl.obolibrary.org/obo/DRON_00013474>	oxaprozin
+<http://purl.obolibrary.org/obo/DRON_00014634>	Oxyphenbutazone
+<http://purl.obolibrary.org/obo/DRON_00011259>	Oxyphenonium
+<http://purl.obolibrary.org/obo/DRON_00011308>	Phenelzine
+<http://purl.obolibrary.org/obo/DRON_00015530>	Phenmetrazine
+<http://purl.obolibrary.org/obo/DRON_00015420>	Theobromine
+<http://purl.obolibrary.org/obo/DRON_00012467>	Phenprocoumon
+<http://purl.obolibrary.org/obo/DRON_00011385>	Pipobroman
+<http://purl.obolibrary.org/obo/DRON_00014903>	Quinacrine
+<http://purl.obolibrary.org/obo/DRON_00011498>	quinethazone
+<http://purl.obolibrary.org/obo/DRON_00012476>	rescinnamine
+<http://purl.obolibrary.org/obo/DRON_00016899>	rivastigmine
+<http://purl.obolibrary.org/obo/DRON_00015719>	rofecoxib
+<http://purl.obolibrary.org/obo/DRON_00018221>	sildenafil
+<http://purl.obolibrary.org/obo/DRON_00012478>	aminosalicylate
+<http://purl.obolibrary.org/obo/DRON_00012737>	Strychnine
+<http://purl.obolibrary.org/obo/DRON_00011594>	sulfacytine
+<http://purl.obolibrary.org/obo/DRON_00011599>	Sulfapyridine
+<http://purl.obolibrary.org/obo/DRON_00013136>	Suprofen
+<http://purl.obolibrary.org/obo/DRON_00012216>	Tacrine
+<http://purl.obolibrary.org/obo/DRON_00011610>	talbutal
+<http://purl.obolibrary.org/obo/DRON_00017608>	temozolomide
+<http://purl.obolibrary.org/obo/DRON_00016960>	terbinafine
+<http://purl.obolibrary.org/obo/DRON_00011687>	Toremifene
+<http://purl.obolibrary.org/obo/DRON_00016014>	Triflupromazine
+<http://purl.obolibrary.org/obo/DRON_00016835>	Tripelennamine
+<http://purl.obolibrary.org/obo/DRON_00011755>	trovafloxacin
+<http://purl.obolibrary.org/obo/DRON_00011822>	Tyropanoate
+<http://purl.obolibrary.org/obo/DRON_00019457>	valganciclovir
+<http://purl.obolibrary.org/obo/DRON_00013809>	Zalcitabine
+<http://purl.obolibrary.org/obo/DRON_00017225>	Apomorphine
+<http://purl.obolibrary.org/obo/DRON_00010866>	halofantrine
+<http://purl.obolibrary.org/obo/DRON_00011226>	orlistat
+<http://purl.obolibrary.org/obo/DRON_00011432>	Procarbazine
+<http://purl.obolibrary.org/obo/DRON_00015829>	Sucralfate
+<http://purl.obolibrary.org/obo/DRON_00011675>	Tolazoline
+<http://purl.obolibrary.org/obo/DRON_00018280>	aluminum acetate
+<http://purl.obolibrary.org/obo/DRON_00018432>	citrus bioflavonoids
+<http://purl.obolibrary.org/obo/DRON_00014645>	Chlorphenesin
+<http://purl.obolibrary.org/obo/DRON_00018438>	Ornithine, (L)-Isomer
+<http://purl.obolibrary.org/obo/DRON_00014252>	entacapone
+<http://purl.obolibrary.org/obo/DRON_00013576>	Dihydroergocornine
+<http://purl.obolibrary.org/obo/DRON_00018107>	Dihydroergocryptine
+<http://purl.obolibrary.org/obo/DRON_00015852>	Sulfamerazine
+<http://purl.obolibrary.org/obo/DRON_00017557>	Fluoride Ion
+<http://purl.obolibrary.org/obo/DRON_00017526>	SODIUM PHOSPHATE,MONOBASIC,MONOHYDRATE
+<http://purl.obolibrary.org/obo/DRON_00018612>	SODIUM PHOSPHATE, DIBASIC, ANHYDROUS
+<http://purl.obolibrary.org/obo/DRON_00013730>	Tribasic potassium phosphate
+<http://purl.obolibrary.org/obo/DRON_00018894>	SODIUM PHOSPHATE, MONOBASIC, ANHYDROUS
+<http://purl.obolibrary.org/obo/DRON_00013578>	Dihydro-alpha-ergocryptine
+<http://purl.obolibrary.org/obo/DRON_00013579>	Dihydro-beta-ergocryptine
+<http://purl.obolibrary.org/obo/DRON_00018214>	Cupric oxide
+<http://purl.obolibrary.org/obo/DRON_00017544>	Calcium Sulfate
+<http://purl.obolibrary.org/obo/DRON_00018559>	"1-ALPHA-VITAMIN D"
+<http://purl.obolibrary.org/obo/DRON_00019174>	CALCIUM CARBONATE, PRECIPITATED
+<http://purl.obolibrary.org/obo/DRON_00013476>	Sirolimus
+<http://purl.obolibrary.org/obo/DRON_00020282>	tenofovir disoproxil
+<http://purl.obolibrary.org/obo/DRON_00013739>	bosentan
+<http://purl.obolibrary.org/obo/DRON_00018583>	valdecoxib
+<http://purl.obolibrary.org/obo/DRON_00018586>	Escitalopram
+<http://purl.obolibrary.org/obo/DRON_00013614>	frovatriptan
+<http://purl.obolibrary.org/obo/DRON_00013482>	tegaserod
+<http://purl.obolibrary.org/obo/DRON_00018580>	gefitinib
+<http://purl.obolibrary.org/obo/DRON_00013625>	nitisinone
+<http://purl.obolibrary.org/obo/DRON_00020248>	Apple Cider Vinegar
+<http://purl.obolibrary.org/obo/DRON_00018622>	Astragalus preparation
+<http://purl.obolibrary.org/obo/DRON_00013763>	eletriptan
+<http://purl.obolibrary.org/obo/DRON_00018907>	CIDER VINEGAR
+<http://purl.obolibrary.org/obo/DRON_00013765>	LUTEIN ESTERS
+<http://purl.obolibrary.org/obo/DRON_00017973>	policosanol
+<http://purl.obolibrary.org/obo/DRON_00018197>	Saccharomyces boulardii
+<http://purl.obolibrary.org/obo/DRON_00014144>	nebivolol
+<http://purl.obolibrary.org/obo/DRON_00014146>	lornoxicam
+<http://purl.obolibrary.org/obo/DRON_00018669>	telithromycin
+<http://purl.obolibrary.org/obo/DRON_00018671>	etoricoxib
+<http://purl.obolibrary.org/obo/DRON_00014162>	potassium iodate
+<http://purl.obolibrary.org/obo/DRON_00014166>	imidapril
+<http://purl.obolibrary.org/obo/DRON_00014732>	deferiprone
+<http://purl.obolibrary.org/obo/DRON_00014164>	Dexketoprofen
+<http://purl.obolibrary.org/obo/DRON_00018677>	Miglustat
+<http://purl.obolibrary.org/obo/DRON_00018685>	tadalafil
+<http://purl.obolibrary.org/obo/DRON_00018831>	fosamprenavir
+<http://purl.obolibrary.org/obo/DRON_00018681>	Atazanavir
+<http://purl.obolibrary.org/obo/DRON_00018691>	aprepitant
+<http://purl.obolibrary.org/obo/DRON_00020281>	emtricitabine
+<http://purl.obolibrary.org/obo/DRON_00015983>	dehydrosanol
+<http://purl.obolibrary.org/obo/DRON_00014557>	butyl chloride
+<http://purl.obolibrary.org/obo/DRON_00014931>	flopropione
+<http://purl.obolibrary.org/obo/DRON_00015755>	Silicon
+<http://purl.obolibrary.org/obo/DRON_00015977>	tranilast
+<http://purl.obolibrary.org/obo/DRON_00017116>	sobrerol
+<http://purl.obolibrary.org/obo/DRON_00018736>	MANGANESE CITRATE
+<http://purl.obolibrary.org/obo/DRON_00018737>	CHROMIUM CITRATE
+<http://purl.obolibrary.org/obo/DRON_00016177>	Methapyrilene
+<http://purl.obolibrary.org/obo/DRON_00015545>	Phenoxybenzamine
+<http://purl.obolibrary.org/obo/DRON_00016072>	VALEPOTRIATE
+<http://purl.obolibrary.org/obo/DRON_00015027>	gepefrine
+<http://purl.obolibrary.org/obo/DRON_00015979>	Trapidil
+<http://purl.obolibrary.org/obo/DRON_00016095>	Orotic Acid
+<http://purl.obolibrary.org/obo/DRON_00014673>	Chromonar
+<http://purl.obolibrary.org/obo/DRON_00015489>	myrtol
+<http://purl.obolibrary.org/obo/DRON_00015028>	GLICOFOSFOPEPTICAL
+<http://purl.obolibrary.org/obo/DRON_00017108>	bamipine
+<http://purl.obolibrary.org/obo/DRON_00014839>	droxicam
+<http://purl.obolibrary.org/obo/DRON_00015826>	Sitosterols
+<http://purl.obolibrary.org/obo/DRON_00015906>	terizidone
+<http://purl.obolibrary.org/obo/DRON_00015724>	acetorphan
+<http://purl.obolibrary.org/obo/DRON_00015628>	Hematoporphyrin
+<http://purl.obolibrary.org/obo/DRON_00017104>	Dimethoxanate
+<http://purl.obolibrary.org/obo/DRON_00014976>	flupirtine
+<http://purl.obolibrary.org/obo/DRON_00015358>	monophenylbutazone
+<http://purl.obolibrary.org/obo/DRON_00015703>	benphothiamine
+<http://purl.obolibrary.org/obo/DRON_00015337>	metopimazine
+<http://purl.obolibrary.org/obo/DRON_00015927>	thymomodulin
+<http://purl.obolibrary.org/obo/DRON_00017977>	Selenite
+<http://purl.obolibrary.org/obo/DRON_00014910>	etifoxine
+<http://purl.obolibrary.org/obo/DRON_00014759>	difemerine
+<http://purl.obolibrary.org/obo/DRON_00015965>	toloxatone
+<http://purl.obolibrary.org/obo/DRON_00015659>	Prednimustine
+<http://purl.obolibrary.org/obo/DRON_00014937>	fenoverine
+<http://purl.obolibrary.org/obo/DRON_00015729>	salicin
+<http://purl.obolibrary.org/obo/DRON_00015179>	limonene
+<http://purl.obolibrary.org/obo/DRON_00016684>	Hexetidine
+<http://purl.obolibrary.org/obo/DRON_00016716>	Dequalinium
+<http://purl.obolibrary.org/obo/DRON_00014446>	Aprindine
+<http://purl.obolibrary.org/obo/DRON_00015481>	butalamine
+<http://purl.obolibrary.org/obo/DRON_00014640>	cetiedil
+<http://purl.obolibrary.org/obo/DRON_00014861>	erdosteine
+<http://purl.obolibrary.org/obo/DRON_00017146>	pholcodine
+<http://purl.obolibrary.org/obo/DRON_00015569>	ISOMYRTOL
+<http://purl.obolibrary.org/obo/DRON_00014930>	flavodic acid
+<http://purl.obolibrary.org/obo/DRON_00015879>	trimethylphloroglucinol
+<http://purl.obolibrary.org/obo/DRON_00015798>	dihydroxybutyl ether
+<http://purl.obolibrary.org/obo/DRON_00016090>	viquidil
+<http://purl.obolibrary.org/obo/DRON_00015571>	Phosphocysteamine
+<http://purl.obolibrary.org/obo/DRON_00015605>	pyrisuccideanol
+<http://purl.obolibrary.org/obo/DRON_00014320>	tiadilon
+<http://purl.obolibrary.org/obo/DRON_00015382>	naringin
+<http://purl.obolibrary.org/obo/DRON_00016098>	xibornol
+<http://purl.obolibrary.org/obo/DRON_00016067>	urapidil
+<http://purl.obolibrary.org/obo/DRON_00015637>	promestriene
+<http://purl.obolibrary.org/obo/DRON_00014498>	benzquercin
+<http://purl.obolibrary.org/obo/DRON_00018727>	Eucalyptus extract
+<http://purl.obolibrary.org/obo/DRON_00017241>	cobamamide
+<http://purl.obolibrary.org/obo/DRON_00014654>	chlorthenoxazin
+<http://purl.obolibrary.org/obo/DRON_00014267>	cycletanide
+<http://purl.obolibrary.org/obo/DRON_00015871>	Muramidase
+<http://purl.obolibrary.org/obo/DRON_00016470>	butacaine
+<http://purl.obolibrary.org/obo/DRON_00016472>	Oleate
+<http://purl.obolibrary.org/obo/DRON_00015940>	tilbroquinol
+<http://purl.obolibrary.org/obo/DRON_00015939>	"5-methyl-8-hydroxyquinoline"
+<http://purl.obolibrary.org/obo/DRON_00014550>	bromopride
+<http://purl.obolibrary.org/obo/DRON_00015539>	Agar
+<http://purl.obolibrary.org/obo/DRON_00015168>	BENZOXONIUM
+<http://purl.obolibrary.org/obo/DRON_00015948>	Thiophene
+<http://purl.obolibrary.org/obo/DRON_00017147>	Squill extract
+<http://purl.obolibrary.org/obo/DRON_00019210>	milnacipran
+<http://purl.obolibrary.org/obo/DRON_00018753>	Thyme preparation
+<http://purl.obolibrary.org/obo/DRON_00014595>	Phosphorus
+<http://purl.obolibrary.org/obo/DRON_00014761>	DIGITALIS LEAF
+<http://purl.obolibrary.org/obo/DRON_00015446>	Ouabain
+<http://purl.obolibrary.org/obo/DRON_00014850>	Ergot Alkaloids
+<http://purl.obolibrary.org/obo/DRON_00018778>	Escherichia coli
+<http://purl.obolibrary.org/obo/DRON_00015079>	Khellin
+<http://purl.obolibrary.org/obo/DRON_00014859>	ESCHERICHIA COLI ANTIGEN
+<http://purl.obolibrary.org/obo/DRON_00015148>	picolinic acid
+<http://purl.obolibrary.org/obo/DRON_00014418>	aluminum chlorhydrate
+<http://purl.obolibrary.org/obo/DRON_00015785>	ruscogenin
+<http://purl.obolibrary.org/obo/DRON_00015745>	sennoside B
+<http://purl.obolibrary.org/obo/DRON_00017790>	clobutinol
+<http://purl.obolibrary.org/obo/DRON_00015820>	Silicones
+<http://purl.obolibrary.org/obo/DRON_00017171>	Thyme oil
+<http://purl.obolibrary.org/obo/DRON_00018713>	DIFETARSONE
+<http://purl.obolibrary.org/obo/DRON_00018236>	Eucalyptus oil
+<http://purl.obolibrary.org/obo/DRON_00018728>	Gentian preparation
+<http://purl.obolibrary.org/obo/DRON_00018715>	Elder extract
+<http://purl.obolibrary.org/obo/DRON_00014955>	Feprazone
+<http://purl.obolibrary.org/obo/DRON_00015486>	parthenolide
+<http://purl.obolibrary.org/obo/DRON_00015076>	hydroquinidine
+<http://purl.obolibrary.org/obo/DRON_00014878>	etofibrate
+<http://purl.obolibrary.org/obo/DRON_00015425>	Escin
+<http://purl.obolibrary.org/obo/DRON_00015590>	Pinacidil
+<http://purl.obolibrary.org/obo/DRON_00015901>	TENONITROZOLE
+<http://purl.obolibrary.org/obo/DRON_00015145>	letosteine
+<http://purl.obolibrary.org/obo/DRON_00016025>	Trihexyphenidyl
+<http://purl.obolibrary.org/obo/DRON_00014661>	Cod Liver Oil
+<http://purl.obolibrary.org/obo/DRON_00015487>	Pancreas extract
+<http://purl.obolibrary.org/obo/DRON_00015405>	nilvadipine
+<http://purl.obolibrary.org/obo/DRON_00015888>	SPIKE LAVENDER OIL
+<http://purl.obolibrary.org/obo/DRON_00014467>	beta-Escin
+<http://purl.obolibrary.org/obo/DRON_00014476>	mepirodipine
+<http://purl.obolibrary.org/obo/DRON_00015570>	pholedrine
+<http://purl.obolibrary.org/obo/DRON_00015966>	TORMENTIL
+<http://purl.obolibrary.org/obo/DRON_00017828>	Terpin hydrate
+<http://purl.obolibrary.org/obo/DRON_00015682>	prothipendyl
+<http://purl.obolibrary.org/obo/DRON_00015770>	cinametic acid
+<http://purl.obolibrary.org/obo/DRON_00014512>	beta-Alanine
+<http://purl.obolibrary.org/obo/DRON_00015413>	nitazoxanide
+<http://purl.obolibrary.org/obo/DRON_00015562>	chlorphenoxamine
+<http://purl.obolibrary.org/obo/DRON_00014631>	chloramine-T
+<http://purl.obolibrary.org/obo/DRON_00018290>	Menthol
+<http://purl.obolibrary.org/obo/DRON_00018261>	Peppermint oil
+<http://purl.obolibrary.org/obo/DRON_00015273>	metylperon
+<http://purl.obolibrary.org/obo/DRON_00018743>	CLOCINIZINE
+<http://purl.obolibrary.org/obo/DRON_00015555>	buzepide metiodide
+<http://purl.obolibrary.org/obo/DRON_00018257>	Benzalkonium
+<http://purl.obolibrary.org/obo/DRON_00018259>	Hexylresorcinol
+<http://purl.obolibrary.org/obo/DRON_00018895>	gamma-Aminobutyrate
+<http://purl.obolibrary.org/obo/DRON_00017708>	Talc
+<http://purl.obolibrary.org/obo/DRON_00015921>	Oleandomycin
+<http://purl.obolibrary.org/obo/DRON_00014918>	fenethylline
+<http://purl.obolibrary.org/obo/DRON_00014484>	benproperine
+<http://purl.obolibrary.org/obo/DRON_00015680>	prednylidene
+<http://purl.obolibrary.org/obo/DRON_00015924>	THEOFIBRATE
+<http://purl.obolibrary.org/obo/DRON_00015320>	METHOSERPIDINE
+<http://purl.obolibrary.org/obo/DRON_00014855>	Erythrosine
+<http://purl.obolibrary.org/obo/DRON_00014554>	butibufen
+<http://purl.obolibrary.org/obo/DRON_00015542>	Rhubarb preparation
+<http://purl.obolibrary.org/obo/DRON_00015492>	Paroxypropione
+<http://purl.obolibrary.org/obo/DRON_00015527>	PHENICARBAZIDE
+<http://purl.obolibrary.org/obo/DRON_00014404>	Ajmaline
+<http://purl.obolibrary.org/obo/DRON_00016886>	Potassium gluconate
+<http://purl.obolibrary.org/obo/DRON_00014832>	CLORAZEPIC ACID
+<http://purl.obolibrary.org/obo/DRON_00014754>	Dichlorophen
+<http://purl.obolibrary.org/obo/DRON_00015480>	Oxyfedrine
+<http://purl.obolibrary.org/obo/DRON_00015718>	pridinol
+<http://purl.obolibrary.org/obo/DRON_00015380>	naftazone
+<http://purl.obolibrary.org/obo/DRON_00017805>	dienogest
+<http://purl.obolibrary.org/obo/DRON_00015180>	Tilia extract
+<http://purl.obolibrary.org/obo/DRON_00017240>	Ammonium
+<http://purl.obolibrary.org/obo/DRON_00014438>	adipic acid
+<http://purl.obolibrary.org/obo/DRON_00015531>	fenbutrazate
+<http://purl.obolibrary.org/obo/DRON_00015883>	talinolol
+<http://purl.obolibrary.org/obo/DRON_00015367>	moxaverine
+<http://purl.obolibrary.org/obo/DRON_00014790>	DI-ISOPROPYLAMMONIUM
+<http://purl.obolibrary.org/obo/DRON_00015914>	etofylline
+<http://purl.obolibrary.org/obo/DRON_00015429>	Norethandrolone
+<http://purl.obolibrary.org/obo/DRON_00014623>	carpipramine
+<http://purl.obolibrary.org/obo/DRON_00015409>	Nialamide
+<http://purl.obolibrary.org/obo/DRON_00015956>	Tocamphyl
+<http://purl.obolibrary.org/obo/DRON_00014674>	cifenline
+<http://purl.obolibrary.org/obo/DRON_00018031>	Succinic Acid
+<http://purl.obolibrary.org/obo/DRON_00018702>	AZINTAMIDE
+<http://purl.obolibrary.org/obo/DRON_00014874>	ethenzamide
+<http://purl.obolibrary.org/obo/DRON_00015594>	pipothiazine
+<http://purl.obolibrary.org/obo/DRON_00014609>	carbazochrome
+<http://purl.obolibrary.org/obo/DRON_00018734>	MELITRACEN
+<http://purl.obolibrary.org/obo/DRON_00014656>	anethole
+<http://purl.obolibrary.org/obo/DRON_00015467>	oxiconazole
+<http://purl.obolibrary.org/obo/DRON_00016637>	carbamide peroxide
+<http://purl.obolibrary.org/obo/DRON_00015065>	Halazone
+<http://purl.obolibrary.org/obo/DRON_00015646>	Potassium Permanganate
+<http://purl.obolibrary.org/obo/DRON_00015706>	Barbital
+<http://purl.obolibrary.org/obo/DRON_00018202>	ALPHA-D-GALACTOSIDASE ENZYME
+<http://purl.obolibrary.org/obo/DRON_00014929>	ferrous phosphate
+<http://purl.obolibrary.org/obo/DRON_00014279>	aminaphthone
+<http://purl.obolibrary.org/obo/DRON_00015073>	ibopamine
+<http://purl.obolibrary.org/obo/DRON_00015736>	Selenomethionine
+<http://purl.obolibrary.org/obo/DRON_00015287>	menfegol
+<http://purl.obolibrary.org/obo/DRON_00014453>	artesunate
+<http://purl.obolibrary.org/obo/DRON_00016111>	zofenopril
+<http://purl.obolibrary.org/obo/DRON_00014520>	GRAPE SEED
+<http://purl.obolibrary.org/obo/DRON_00014883>	Hexobendine
+<http://purl.obolibrary.org/obo/DRON_00015434>	ethamivan
+<http://purl.obolibrary.org/obo/DRON_00015249>	loxoprofen
+<http://purl.obolibrary.org/obo/DRON_00015228>	manidipine
+<http://purl.obolibrary.org/obo/DRON_00014597>	Cambendazole
+<http://purl.obolibrary.org/obo/DRON_00016080>	Vinbarbital
+<http://purl.obolibrary.org/obo/DRON_00010189>	Amdinocillin
+<http://purl.obolibrary.org/obo/DRON_00015684>	Prothionamide
+<http://purl.obolibrary.org/obo/DRON_00014271>	azosemid
+<http://purl.obolibrary.org/obo/DRON_00015731>	ICTASOL
+<http://purl.obolibrary.org/obo/DRON_00015437>	OCTODRINE
+<http://purl.obolibrary.org/obo/DRON_00018868>	Tiaprofenate
+<http://purl.obolibrary.org/obo/DRON_00015930>	THYROID (PORK)
+<http://purl.obolibrary.org/obo/DRON_00015843>	guaiazulene
+<http://purl.obolibrary.org/obo/DRON_00015156>	iprazochrome
+<http://purl.obolibrary.org/obo/DRON_00015169>	Ethacridine
+<http://purl.obolibrary.org/obo/DRON_00017845>	potassium sulfate
+<http://purl.obolibrary.org/obo/DRON_00014527>	brivudine
+<http://purl.obolibrary.org/obo/DRON_00014848>	dibenzepin
+<http://purl.obolibrary.org/obo/DRON_00014746>	detajmium
+<http://purl.obolibrary.org/obo/DRON_00015519>	Perazine
+<http://purl.obolibrary.org/obo/DRON_00017179>	Chymosin
+<http://purl.obolibrary.org/obo/DRON_00014524>	bismuth oxide
+<http://purl.obolibrary.org/obo/DRON_00015310>	Metaclazepam hydrochloride
+<http://purl.obolibrary.org/obo/DRON_00015887>	tartaric acid
+<http://purl.obolibrary.org/obo/DRON_00015359>	mofezolac
+<http://purl.obolibrary.org/obo/DRON_00015639>	propentofylline
+<http://purl.obolibrary.org/obo/DRON_00014676>	cinitapride
+<http://purl.obolibrary.org/obo/DRON_00015534>	Merbromin
+<http://purl.obolibrary.org/obo/DRON_00015469>	oxiracetam
+<http://purl.obolibrary.org/obo/DRON_00015996>	trepibutone
+<http://purl.obolibrary.org/obo/DRON_00014751>	Dexetimide
+<http://purl.obolibrary.org/obo/DRON_00015583>	Phthalylsulfacetamide
+<http://purl.obolibrary.org/obo/DRON_00015714>	rifaximin
+<http://purl.obolibrary.org/obo/DRON_00015370>	mosapride
+<http://purl.obolibrary.org/obo/DRON_00015299>	bismuth aluminate
+<http://purl.obolibrary.org/obo/DRON_00014731>	cyprodenate
+<http://purl.obolibrary.org/obo/DRON_00018278>	propylhexedrine
+<http://purl.obolibrary.org/obo/DRON_00018855>	Aminobutyrate
+<http://purl.obolibrary.org/obo/DRON_00014602>	carazolol
+<http://purl.obolibrary.org/obo/DRON_00014566>	Bupranolol
+<http://purl.obolibrary.org/obo/DRON_00015201>	lonazolac
+<http://purl.obolibrary.org/obo/DRON_00015677>	cycloadiphenine
+<http://purl.obolibrary.org/obo/DRON_00014984>	Fumitory Extract
+<http://purl.obolibrary.org/obo/DRON_00015293>	Mephentermine
+<http://purl.obolibrary.org/obo/DRON_00014856>	epomediol
+<http://purl.obolibrary.org/obo/DRON_00015885>	stevioside
+<http://purl.obolibrary.org/obo/DRON_00015254>	magnesium phosphate
+<http://purl.obolibrary.org/obo/DRON_00015153>	lidamidine
+<http://purl.obolibrary.org/obo/DRON_00018706>	CHLORPHENINDIONE
+<http://purl.obolibrary.org/obo/DRON_00015468>	oxilofrine
+<http://purl.obolibrary.org/obo/DRON_00014295>	Methaqualone
+<http://purl.obolibrary.org/obo/DRON_00016035>	trofosfamide
+<http://purl.obolibrary.org/obo/DRON_00015296>	mepindolol
+<http://purl.obolibrary.org/obo/DRON_00014445>	"4-aminomethylbenzoic acid"
+<http://purl.obolibrary.org/obo/DRON_00014531>	bopindolol
+<http://purl.obolibrary.org/obo/DRON_00014986>	Fursultiamin
+<http://purl.obolibrary.org/obo/DRON_00014436>	amphetaminil
+<http://purl.obolibrary.org/obo/DRON_00018742>	Buckthorn preparation
+<http://purl.obolibrary.org/obo/DRON_00015171>	alum, potassium
+<http://purl.obolibrary.org/obo/DRON_00020084>	Sapropterin
+<http://purl.obolibrary.org/obo/DRON_00016590>	ammonium ferrous sulfate
+<http://purl.obolibrary.org/obo/DRON_00014525>	bismuth subcarbonate
+<http://purl.obolibrary.org/obo/DRON_00015654>	Prajmaline
+<http://purl.obolibrary.org/obo/DRON_00014838>	drotaverin
+<http://purl.obolibrary.org/obo/DRON_00014852>	Aconite
+<http://purl.obolibrary.org/obo/DRON_00014361>	Acetyldigoxins
+<http://purl.obolibrary.org/obo/DRON_00015733>	SCOPARIUM
+<http://purl.obolibrary.org/obo/DRON_00015189>	Lithium acetate
+<http://purl.obolibrary.org/obo/DRON_00014270>	azidocillin
+<http://purl.obolibrary.org/obo/DRON_00015404>	Nifurtimox
+<http://purl.obolibrary.org/obo/DRON_00015768>	SIMALDRATE
+<http://purl.obolibrary.org/obo/DRON_00014495>	benzonidazole
+<http://purl.obolibrary.org/obo/DRON_00016697>	Flufenamic Acid
+<http://purl.obolibrary.org/obo/DRON_00015632>	progabide
+<http://purl.obolibrary.org/obo/DRON_00015722>	quinupramine
+<http://purl.obolibrary.org/obo/DRON_00015353>	midecamycin
+<http://purl.obolibrary.org/obo/DRON_00014327>	bamifylline
+<http://purl.obolibrary.org/obo/DRON_00015686>	proxibarbal
+<http://purl.obolibrary.org/obo/DRON_00016091>	Virginiamycin
+<http://purl.obolibrary.org/obo/DRON_00015958>	tofisopam
+<http://purl.obolibrary.org/obo/DRON_00016042>	tropatepine
+<http://purl.obolibrary.org/obo/DRON_00016888>	TRYPSIN
+<http://purl.obolibrary.org/obo/DRON_00014310>	thiphenamil
+<http://purl.obolibrary.org/obo/DRON_00016723>	Cellulose
+<http://purl.obolibrary.org/obo/DRON_00015588>	pidotimod
+<http://purl.obolibrary.org/obo/DRON_00015599>	piprozoline
+<http://purl.obolibrary.org/obo/DRON_00015766>	Greater Celandine
+<http://purl.obolibrary.org/obo/DRON_00014544>	butamirate
+<http://purl.obolibrary.org/obo/DRON_00017838>	Tramadol
+<http://purl.obolibrary.org/obo/DRON_00014357>	Acetoxolone
+<http://purl.obolibrary.org/obo/DRON_00015584>	Clioquinol
+<http://purl.obolibrary.org/obo/DRON_00014275>	barbexaclone
+<http://purl.obolibrary.org/obo/DRON_00017102>	Guaiacol
+<http://purl.obolibrary.org/obo/DRON_00015673>	carzenide
+<http://purl.obolibrary.org/obo/DRON_00016860>	Aspartate Magnesium Hydrochloride
+<http://purl.obolibrary.org/obo/DRON_00014837>	DIPOTASSIUM ADIPATE
+<http://purl.obolibrary.org/obo/DRON_00015194>	kebuzone
+<http://purl.obolibrary.org/obo/DRON_00015899>	succinylsulfathiazole
+<http://purl.obolibrary.org/obo/DRON_00015322>	METHYL DIACETYLCYSTEINATE
+<http://purl.obolibrary.org/obo/DRON_00015193>	lithium gluconate
+<http://purl.obolibrary.org/obo/DRON_00014938>	fenozolone
+<http://purl.obolibrary.org/obo/DRON_00014842>	efloxate
+<http://purl.obolibrary.org/obo/DRON_00014628>	Cefotiam
+<http://purl.obolibrary.org/obo/DRON_00015858>	Sulfamethoxypyridazine
+<http://purl.obolibrary.org/obo/DRON_00015931>	tiadenol
+<http://purl.obolibrary.org/obo/DRON_00014306>	"5-methoxypsoralen"
+<http://purl.obolibrary.org/obo/DRON_00018709>	cinacalcet
+<http://purl.obolibrary.org/obo/DRON_00015715>	rilmenidine
+<http://purl.obolibrary.org/obo/DRON_00015119>	indobufen
+<http://purl.obolibrary.org/obo/DRON_00014721>	clotiazepam
+<http://purl.obolibrary.org/obo/DRON_00014529>	brodimoprim
+<http://purl.obolibrary.org/obo/DRON_00016411>	Adenine
+<http://purl.obolibrary.org/obo/DRON_00015245>	medifoxamine
+<http://purl.obolibrary.org/obo/DRON_00015183>	Josamycin
+<http://purl.obolibrary.org/obo/DRON_00014349>	Captodiamine
+<http://purl.obolibrary.org/obo/DRON_00014315>	alminoprofen
+<http://purl.obolibrary.org/obo/DRON_00014313>	ALIBENDOL
+<http://purl.obolibrary.org/obo/DRON_00015973>	thiopurinol
+<http://purl.obolibrary.org/obo/DRON_00015967>	tioclomarol
+<http://purl.obolibrary.org/obo/DRON_00017170>	TIEMONIUM
+<http://purl.obolibrary.org/obo/DRON_00015869>	sultopride
+<http://purl.obolibrary.org/obo/DRON_00015573>	biclotymol
+<http://purl.obolibrary.org/obo/DRON_00016034>	tritoqualine
+<http://purl.obolibrary.org/obo/DRON_00015912>	tertatolol
+<http://purl.obolibrary.org/obo/DRON_00015838>	Black currant preparation
+<http://purl.obolibrary.org/obo/DRON_00015196>	keracyanin
+<http://purl.obolibrary.org/obo/DRON_00018289>	aluminum magnesium silicate
+<http://purl.obolibrary.org/obo/DRON_00015096>	ifenprodil
+<http://purl.obolibrary.org/obo/DRON_00014625>	cefetamet
+<http://purl.obolibrary.org/obo/DRON_00016089>	butylvinal
+<http://purl.obolibrary.org/obo/DRON_00014712>	cyamemazine
+<http://purl.obolibrary.org/obo/DRON_00015533>	febarbamate
+<http://purl.obolibrary.org/obo/DRON_00015532>	difebarbamate
+<http://purl.obolibrary.org/obo/DRON_00014857>	eprazinone
+<http://purl.obolibrary.org/obo/DRON_00015491>	chlorproethazine
+<http://purl.obolibrary.org/obo/DRON_00015472>	Oxolinic Acid
+<http://purl.obolibrary.org/obo/DRON_00014764>	DIHEXYVERINE
+<http://purl.obolibrary.org/obo/DRON_00014954>	flumequine
+<http://purl.obolibrary.org/obo/DRON_00014510>	benzylthiouracil
+<http://purl.obolibrary.org/obo/DRON_00015376>	nadoxolol
+<http://purl.obolibrary.org/obo/DRON_00014726>	cyclobutyrol
+<http://purl.obolibrary.org/obo/DRON_00014736>	demegestone
+<http://purl.obolibrary.org/obo/DRON_00014400>	adrafinil
+<http://purl.obolibrary.org/obo/DRON_00015009>	GUAIETOLIN
+<http://purl.obolibrary.org/obo/DRON_00015592>	pipamperone
+<http://purl.obolibrary.org/obo/DRON_00015604>	Piribedil
+<http://purl.obolibrary.org/obo/DRON_00015627>	Pristinamycin
+<http://purl.obolibrary.org/obo/DRON_00015416>	Norgestrienone
+<http://purl.obolibrary.org/obo/DRON_00014477>	ACETIAMINE
+<http://purl.obolibrary.org/obo/DRON_00017129>	fenspiride
+<http://purl.obolibrary.org/obo/DRON_00014622>	Carbutamide
+<http://purl.obolibrary.org/obo/DRON_00014803>	DIMECROTIC ACID
+<http://purl.obolibrary.org/obo/DRON_00014345>	aceprometazine
+<http://purl.obolibrary.org/obo/DRON_00015890>	althiazide
+<http://purl.obolibrary.org/obo/DRON_00015262>	mefenorex
+<http://purl.obolibrary.org/obo/DRON_00015923>	THENOATE LITHIUM
+<http://purl.obolibrary.org/obo/DRON_00015097>	imidazole-2-hydroxybenzoate
+<http://purl.obolibrary.org/obo/DRON_00016699>	Fluocortolone
+<http://purl.obolibrary.org/obo/DRON_00015856>	sulfaethidole
+<http://purl.obolibrary.org/obo/DRON_00015195>	LITHIUM HYDROGEN ASPARTATE
+<http://purl.obolibrary.org/obo/DRON_00015366>	minaprine
+<http://purl.obolibrary.org/obo/DRON_00015311>	methampicillin
+<http://purl.obolibrary.org/obo/DRON_00015261>	MEFENIDRAMIUM
+<http://purl.obolibrary.org/obo/DRON_00015372>	MAGNESIUM THIOSULFATE
+<http://purl.obolibrary.org/obo/DRON_00015830>	sulbutiamine
+<http://purl.obolibrary.org/obo/DRON_00014359>	Acetyldigitoxin
+<http://purl.obolibrary.org/obo/DRON_00017128>	eprozinol
+<http://purl.obolibrary.org/obo/DRON_00015242>	Meclofenoxate
+<http://purl.obolibrary.org/obo/DRON_00016450>	Cyclamate
+<http://purl.obolibrary.org/obo/DRON_00015598>	pipoxolan
+<http://purl.obolibrary.org/obo/DRON_00015302>	COBALT GLUCONATE
+<http://purl.obolibrary.org/obo/DRON_00014905>	ethyl cysteine
+<http://purl.obolibrary.org/obo/DRON_00014720>	clostebol
+<http://purl.obolibrary.org/obo/DRON_00015933>	Tiapride
+<http://purl.obolibrary.org/obo/DRON_00014651>	Chlorquinaldol
+<http://purl.obolibrary.org/obo/DRON_00015462>	oxetorone
+<http://purl.obolibrary.org/obo/DRON_00016113>	omoconazole
+<http://purl.obolibrary.org/obo/DRON_00014749>	FERROUS OXALATE
+<http://purl.obolibrary.org/obo/DRON_00016070>	Uridine
+<http://purl.obolibrary.org/obo/DRON_00015786>	Aluminum Oxide
+<http://purl.obolibrary.org/obo/DRON_00014393>	aloxiprin
+<http://purl.obolibrary.org/obo/DRON_00015084>	lactitol
+<http://purl.obolibrary.org/obo/DRON_00015934>	TIBEZONIUM IODIDE
+<http://purl.obolibrary.org/obo/DRON_00014601>	Canrenoic Acid
+<http://purl.obolibrary.org/obo/DRON_00015460>	Opipramol
+<http://purl.obolibrary.org/obo/DRON_00014829>	dolomite
+<http://purl.obolibrary.org/obo/DRON_00014526>	bornaprine
+<http://purl.obolibrary.org/obo/DRON_00014953>	fluindione
+<http://purl.obolibrary.org/obo/DRON_00015428>	Nordazepam
+<http://purl.obolibrary.org/obo/DRON_00014904>	ethoxazene
+<http://purl.obolibrary.org/obo/DRON_00014423>	aluminum phosphate
+<http://purl.obolibrary.org/obo/DRON_00016074>	dipropylacetamide
+<http://purl.obolibrary.org/obo/DRON_00014563>	budipine
+<http://purl.obolibrary.org/obo/DRON_00015198>	lithium sulfate
+<http://purl.obolibrary.org/obo/DRON_00014333>	bunazosin
+<http://purl.obolibrary.org/obo/DRON_00014294>	Nomifensine
+<http://purl.obolibrary.org/obo/DRON_00014297>	carbromal
+<http://purl.obolibrary.org/obo/DRON_00014298>	tybamate
+<http://purl.obolibrary.org/obo/DRON_00016718>	Diphemanil
+<http://purl.obolibrary.org/obo/DRON_00015895>	methoxyphenamine
+<http://purl.obolibrary.org/obo/DRON_00014305>	cycrimine
+<http://purl.obolibrary.org/obo/DRON_00015863>	Fluprednisolone
+<http://purl.obolibrary.org/obo/DRON_00018754>	Astragalus Root Extract
+<http://purl.obolibrary.org/obo/DRON_00016126>	epigallocatechin gallate
+<http://purl.obolibrary.org/obo/DRON_00020294>	Cinnamon Bark
+<http://purl.obolibrary.org/obo/DRON_00016132>	lanthanum carbonate
+<http://purl.obolibrary.org/obo/DRON_00018757>	Solfenacin
+<http://purl.obolibrary.org/obo/DRON_00018758>	Solifenacin
+<http://purl.obolibrary.org/obo/DRON_00018761>	Echinacea Purpurea Aerial Parts Extract
+<http://purl.obolibrary.org/obo/DRON_00016862>	duloxetine
+<http://purl.obolibrary.org/obo/DRON_00017760>	pregabalin
+<http://purl.obolibrary.org/obo/DRON_00016769>	Mycophenolic Acid
+<http://purl.obolibrary.org/obo/DRON_00016170>	darifenacin
+<http://purl.obolibrary.org/obo/DRON_00018769>	entecavir
+<http://purl.obolibrary.org/obo/DRON_00018768>	Eszopiclone
+<http://purl.obolibrary.org/obo/DRON_00019849>	GOLDEN SEAL EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018773>	magnesium amino acid chelate
+<http://purl.obolibrary.org/obo/DRON_00018066>	Deoxyribonucleases
+<http://purl.obolibrary.org/obo/DRON_00016261>	Iopanoic Acid
+<http://purl.obolibrary.org/obo/DRON_00018789>	Monascus purpureus West
+<http://purl.obolibrary.org/obo/DRON_00016318>	FRUIT EXTRACTS
+<http://purl.obolibrary.org/obo/DRON_00018792>	COLLAGEN, HYDROLYZED
+<http://purl.obolibrary.org/obo/DRON_00020257>	Omega-3 Acid Ethyl Esters (USP)
+<http://purl.obolibrary.org/obo/DRON_00016325>	paricalcitol
+<http://purl.obolibrary.org/obo/DRON_00018794>	ramelteon
+<http://purl.obolibrary.org/obo/DRON_00016329>	Stigmasterol
+<http://purl.obolibrary.org/obo/DRON_00016330>	campesterol
+<http://purl.obolibrary.org/obo/DRON_00016332>	Choline Magnesium Trisalicyclate
+<http://purl.obolibrary.org/obo/DRON_00016334>	alpha-ketoglutaric acid
+<http://purl.obolibrary.org/obo/DRON_00016789>	black currant oil
+<http://purl.obolibrary.org/obo/DRON_00018800>	fenugreek seed meal
+<http://purl.obolibrary.org/obo/DRON_00018828>	Fenugreek seed preparation
+<http://purl.obolibrary.org/obo/DRON_00018822>	Soybean Lecithin
+<http://purl.obolibrary.org/obo/DRON_00017649>	orgotein
+<http://purl.obolibrary.org/obo/DRON_00018807>	Cornsilk
+<http://purl.obolibrary.org/obo/DRON_00016360>	Iron polysaccharide
+<http://purl.obolibrary.org/obo/DRON_00016363>	theaflavin
+<http://purl.obolibrary.org/obo/DRON_00018818>	African Pygeum Extract
+<http://purl.obolibrary.org/obo/DRON_00018815>	Stinging Nettle Extract
+<http://purl.obolibrary.org/obo/DRON_00020140>	Tocotrienols
+<http://purl.obolibrary.org/obo/DRON_00016375>	MILK THISTLE SEED EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00018821>	Whortleberry substance
+<http://purl.obolibrary.org/obo/DRON_00018881>	Citrus Pectin extract
+<http://purl.obolibrary.org/obo/DRON_00018827>	Legume preparation
+<http://purl.obolibrary.org/obo/DRON_00018834>	sorafenib
+<http://purl.obolibrary.org/obo/DRON_00020195>	Saccharomyces boulardii lyo
+<http://purl.obolibrary.org/obo/DRON_00020293>	Lactobacillus rhamnosus GG
+<http://purl.obolibrary.org/obo/DRON_00018841>	lenalidomide
+<http://purl.obolibrary.org/obo/DRON_00018756>	erlotinib
+<http://purl.obolibrary.org/obo/DRON_00016437>	rasagiline
+<http://purl.obolibrary.org/obo/DRON_00018847>	HOODIA GORDONII EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00016442>	ranolazine
+<http://purl.obolibrary.org/obo/DRON_00018848>	white kidney bean extract
+<http://purl.obolibrary.org/obo/DRON_00018849>	lubiprostone
+<http://purl.obolibrary.org/obo/DRON_00017872>	Risedronate
+<http://purl.obolibrary.org/obo/DRON_00018856>	Flufenamate
+<http://purl.obolibrary.org/obo/DRON_00018859>	estrogens, conjugated synthetic B
+<http://purl.obolibrary.org/obo/DRON_00016483>	sunflower seed oil
+<http://purl.obolibrary.org/obo/DRON_00018864>	Nalidixate
+<http://purl.obolibrary.org/obo/DRON_00019207>	Evening primrose extract
+<http://purl.obolibrary.org/obo/DRON_00018872>	Meclofenamate
+<http://purl.obolibrary.org/obo/DRON_00017085>	Fusidate
+<http://purl.obolibrary.org/obo/DRON_00018873>	Cerebral Phospholipids
+<http://purl.obolibrary.org/obo/DRON_00016643>	Aminocaproate
+<http://purl.obolibrary.org/obo/DRON_00018886>	varenicline
+<http://purl.obolibrary.org/obo/DRON_00018890>	Morinda citrifolia extract
+<http://purl.obolibrary.org/obo/DRON_00020121>	phytosterol esters
+<http://purl.obolibrary.org/obo/DRON_00018892>	Polypodium Leucotomos
+<http://purl.obolibrary.org/obo/DRON_00014197>	gemifloxacin
+<http://purl.obolibrary.org/obo/DRON_00020177>	darunavir
+<http://purl.obolibrary.org/obo/DRON_00018901>	dasatinib
+<http://purl.obolibrary.org/obo/DRON_00019110>	Bean Pod Extract
+<http://purl.obolibrary.org/obo/DRON_00017565>	xylometazoline
+<http://purl.obolibrary.org/obo/DRON_00016801>	Yeasts
+<http://purl.obolibrary.org/obo/DRON_00016770>	Gitalin
+<http://purl.obolibrary.org/obo/DRON_00018910>	deracoxib
+<http://purl.obolibrary.org/obo/DRON_00016776>	pseudoisocytidine
+<http://purl.obolibrary.org/obo/DRON_00016782>	Bentonite
+<http://purl.obolibrary.org/obo/DRON_00019582>	telbivudine
+<http://purl.obolibrary.org/obo/DRON_00016804>	Vorinostat
+<http://purl.obolibrary.org/obo/DRON_00018921>	lapatinib
+<http://purl.obolibrary.org/obo/DRON_00016811>	malate
+<http://purl.obolibrary.org/obo/DRON_00019458>	paliperidone
+<http://purl.obolibrary.org/obo/DRON_00018923>	Bismuth biskalcitrate
+<http://purl.obolibrary.org/obo/DRON_00016833>	CALCIUM STEARATE
+<http://purl.obolibrary.org/obo/DRON_00018945>	Petiveria Alliacea Preparation
+<http://purl.obolibrary.org/obo/DRON_00018946>	Insoluble berlin blue stain
+<http://purl.obolibrary.org/obo/DRON_00018947>	ambrisentan
+<http://purl.obolibrary.org/obo/DRON_00018950>	armodafinil
+<http://purl.obolibrary.org/obo/DRON_00020013>	Pomegranate Extract
+<http://purl.obolibrary.org/obo/DRON_00019821>	guaiacolsulfonate
+<http://purl.obolibrary.org/obo/DRON_00018974>	maraviroc
+<http://purl.obolibrary.org/obo/DRON_00018975>	pafuramidine
+<http://purl.obolibrary.org/obo/DRON_00018977>	Vitis extract
+<http://purl.obolibrary.org/obo/DRON_00018978>	GLYCERYL MONOLAURATE
+<http://purl.obolibrary.org/obo/DRON_00019017>	Olive Leaf Extract
+<http://purl.obolibrary.org/obo/DRON_00020175>	Raltegravir
+<http://purl.obolibrary.org/obo/DRON_00018983>	Lithium Aspartate
+<http://purl.obolibrary.org/obo/DRON_00018984>	Saw Palmetto Fruit Extract
+<http://purl.obolibrary.org/obo/DRON_00018985>	nilotinib
+<http://purl.obolibrary.org/obo/DRON_00018986>	Inert Ingredients
+<http://purl.obolibrary.org/obo/DRON_00017686>	sevelamer
+<http://purl.obolibrary.org/obo/DRON_00018993>	etravirine
+<http://purl.obolibrary.org/obo/DRON_00019001>	vildagliptin
+<http://purl.obolibrary.org/obo/DRON_00017197>	Prussian blue
+<http://purl.obolibrary.org/obo/DRON_00019106>	Desvenlafaxine
+<http://purl.obolibrary.org/obo/DRON_00018104>	theanine
+<http://purl.obolibrary.org/obo/DRON_00017785>	Bifidobacterium Infantis
+<http://purl.obolibrary.org/obo/DRON_00019083>	alvimopan
+<http://purl.obolibrary.org/obo/DRON_00017706>	Dibasic potassium phosphate
+<http://purl.obolibrary.org/obo/DRON_00020027>	Ferrous Asparto Glycinate
+<http://purl.obolibrary.org/obo/DRON_00020026>	calcium threonate
+<http://purl.obolibrary.org/obo/DRON_00020297>	Sodium Ascorbate
+<http://purl.obolibrary.org/obo/DRON_00019902>	liver stomach concentrate
+<http://purl.obolibrary.org/obo/DRON_00017484>	Vitamin K 2
+<http://purl.obolibrary.org/obo/DRON_00017491>	palonosetron
+<http://purl.obolibrary.org/obo/DRON_00020094>	ferrous bisglycinate
+<http://purl.obolibrary.org/obo/DRON_00019154>	silodosin
+<http://purl.obolibrary.org/obo/DRON_00019865>	lacosamide
+<http://purl.obolibrary.org/obo/DRON_00019160>	fesoterodine
+<http://purl.obolibrary.org/obo/DRON_00017984>	rufinamide
+<http://purl.obolibrary.org/obo/DRON_00020298>	tapentadol
+<http://purl.obolibrary.org/obo/DRON_00019163>	eltrombopag
+<http://purl.obolibrary.org/obo/DRON_00017540>	fludarabine
+<http://purl.obolibrary.org/obo/DRON_00016478>	Mefenamate
+<http://purl.obolibrary.org/obo/DRON_00017566>	Safflower Oil
+<http://purl.obolibrary.org/obo/DRON_00018180>	Phytosterols
+<http://purl.obolibrary.org/obo/DRON_00016650>	Phospholipids
+<http://purl.obolibrary.org/obo/DRON_00017577>	menatetrenone
+<http://purl.obolibrary.org/obo/DRON_00019205>	OREGANO OIL
+<http://purl.obolibrary.org/obo/DRON_00019211>	dexlansoprazole
+<http://purl.obolibrary.org/obo/DRON_00017604>	Flavin Mononucleotide
+<http://purl.obolibrary.org/obo/DRON_00017605>	febuxostat
+<http://purl.obolibrary.org/obo/DRON_00017465>	acamprosate
+<http://purl.obolibrary.org/obo/DRON_00018241>	Docusate
+<http://purl.obolibrary.org/obo/DRON_00018224>	everolimus
+<http://purl.obolibrary.org/obo/DRON_00019217>	GAMMA LINOLEIC ACID
+<http://purl.obolibrary.org/obo/DRON_00017629>	epsiprantel
+<http://purl.obolibrary.org/obo/DRON_00017631>	artemether
+<http://purl.obolibrary.org/obo/DRON_00019223>	lumefantrine
+<http://purl.obolibrary.org/obo/DRON_00017638>	iloperidone
+<http://purl.obolibrary.org/obo/DRON_00019226>	Acai Berry Extract
+<http://purl.obolibrary.org/obo/DRON_00020217>	Magnesium glycinate
+<http://purl.obolibrary.org/obo/DRON_00017645>	Berberine
+<http://purl.obolibrary.org/obo/DRON_00017650>	Creatinine
+<http://purl.obolibrary.org/obo/DRON_00017655>	Thymus Extracts
+<http://purl.obolibrary.org/obo/DRON_00019230>	tolvaptan
+<http://purl.obolibrary.org/obo/DRON_00018940>	Lisdexamfetamine
+<http://purl.obolibrary.org/obo/DRON_00017674>	dronedarone
+<http://purl.obolibrary.org/obo/DRON_00019004>	levocetirizine
+<http://purl.obolibrary.org/obo/DRON_00019434>	prasugrel
+<http://purl.obolibrary.org/obo/DRON_00019435>	Cinnamon Preparation
+<http://purl.obolibrary.org/obo/DRON_00010568>	Delavirdine
+<http://purl.obolibrary.org/obo/DRON_00017006>	Rimantadine
+<http://purl.obolibrary.org/obo/DRON_00020015>	saxagliptin
+<http://purl.obolibrary.org/obo/DRON_00018679>	rosuvastatin
+<http://purl.obolibrary.org/obo/DRON_00019451>	Asenapine
+<http://purl.obolibrary.org/obo/DRON_00019455>	pitavastatin
+<http://purl.obolibrary.org/obo/DRON_00017690>	nattokinase
+<http://purl.obolibrary.org/obo/DRON_00014638>	Proguanil
+<http://purl.obolibrary.org/obo/DRON_00017704>	colesevelam
+<http://purl.obolibrary.org/obo/DRON_00019497>	pazopanib
+<http://purl.obolibrary.org/obo/DRON_00019498>	maropitant
+<http://purl.obolibrary.org/obo/DRON_00019503>	cocklebur extract
+<http://purl.obolibrary.org/obo/DRON_00019504>	krill oil
+<http://purl.obolibrary.org/obo/DRON_00019977>	firocoxib
+<http://purl.obolibrary.org/obo/DRON_00019507>	nitenpyram
+<http://purl.obolibrary.org/obo/DRON_00016642>	adefovir
+<http://purl.obolibrary.org/obo/DRON_00019508>	calcium pyruvate
+<http://purl.obolibrary.org/obo/DRON_00017994>	milbemycin oxime
+<http://purl.obolibrary.org/obo/DRON_00017756>	lufenuron
+<http://purl.obolibrary.org/obo/DRON_00018054>	cuprous oxide
+<http://purl.obolibrary.org/obo/DRON_00017737>	sodium selenate
+<http://purl.obolibrary.org/obo/DRON_00017743>	febantel
+<http://purl.obolibrary.org/obo/DRON_00017747>	ormetoprim
+<http://purl.obolibrary.org/obo/DRON_00018203>	enrofloxacin
+<http://purl.obolibrary.org/obo/DRON_00019616>	dalfampridine
+<http://purl.obolibrary.org/obo/DRON_00017759>	marbofloxacin
+<http://purl.obolibrary.org/obo/DRON_00020048>	spinosad
+<http://purl.obolibrary.org/obo/DRON_00019019>	dexmethylphenidate
+<http://purl.obolibrary.org/obo/DRON_00020134>	WHEAT DEXTRIN
+<http://purl.obolibrary.org/obo/DRON_00017779>	ubiquinol
+<http://purl.obolibrary.org/obo/DRON_00016924>	Ibandronate
+<http://purl.obolibrary.org/obo/DRON_00017786>	tiludronic acid
+<http://purl.obolibrary.org/obo/DRON_00011221>	olsalazine
+<http://purl.obolibrary.org/obo/DRON_00019848>	Chia Seed Oil
+<http://purl.obolibrary.org/obo/DRON_00016730>	Oxymorphone
+<http://purl.obolibrary.org/obo/DRON_00019854>	heme iron polypeptide
+<http://purl.obolibrary.org/obo/DRON_00010111>	Hydroxychloroquine
+<http://purl.obolibrary.org/obo/DRON_00011307>	phendimetrazine
+<http://purl.obolibrary.org/obo/DRON_00017808>	Malt soup extract
+<http://purl.obolibrary.org/obo/DRON_00017827>	Memantine
+<http://purl.obolibrary.org/obo/DRON_00020144>	resveratrol
+<http://purl.obolibrary.org/obo/DRON_00019914>	ulipristal
+<http://purl.obolibrary.org/obo/DRON_00020021>	aliskiren
+<http://purl.obolibrary.org/obo/DRON_00019942>	wasabi preparation
+<http://purl.obolibrary.org/obo/DRON_00019943>	coffee fruit preparation
+<http://purl.obolibrary.org/obo/DRON_00013357>	sulfabenzamide
+<http://purl.obolibrary.org/obo/DRON_00019979>	fingolimod
+<http://purl.obolibrary.org/obo/DRON_00020290>	Levomefolic Acid
+<http://purl.obolibrary.org/obo/DRON_00019985>	Linoleic Acids, Conjugated
+<http://purl.obolibrary.org/obo/DRON_00020006>	dabigatran etexilate
+<http://purl.obolibrary.org/obo/DRON_00020009>	lurasidone
+<http://purl.obolibrary.org/obo/DRON_00017897>	CATALASE
+<http://purl.obolibrary.org/obo/DRON_00018273>	chlophedianol
+<http://purl.obolibrary.org/obo/DRON_00020025>	vilazodone
+<http://purl.obolibrary.org/obo/DRON_00020031>	"6-O-palmitoylascorbic acid"
+<http://purl.obolibrary.org/obo/DRON_00020033>	pregna-4,17-diene-3,16-dione
+<http://purl.obolibrary.org/obo/DRON_00020032>	Chromium Polynicotinate
+<http://purl.obolibrary.org/obo/DRON_00020174>	azilsartan
+<http://purl.obolibrary.org/obo/DRON_00020039>	Roflumilast
+<http://purl.obolibrary.org/obo/DRON_00018008>	Xylitol
+<http://purl.obolibrary.org/obo/DRON_00018009>	Triprolidine
+<http://purl.obolibrary.org/obo/DRON_00020081>	abiraterone
+<http://purl.obolibrary.org/obo/DRON_00018024>	iron protein succinylate
+<http://purl.obolibrary.org/obo/DRON_00011912>	Hydroxyprogesterone
+<http://purl.obolibrary.org/obo/DRON_00020189>	Linagliptin
+<http://purl.obolibrary.org/obo/DRON_00020085>	boceprevir
+<http://purl.obolibrary.org/obo/DRON_00018029>	formic acid
+<http://purl.obolibrary.org/obo/DRON_00018030>	Iron-Dextran Complex
+<http://purl.obolibrary.org/obo/DRON_00020128>	Rilpivirine
+<http://purl.obolibrary.org/obo/DRON_00020088>	telaprevir
+<http://purl.obolibrary.org/obo/DRON_00020091>	pimobendan
+<http://purl.obolibrary.org/obo/DRON_00020093>	fidaxomicin
+<http://purl.obolibrary.org/obo/DRON_00018039>	Collagen
+<http://purl.obolibrary.org/obo/DRON_00012986>	Ritodrine
+<http://purl.obolibrary.org/obo/DRON_00020096>	ezogabine
+<http://purl.obolibrary.org/obo/DRON_00020099>	rivaroxaban
+<http://purl.obolibrary.org/obo/DRON_00020104>	Turmeric extract
+<http://purl.obolibrary.org/obo/DRON_00020111>	Ticagrelor
+<http://purl.obolibrary.org/obo/DRON_00020123>	Ascorbate Manganese
+<http://purl.obolibrary.org/obo/DRON_00020124>	L-METHYLFOLATE
+<http://purl.obolibrary.org/obo/DRON_00020125>	Azelate
+<http://purl.obolibrary.org/obo/DRON_00020130>	toceranib
+<http://purl.obolibrary.org/obo/DRON_00020131>	Vemurafenib
+<http://purl.obolibrary.org/obo/DRON_00020139>	crizotinib
+<http://purl.obolibrary.org/obo/DRON_00018076>	astaxanthin
+<http://purl.obolibrary.org/obo/DRON_00018119>	chlorcyclizine
+<http://purl.obolibrary.org/obo/DRON_00010608>	difenoxin
+<http://purl.obolibrary.org/obo/DRON_00015521>	Penbutolol
+<http://purl.obolibrary.org/obo/DRON_00020165>	ruxolitinib
+<http://purl.obolibrary.org/obo/DRON_00017044>	Benzydamine
+<http://purl.obolibrary.org/obo/DRON_00020176>	Tocopherol
+<http://purl.obolibrary.org/obo/DRON_00020187>	vismodegib
+<http://purl.obolibrary.org/obo/DRON_00020188>	axitinib
+<http://purl.obolibrary.org/obo/DRON_00020190>	ivacaftor
+<http://purl.obolibrary.org/obo/DRON_00020194>	POMEGRANATE FRUIT EXTRACT
+<http://purl.obolibrary.org/obo/DRON_00016890>	spermaceti
+<http://purl.obolibrary.org/obo/DRON_00020205>	robenacoxib
+<http://purl.obolibrary.org/obo/DRON_00020212>	avanafil
+<http://purl.obolibrary.org/obo/DRON_00020213>	Docosaenoic Acid
+<http://purl.obolibrary.org/obo/DRON_00014641>	CHLOROTHEOPHYLLINE
+<http://purl.obolibrary.org/obo/DRON_00018184>	Lactobacillus bulgaricus
+<http://purl.obolibrary.org/obo/DRON_00011547>	sibutramine
+<http://purl.obolibrary.org/obo/DRON_00010691>	Encainide
+<http://purl.obolibrary.org/obo/DRON_00010804>	Flurazepam
+<http://purl.obolibrary.org/obo/DRON_00013649>	Isoxsuprine
+<http://purl.obolibrary.org/obo/DRON_00015231>	Maprotiline
+<http://purl.obolibrary.org/obo/DRON_00011024>	Mecamylamine
+<http://purl.obolibrary.org/obo/DRON_00011127>	Molindone
+<http://purl.obolibrary.org/obo/DRON_00011811>	Moricizine
+<http://purl.obolibrary.org/obo/DRON_00011124>	moexipril
+<http://purl.obolibrary.org/obo/DRON_00012221>	tiagabine
+<http://purl.obolibrary.org/obo/DRON_00020254>	lorcaserin
+<http://purl.obolibrary.org/obo/DRON_00020255>	mirabegron
+<http://purl.obolibrary.org/obo/DRON_00020278>	icosapent ethyl
+<http://purl.obolibrary.org/obo/DRON_00020284>	elvitegravir
+<http://purl.obolibrary.org/obo/DRON_00020283>	cobicistat
+<http://purl.obolibrary.org/obo/DRON_00020285>	enzalutamide
+<http://purl.obolibrary.org/obo/DRON_00020286>	linaclotide
+<http://purl.obolibrary.org/obo/DRON_00020287>	bosutinib
+<http://purl.obolibrary.org/obo/DRON_00020307>	teriflunomide
+<http://purl.obolibrary.org/obo/DRON_00020309>	regorafenib
+<http://purl.obolibrary.org/obo/DRON_00018231>	Petrolatum
+<http://purl.obolibrary.org/obo/DRON_00020314>	perampanel
+<http://purl.obolibrary.org/obo/DRON_00020315>	tofacitinib
+<http://purl.obolibrary.org/obo/DRON_00020318>	Phyllanthus emblica fruit extract
+<http://purl.obolibrary.org/obo/DRON_00015550>	Phentolamine
+<http://purl.obolibrary.org/obo/DRON_00020319>	cabozantinib
