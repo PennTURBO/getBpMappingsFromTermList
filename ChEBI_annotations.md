@@ -364,6 +364,113 @@ There's ~ 700 when labels are only extracted for DrOn terms that satisfy the rig
 
 Removing the active ingredient constraint brings it down to 32
 
+    ChEBI_to_DrOn_BpMappingsFromTermList_out <-
+      read_delim(
+        "C:/Users/Mark Miller/getBpMappingsFromTermList/ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv",
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE,
+        col_names = c(
+          "source.ont",
+          "source.term",
+          "map.meth",
+          "dest.ont",
+          "dest.term"
+        )
+      )
+
+    # dron.labs <-
+    #   read_delim(
+    #     "C:/Users/Mark Miller/Desktop/dronActIngLabs.tsv",
+    #     "\t",
+    #     escape_double = FALSE,
+    #     trim_ws = TRUE
+    #   )
+
+
+    dron.labs <-
+      read_delim(
+        "C:/Users/Mark Miller/Desktop/dron_all_labels.tsv",
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE
+      )
+
+    names(dron.labs) <-
+      gsub(pattern = "^\\?",
+           replacement = "",
+           x = names(dron.labs))
+
+    chebi_labels_synonyms_depr_distinct <-
+      read_delim(
+        "C:/Users/Mark Miller/Desktop/chebi_labels_synonyms_depr_distinct.tsv",
+        "\t",
+        escape_double = FALSE,
+        trim_ws = TRUE
+      )
+
+
+    names(chebi_labels_synonyms_depr_distinct) <-
+      gsub(
+        pattern = "^\\?",
+        replacement = "",
+        x = names(chebi_labels_synonyms_depr_distinct)
+      )
+
+    chebi_labels_synonyms_depr_distinct$s <-
+      gsub(pattern = "<|>",
+           replacement = "",
+           x = chebi_labels_synonyms_depr_distinct$s)
+
+
+    dron.labs$ingredient <-
+      gsub(pattern = "<|>",
+           replacement = "",
+           x = dron.labs$ingredient)
+
+
+    joined <-
+      dplyr::inner_join(x = ChEBI_to_DrOn_BpMappingsFromTermList_out,
+                        y = chebi_labels_synonyms_depr_distinct,
+                        by = c("source.term" = "s"))
+
+    joined <-
+      dplyr::inner_join(x = joined,
+                        y = dron.labs,
+                        by = c("dest.term" = "ingredient"))
+
+    # dput(names(joined))
+    names(joined) <-
+      c(
+        "source.ont",
+        "source.term",
+        "map.meth",
+        "dest.ont",
+        "dest.term",
+        "source.label",
+        "deprecated",
+        "source.exact.syns",
+        "source.related.syns",
+        "dest.label"
+      )
+
+    joined <- joined[,  c(
+      "source.ont",
+      "source.term",
+      "map.meth",
+      "dest.ont",
+      "dest.term",
+      "source.label",
+      "source.exact.syns",
+      "source.related.syns",
+      "dest.label"
+    )]
+
+    setdiff(ChEBI_to_DrOn_BpMappingsFromTermList_out$dest.term,
+            joined$dest.term)
+
+----
+
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     select ?ingredient ?ingLab
     where {
