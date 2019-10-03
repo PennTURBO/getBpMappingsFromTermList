@@ -361,7 +361,7 @@ select ?authPred ?s ?eVsR ?o where {
 
 ## DrOn terms that don't appear in the new labeled _active ingredient_ mappings
 
-There's ~ 700 when labels are only extracted for DrOn terms that satisfy the rigid active ingredient query above.
+~ 700 DrOn terms are lost from `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` when inner-joined to labels that come from the rigid active ingredient query above.
 
 Removing the active ingredient constraint brings it down to 32
 
@@ -397,7 +397,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     # dron.labs <-
     #   read_delim(
-    #     "C:/Users/Mark Miller/Desktop/dronActIngLabs.tsv",
+    #     "dronActIngLabs.tsv",
     #     "\t",
     #     escape_double = FALSE,
     #     trim_ws = TRUE
@@ -406,7 +406,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     dron.labs <-
       read_delim(
-        "C:/Users/Mark Miller/Desktop/dron_all_labels.tsv",
+        "dron_all_labels.tsv",
         "\t",
         escape_double = FALSE,
         trim_ws = TRUE
@@ -419,7 +419,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
     chebi_labels_synonyms_depr_distinct <-
       read_delim(
-        "C:/Users/Mark Miller/Desktop/chebi_labels_synonyms_depr_distinct.tsv",
+        "chebi_labels_synonyms_depr_distinct.tsv",
         "\t",
         escape_double = FALSE,
         trim_ws = TRUE
