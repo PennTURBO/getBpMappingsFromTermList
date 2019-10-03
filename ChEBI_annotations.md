@@ -1,12 +1,12 @@
-The script `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API. The output, like `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv`, only contains the term IDs/URIs. 
+The script `getBpMappingsFromTermList.py` was written to retrieve mappings from ChEBI terms to DrOn terms from the BioPortal API. The output, like `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv`, only contains the term IDs/URIs. 
 
-This document addresses adding labels and synonyms, from both sources, in order help with quality control. Adding this capability to `getBpMappingsFromTermList.py` was considered, but in order to clarify some filtering opportunities, manually issued SPARQL queries and a short R merging script were used instead.
+This document addresses adding labels and synonyms, from both sources, in order help with quality control. Adding this capability to `getBpMappingsFromTermList.py` was considered, but in order to clarify some filtering opportunities, manually issued SPARQL queries and a short R merging script were used instead. The resulting labeled mappings can be found in https://github.com/PennTURBO/getBpMappingsFromTermList/blob/master/ChEBI_to_DrOn_BpMappingsFromTermList.out.withLabels.tsv
 
-For example, rosuvastatin is modeled with different terms in the two ontologies: `obo:CHEBI_38545` and `obo:DRON_00018679`. When DrOn asserts that Crestor tablets have `obo:DRON_00018679` as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'.
+For example, rosuvastatin is modeled with different terms in the two ontologies: `obo:CHEBI_38545` and `obo:DRON_00018679`. When DrOn asserts that Crestor tablets have `obo:DRON_00018679` as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'. So `obo:DRON_00018679` could be retired from the DrugOntology and replaced with `obo:CHEBI_38545`. 
 
-For ChEBI, let's only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
+For ChEBI, let's only consider terms that are `rdfs:subClassOf*` `obo:CHEBI_24431` ('chemical entity'). That is, don't bother examining the labels of roles, etc. for the purpose of aligning with DrOn.
 
-_Could we possibly constrain even more? Molecular entity and chemical substance?_
+_Could we possibly constrain this even more? Just examining the labels of Molecular entities and chemical substances?_
 
     CHEBI:24431 chemical entity
         CHEBI:59999 chemical substance
@@ -14,7 +14,9 @@ _Could we possibly constrain even more? Molecular entity and chemical substance?
         CHEBI:24433 group
         CHEBI:33250 atom
 
-The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. We could further condense by lowercasing. I don't think it can be filtered by language, but the non-English labels might be enriched for one of the synonym authorities. The distinct group_concat query wouldn't run for me on a 16 GB server, but it did run in < 1 minute on a 128 GB server.
+The following query retrieves all ChEBI labels, exact synonyms, related synonyms. It was run on a server with 128 GB RAM.
+
+An open question is whether some of the sources of ChEBI synonyms aren't useful for confirming equivalence with DrOn terms, and should therefore be omitted.
 
 ```
 PREFIX obo: <http://purl.obolibrary.org/obo/>
@@ -46,20 +48,12 @@ The full version of `chebi.owl` includes annotations like these on chemical enti
 - `rdfs:label` (one per class)
 - `oboInOwl:hasExactSynonym` (possibly many)
 - `oboInOwl:hasRelatedSynonym` (possibly many, even as many as 50)
-- `owl:deprecated`
-- `obo:IAO_0000231`
-    - 'has obsolescence reason'... always takes `obo:IAO_0000227` as it's object
-- `obo:IAO_0100001`
-     - 'term replaced by' (possibly many)
 
 For every synonym assertion, there will be a supporting axiom. The axioms can assert a synonym type or a database cross reference. The data base cross references are sources or authorities (like "KEGG"), not the identifying values used by those third party authorities (like "D00217").
 
-There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`. 
+Regarding unhelpful synonym sources: there are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`. Omitting the `chebi:BRAND_NAME` synonyms might be justified, too. While DrOn doesn't have terms for brands in the absence of a dose form (like "Tylenol"), ChEBI does assert that "Tylenol" is a `KEGG DRUG` synonym for `obo:CHEBI_46195` ("paracetamol").
 
-It would probably be best to leave out the `chebi:BRAND_NAME` synonyms, too. While DrOn doesn't have terms for brands in the absence of a dose form (like "Tylenol"), ChEBI does assert that "Tylenol" is a `KEGG DRUG` synonym for `obo:CHEBI_46195` ("paracetamol"). `KEGG COMPOUND` is the source of the "Acetaminophen" synonym that is asserted as the `rdfs:label` of `obo:CHEBI_46195` in `dron-ingredient.owl`. ("paracetamol" is asserted as the label in `dron-chebi.owl`)
-
-Because ChEBI classes can have many related synonyms, and because some of the sources may not be very useful for mapping to DrOn, some triage might be beneficial.
-
+### Table of all ChEBI synonym sources
 
 | ?eVsR                                                            | ?st                                               | ?dbxr                  | ?count |
 |------------------------------------------------------------------|---------------------------------------------------|------------------------|--------|
@@ -137,108 +131,7 @@ Because ChEBI classes can have many related synonyms, and because some of the so
 | oboInOwl:hasRelatedSynonym |                                                   | PubChem                | 1      |
 | oboInOwl:hasRelatedSynonym |                                                   | VSDB                   | 1      |
 
-
-## ChEBI Ontology Files
-
-All use base address `ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/`
-
-| Name                | Size      | Last Modified |             |
-|---------------------|-----------|---------------|-------------|
-| chebi.owl           | 487984 KB | 10/1/2019     | 10:17:00 PM |
-| chebi_core.owl      | 223883 KB | 10/1/2019     | 10:17:00 PM |
-| chebi_lite.owl      | 138622 KB | 10/1/2019     | 10:17:00 PM |
-| chebi.obo           | 130865 KB | 10/1/2019     | 10:17:00 PM |
-| chebi_core.obo      | 105534 KB | 10/1/2019     | 10:17:00 PM |
-| chebi.owl.gz        | 31071 KB  | 10/1/2019     | 10:17:00 PM |
-| chebi_lite.obo      | 28983 KB  | 10/1/2019     | 10:17:00 PM |
-| chebi_core.owl.gz   | 19672 KB  | 10/1/2019     | 10:16:00 PM |
-| chebi.obo.gz        | 18327 KB  | 10/1/2019     | 10:17:00 PM |
-| chebi_core.obo.gz   | 13965 KB  | 10/1/2019     | 10:16:00 PM |
-| chebi_lite.owl.gz   | 7229 KB   | 10/1/2019     | 10:16:00 PM |
-| chebi_lite.obo.gz   | 3702 KB   | 10/1/2019     | 10:17:00 PM |
-| fix.obo             | 182 KB    | 2/6/2014      | 12:00:00 AM |
-| rex.obo             | 131 KB    | 2/6/2014      | 12:00:00 AM |
-| chebi-proteins.owl  | 81 KB     | 10/8/2012     | 12:00:00 AM |
-| chebi-disjoints.owl | 61 KB     | 2/16/2017     | 12:00:00 AM |
-| chebi-in-bfo.owl    | 4 KB      | 10/1/2019     | 10:16:00 PM |
-| nightly             |           | 9/29/2019     | 8:13:00 PM  |
-
-## Search for synonym annotations lacking supporting axioms
-
-```
-PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-ask 
-where {
-    values ?eVsR {
-        oboInOwl:hasExactSynonym
-        oboInOwl:hasRelatedSynonym
-    }
-    ?s ?eVsR ?o .
-    minus {
-        {
-            ?a rdf:type owl:Axiom ;
-               owl:annotatedSource ?s ;
-               owl:annotatedProperty ?eVsR ;
-               owl:annotatedTarget ?o ;
-               oboInOwl:hasDbXref ?dbxr .
-        } union {
-            ?a rdf:type owl:Axiom ;
-               owl:annotatedSource ?s ;
-               owl:annotatedProperty ?eVsR ;
-               owl:annotatedTarget ?o ;
-               oboInOwl:hasSynonymType ?st .
-        }
-    } 
-}
-```
-
-## Creating complete tabulation of axiom sources
-
-```
-PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX chebi2: <http://purl.obolibrary.org/obo/chebi#>
-PREFIX : <http://purl.obolibrary.org/obo/chebi.owl#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
-select 
-#?s ?eVsR ?o ?dbxr ?st
-?eVsR ?st ?dbxr (count(?a) as ?count)
-where {
-    values ?eVsR {
-        oboInOwl:hasExactSynonym
-        oboInOwl:hasRelatedSynonym
-    }
-    ?s rdfs:subClassOf* obo:CHEBI_24431 ;
-                      ?eVsR ?o .
-    {
-        {
-            ?a rdf:type owl:Axiom ;
-               owl:annotatedSource ?s ;
-               owl:annotatedProperty ?eVsR ;
-               owl:annotatedTarget ?o ;
-               oboInOwl:hasDbXref ?dbxr .
-            #            filter (?dbxr != "IUPAC")
-        } 
-        union  {
-            ?a rdf:type owl:Axiom ;
-               owl:annotatedSource ?s ;
-               owl:annotatedProperty ?eVsR ;
-               owl:annotatedTarget ?o ;
-               oboInOwl:hasSynonymType ?st .
-            #            filter (?st != 	chebi2:IUPAC_NAME)
-        }
-    }
-}
-group by ?eVsR ?st ?dbxr
-order by desc (count(?a))
-```
-
-
-## Finding examples of synonyms from a specified authority
+### Finding examples of synonyms from a specified authority
 
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -259,74 +152,7 @@ select ?authPred ?s ?eVsR ?o where {
 } limit 100
 ```
 
-## Complete DrOn active ingredient + dose query
-
-    PREFIX obo: <http://purl.obolibrary.org/obo/>
-    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX hsv: <http://purl.obolibrary.org/obo/OBI_0001937>
-    PREFIX hmul: <http://purl.obolibrary.org/obo/IAO_0000039>
-    PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    prefix sma: <http://purl.obolibrary.org/obo/OBI_0000576>
-    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
-    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
-    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
-    select ?drug ?drugLab ?dosage 
-    #?measurementUnitLabel  
-    ?mmulLab 
-    ?ingredient ?ingLab
-    where {
-        ?drug rdfs:subClassOf ?s_1 ;
-              rdfs:label ?drugLab .
-        ?s_1 rdf:type owl:Restriction ;
-             owl:someValuesFrom ?s_2 ;
-             owl:onProperty ro:has_proper_part .
-        ?s_2 owl:intersectionOf ?s_3 .
-        ?s_3 rdf:first sma: ;
-             rdf:rest ?s_4 .
-        ?s_4 rdf:first ?s_4_b ;
-             rdf:rest ?s_5 .
-        ?s_4_b rdf:type owl:Restriction ;
-               owl:onProperty ibo: ;
-               owl:someValuesFrom actIng: .
-        ?s_5 rdf:first ?s_6 ;
-             rdf:rest ?s_7 .
-        ?s_7 rdf:rest rdf:nil;
-             rdf:first ?s_8 .
-        ?s_8 rdf:type owl:Restriction ;
-             owl:onProperty hgp: ;
-             owl:someValuesFrom ?ingredient .
-        ?s_6 rdf:type owl:Restriction ;
-             owl:someValuesFrom ?s_9 ;
-             owl:onProperty ibo: .
-        ?s_9 owl:intersectionOf ?s_10 ;
-             rdf:type owl:Class .
-        ?s_10 rdf:rest ?s_11 ;
-              rdf:first ?doseQual .
-        ?s_11 rdf:first ?s_12 ;
-              rdf:rest ?s_13 .
-        ?s_13 rdf:rest rdf:nil  ;
-              rdf:first ?s_14 .
-        ?s_14 rdf:type owl:Restriction ;
-              owl:onProperty hsv: ;
-              owl:hasValue ?dosage .
-        ?s_12 owl:onProperty hmul: ;
-              rdf:type owl:Restriction ;
-              owl:hasValue ?measurementUnitLabel .
-        optional {
-            ?measurementUnitLabel rdfs:label ?mmulLab
-        }
-        optional {
-            ?ingredient rdfs:label ?ingLab
-        }
-    } limit 100
-
-## DrOn terms that don't appear in the new labeled _active ingredient_ mappings
-
-~ 700 DrOn terms are lost from `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` when inner-joined to labels that come from the rigid active ingredient query above.
-
-Removing the active ingredient constraint brings it down to 32
+## DrOn label query
 
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     select ?ingredient ?ingLab
@@ -341,7 +167,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         }
     }
 
-----
+## Merging the BioPortal mappings with the ChEBI and DrOn labels
 
     ChEBI_to_DrOn_BpMappingsFromTermList_out <-
       read_delim(
@@ -448,7 +274,11 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     setdiff(ChEBI_to_DrOn_BpMappingsFromTermList_out$dest.term,
             joined$dest.term)
     
-----
+## DrOn terms that don't appear in the new labeled _active ingredient_ mappings
+
+~ 700 DrOn terms from `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` are lost when inner-joined to the results from the attempted active-ingredient-only query
+
+Removing the active ingredient constraint brings it down to 32
     
     > setdiff(ChEBI_to_DrOn_BpMappingsFromTermList_out$dest.term, joined$dest.term)
      [1] "http://purl.obolibrary.org/obo/CHEBI_32150"   "http://purl.obolibrary.org/obo/CHEBI_25524"  
@@ -468,7 +298,175 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     [29] "http://purl.obolibrary.org/obo/DRON_00000029" "http://purl.obolibrary.org/obo/DRON_00750819"
     [31] "http://purl.obolibrary.org/obo/DRON_00750823" "http://purl.obolibrary.org/obo/CHEBI_50217"  
     
- ## Abandoned attempt to limit DrOn label search to active ingredients
+
+    
+## List of ChEBI Ontology Files
+
+All use base address `ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/`
+
+`chebi_core.owl` and `chebi_lite.owl` include smaller subsets of synomyms, compared to `chebi.owl`
+
+
+| Name                | Size      | Last Modified |             |
+|---------------------|-----------|---------------|-------------|
+| chebi.owl           | 487984 KB | 10/1/2019     | 10:17:00 PM |
+| chebi_core.owl      | 223883 KB | 10/1/2019     | 10:17:00 PM |
+| chebi_lite.owl      | 138622 KB | 10/1/2019     | 10:17:00 PM |
+| chebi.obo           | 130865 KB | 10/1/2019     | 10:17:00 PM |
+| chebi_core.obo      | 105534 KB | 10/1/2019     | 10:17:00 PM |
+| chebi.owl.gz        | 31071 KB  | 10/1/2019     | 10:17:00 PM |
+| chebi_lite.obo      | 28983 KB  | 10/1/2019     | 10:17:00 PM |
+| chebi_core.owl.gz   | 19672 KB  | 10/1/2019     | 10:16:00 PM |
+| chebi.obo.gz        | 18327 KB  | 10/1/2019     | 10:17:00 PM |
+| chebi_core.obo.gz   | 13965 KB  | 10/1/2019     | 10:16:00 PM |
+| chebi_lite.owl.gz   | 7229 KB   | 10/1/2019     | 10:16:00 PM |
+| chebi_lite.obo.gz   | 3702 KB   | 10/1/2019     | 10:17:00 PM |
+| fix.obo             | 182 KB    | 2/6/2014      | 12:00:00 AM |
+| rex.obo             | 131 KB    | 2/6/2014      | 12:00:00 AM |
+| chebi-proteins.owl  | 81 KB     | 10/8/2012     | 12:00:00 AM |
+| chebi-disjoints.owl | 61 KB     | 2/16/2017     | 12:00:00 AM |
+| chebi-in-bfo.owl    | 4 KB      | 10/1/2019     | 10:16:00 PM |
+| nightly             |           | 9/29/2019     | 8:13:00 PM  |
+
+## Checking if any synonym annotations lack a supporting source axiom
+
+```
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+ask 
+where {
+    values ?eVsR {
+        oboInOwl:hasExactSynonym
+        oboInOwl:hasRelatedSynonym
+    }
+    ?s ?eVsR ?o .
+    minus {
+        {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasDbXref ?dbxr .
+        } union {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasSynonymType ?st .
+        }
+    } 
+}
+```
+
+## Creating the complete tabulation of ChEBI synonym sources
+
+```
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX chebi2: <http://purl.obolibrary.org/obo/chebi#>
+PREFIX : <http://purl.obolibrary.org/obo/chebi.owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+select 
+#?s ?eVsR ?o ?dbxr ?st
+?eVsR ?st ?dbxr (count(?a) as ?count)
+where {
+    values ?eVsR {
+        oboInOwl:hasExactSynonym
+        oboInOwl:hasRelatedSynonym
+    }
+    ?s rdfs:subClassOf* obo:CHEBI_24431 ;
+                      ?eVsR ?o .
+    {
+        {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasDbXref ?dbxr .
+            #            filter (?dbxr != "IUPAC")
+        } 
+        union  {
+            ?a rdf:type owl:Axiom ;
+               owl:annotatedSource ?s ;
+               owl:annotatedProperty ?eVsR ;
+               owl:annotatedTarget ?o ;
+               oboInOwl:hasSynonymType ?st .
+            #            filter (?st != 	chebi2:IUPAC_NAME)
+        }
+    }
+}
+group by ?eVsR ?st ?dbxr
+order by desc (count(?a))
+```
+
+## Complete DrOn active ingredient + dose query
+
+    PREFIX obo: <http://purl.obolibrary.org/obo/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX hsv: <http://purl.obolibrary.org/obo/OBI_0001937>
+    PREFIX hmul: <http://purl.obolibrary.org/obo/IAO_0000039>
+    PREFIX ro: <http://www.obofoundry.org/ro/ro.owl#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    prefix sma: <http://purl.obolibrary.org/obo/OBI_0000576>
+    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
+    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
+    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
+    select ?drug ?drugLab ?dosage 
+    #?measurementUnitLabel  
+    ?mmulLab 
+    ?ingredient ?ingLab
+    where {
+        ?drug rdfs:subClassOf ?s_1 ;
+              rdfs:label ?drugLab .
+        ?s_1 rdf:type owl:Restriction ;
+             owl:someValuesFrom ?s_2 ;
+             owl:onProperty ro:has_proper_part .
+        ?s_2 owl:intersectionOf ?s_3 .
+        ?s_3 rdf:first sma: ;
+             rdf:rest ?s_4 .
+        ?s_4 rdf:first ?s_4_b ;
+             rdf:rest ?s_5 .
+        ?s_4_b rdf:type owl:Restriction ;
+               owl:onProperty ibo: ;
+               owl:someValuesFrom actIng: .
+        ?s_5 rdf:first ?s_6 ;
+             rdf:rest ?s_7 .
+        ?s_7 rdf:rest rdf:nil;
+             rdf:first ?s_8 .
+        ?s_8 rdf:type owl:Restriction ;
+             owl:onProperty hgp: ;
+             owl:someValuesFrom ?ingredient .
+        ?s_6 rdf:type owl:Restriction ;
+             owl:someValuesFrom ?s_9 ;
+             owl:onProperty ibo: .
+        ?s_9 owl:intersectionOf ?s_10 ;
+             rdf:type owl:Class .
+        ?s_10 rdf:rest ?s_11 ;
+              rdf:first ?doseQual .
+        ?s_11 rdf:first ?s_12 ;
+              rdf:rest ?s_13 .
+        ?s_13 rdf:rest rdf:nil  ;
+              rdf:first ?s_14 .
+        ?s_14 rdf:type owl:Restriction ;
+              owl:onProperty hsv: ;
+              owl:hasValue ?dosage .
+        ?s_12 owl:onProperty hmul: ;
+              rdf:type owl:Restriction ;
+              owl:hasValue ?measurementUnitLabel .
+        optional {
+            ?measurementUnitLabel rdfs:label ?mmulLab
+        }
+        optional {
+            ?ingredient rdfs:label ?ingLab
+        }
+    }
+
+
+## Abandoned attempt to limit DrOn label search to active ingredients, disregarding dosage
 
 This constrained query (and even the ChEBI chemical entity filter) may be somewhat irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
 
@@ -504,3 +502,21 @@ This constrained query (and even the ChEBI chemical entity filter) may be somewh
             }  
         }
     }
+
+### to be removed
+
+I looked for labeled chemical entities in ChEBI with the deprecation flag but didn't find any.
+
+- `owl:deprecated`
+- `obo:IAO_0000231`
+    - 'has obsolescence reason'... always takes `obo:IAO_0000227` as it's object
+- `obo:IAO_0100001`
+     - 'term replaced by' (possibly many)
+     
+----
+     
+We could further condense the ChEBI synonyms by lowercasing. I don't think they can be filtered by language, but the non-English labels might be enriched for one of the synonym authorities. The distinct group_concat query wouldn't run for me on a 16 GB server, but it did run in < 1 minute on a 128 GB server.
+
+ChEBI attributes `obo:CHEBI_46195`'s synonym 'Acetaminphen' to `KEGG COMPOUND`. "paracetamol" is asserted as the `rdfs:label` in `dron-chebi.owl`, but "Acetaminophen" is asserted as the label in `dron-ingredient.owl`. 
+
+Because ChEBI classes can have many related synonyms, and because some of the sources may not be very useful for mapping to DrOn, some triage might be beneficial.
