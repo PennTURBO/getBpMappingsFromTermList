@@ -1,4 +1,8 @@
-For ChEBI, only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
+Previously, the BioPortal API was used to retrieve mappings between ChEBI terms and DrOn terms. The mapping file only contained the term IDs/URIs. This current document addresses adding the labels, from both sources, to the mapping to aid in quality control. Adding this capability to script XXX was considered, but the current implementation uses raw SPARQL queries ti clarify some filtering opportunities.
+
+FOr example, rosuvastatin is modelled with differnt terms in the two ontologies: CHEBI:38545 and obo:DRON_00018679. When DrOn asserts that Crestor tablets obo:DRON_00018679 as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'.
+
+For ChEBI, let's only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
 
 Could we possibly constrain even more? Molecular entity and chemical substance?
 
@@ -8,7 +12,7 @@ Could we possibly constrain even more? Molecular entity and chemical substance?
     - CHEBI:24433 group
     - CHEBI:33250 atom
 
-For DrOn, only consider terms that are the granular part of an active ingredient.
+For DrOn, let's only consider terms that are the granular part of an active ingredient.
 
 Both of those rules may be mostly irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
 
