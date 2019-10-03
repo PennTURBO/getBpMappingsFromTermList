@@ -1,45 +1,8 @@
-Previously, `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API. The `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` mapping file only contained the term IDs/URIs. 
+The script `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API. The output, like `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv`, only contains the term IDs/URIs. 
 
 This document addresses adding labels and synonyms, from both sources, in order help with quality control. Adding this capability to `getBpMappingsFromTermList.py` was considered, but in order to clarify some filtering opportunities, manually issued SPARQL queries and a short R merging script were used instead.
 
 For example, rosuvastatin is modeled with different terms in the two ontologies: `obo:CHEBI_38545` and `obo:DRON_00018679`. When DrOn asserts that Crestor tablets have `obo:DRON_00018679` as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'.
-
-For DrOn, let's start by only considering terms that are the granular part of an active ingredient.
-
-Both of those rules may be mostly irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
-
-    PREFIX obo: <http://purl.obolibrary.org/obo/>
-    PREFIX owl: <http://www.w3.org/2002/07/owl#>
-    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
-    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
-    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
-    select 
-    distinct 
-    ?ingredient ?ingLab
-    where {
-        ?s_4 rdf:first ?s_4_b ;
-             rdf:rest ?s_5 .
-        ?s_4_b rdf:type owl:Restriction ;
-               owl:onProperty ibo: ;
-               owl:someValuesFrom actIng: .
-        ?s_5 rdf:first ?s_6 ;
-             rdf:rest ?s_7 .
-        ?s_7 rdf:rest rdf:nil;
-             rdf:first ?s_8 .
-        ?s_8 rdf:type owl:Restriction ;
-             owl:onProperty hgp: ;
-             owl:someValuesFrom ?ingredient .
-        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
-            ?ingredient rdfs:label ?ingLab   
-        }
-        minus {
-            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
-                ?ingredient rdfs:label ?chebiLab   
-            }  
-        }
-    }
 
 For ChEBI, let's only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
 
@@ -79,7 +42,7 @@ where {
 group by ?s ?l ?deprecated
 ```
 
-The full `chebi.owl` has includes the following annotations
+The full version of `chebi.owl` includes annotations like these on chemical entities
 - `rdfs:label` (one per class)
 - `oboInOwl:hasExactSynonym` (possibly many)
 - `oboInOwl:hasRelatedSynonym` (possibly many, even as many as 50)
@@ -504,3 +467,40 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     [27] "http://purl.obolibrary.org/obo/CHEBI_23238"   "http://purl.obolibrary.org/obo/CHEBI_57589"  
     [29] "http://purl.obolibrary.org/obo/DRON_00000029" "http://purl.obolibrary.org/obo/DRON_00750819"
     [31] "http://purl.obolibrary.org/obo/DRON_00750823" "http://purl.obolibrary.org/obo/CHEBI_50217"  
+    
+ ## Abandoned attempt to limit DrOn label search to active ingredients
+
+This constrained query (and even the ChEBI chemical entity filter) may be somewhat irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
+
+    PREFIX obo: <http://purl.obolibrary.org/obo/>
+    PREFIX owl: <http://www.w3.org/2002/07/owl#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    prefix ibo: <http://purl.obolibrary.org/obo/BFO_0000053>
+    prefix hgp: <http://purl.obolibrary.org/obo/BFO_0000071>
+    prefix actIng: <http://purl.obolibrary.org/obo/DRON_00000028>
+    select 
+    distinct 
+    ?ingredient ?ingLab
+    where {
+        ?s_4 rdf:first ?s_4_b ;
+             rdf:rest ?s_5 .
+        ?s_4_b rdf:type owl:Restriction ;
+               owl:onProperty ibo: ;
+               owl:someValuesFrom actIng: .
+        ?s_5 rdf:first ?s_6 ;
+             rdf:rest ?s_7 .
+        ?s_7 rdf:rest rdf:nil;
+             rdf:first ?s_8 .
+        ?s_8 rdf:type owl:Restriction ;
+             owl:onProperty hgp: ;
+             owl:someValuesFrom ?ingredient .
+        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
+            ?ingredient rdfs:label ?ingLab   
+        }
+        minus {
+            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
+                ?ingredient rdfs:label ?chebiLab   
+            }  
+        }
+    }
