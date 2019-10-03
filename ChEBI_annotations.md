@@ -1,4 +1,4 @@
-Previously, `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API was used to. The `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` mapping file only contained the term IDs/URIs. 
+Previously, `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API. The `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` mapping file only contained the term IDs/URIs. 
 
 This document addresses adding labels and synonyms, from both sources, in order help with quality control. Adding this capability to `getBpMappingsFromTermList.py` was considered, but in order to clarify some filtering opportunities, manually issued SPARQL queries and a short R merging script were used instead.
 
