@@ -1,18 +1,10 @@
-Previously, the BioPortal API was used to retrieve mappings between ChEBI terms and DrOn terms. The mapping file only contained the term IDs/URIs. This current document addresses adding the labels, from both sources, to the mapping to aid in quality control. Adding this capability to script XXX was considered, but the current implementation uses raw SPARQL queries ti clarify some filtering opportunities.
+Previously, `getBpMappingsFromTermList.py` was written to retrieve mappings between ChEBI terms and DrOn terms from the BioPortal API was used to. The `ChEBI_to_DrOn_BpMappingsFromTermList.out.tsv` mapping file only contained the term IDs/URIs. 
 
-FOr example, rosuvastatin is modelled with differnt terms in the two ontologies: CHEBI:38545 and obo:DRON_00018679. When DrOn asserts that Crestor tablets obo:DRON_00018679 as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'.
+This document addresses adding labels and synonyms, from both sources, in order help with quality control. Adding this capability to `getBpMappingsFromTermList.py` was considered, but in order to clarify some filtering opportunities, manually issued SPARQL queries and a short R merging script were used instead.
 
-For ChEBI, let's only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
+For example, rosuvastatin is modeled with different terms in the two ontologies: `obo:CHEBI_38545` and `obo:DRON_00018679`. When DrOn asserts that Crestor tablets have `obo:DRON_00018679` as an active ingredient, it breaks the potential link to ChEBI's 'anticholesteremic drug'.
 
-Could we possibly constrain even more? Molecular entity and chemical substance?
-
-- CHEBI:24431 chemical entity
-    - CHEBI:59999 chemical substance
-    - CHEBI:23367 molecular entity
-    - CHEBI:24433 group
-    - CHEBI:33250 atom
-
-For DrOn, let's only consider terms that are the granular part of an active ingredient.
+For DrOn, let's start by only considering terms that are the granular part of an active ingredient.
 
 Both of those rules may be mostly irrelevant, if the label matrices are going to be merged with the BioPortal mappings, and if BioPortal only maps ingredients. (DrOn doesn't model roles? and ChEBI doesn't model products?)
 
@@ -48,7 +40,17 @@ Both of those rules may be mostly irrelevant, if the label matrices are going to
             }  
         }
     }
-    
+
+For ChEBI, let's only consider terms that are rdfs:subClassOf* obo:CHEBI_24431 (chemical entity). That is, don't examine the labels of roles, etc. for the purpose of aligning with DrOn.
+
+_Could we possibly constrain even more? Molecular entity and chemical substance?_
+
+    CHEBI:24431 chemical entity
+        CHEBI:59999 chemical substance
+        CHEBI:23367 molecular entity
+        CHEBI:24433 group
+        CHEBI:33250 atom
+
 The following query retrieves all ChEBI labels, exact synonyms, related synonyms, as well as the deprecation flag. We could further condense by lowercasing. I don't think it can be filtered by language, but the non-English labels might be enriched for one of the synonym authorities. The distinct group_concat query wouldn't run for me on a 16 GB server, but it did run in < 1 minute on a 128 GB server.
 
 ```
@@ -91,8 +93,7 @@ For every synonym assertion, there will be a supporting axiom. The axioms can as
 
 There are 46,351 IUPAC `ExactSynonym`s, which presumably would never match a DrOn `rdfs:label`. 
 
-It would probably be best to leave out the `chebi:BRAND_NAME` synonyms, too. While DrOn doesn't have terms for brands in the absence of a dose form (like "Tylenol"), ChEBI does assert that "Tylenol" is a `KEGG DRUG` synonym for `CHEBI:46195` ("paracetamol"). `KEGG COMPOUND` is the source of the "Acetaminophen" synonym that is asserted as the rdfs:label of `obo:CHEBI_46195` in `dron-ingredient.owl`. ("paracetamol" is asserted as the label in `dron-chebi.owl`)
-
+It would probably be best to leave out the `chebi:BRAND_NAME` synonyms, too. While DrOn doesn't have terms for brands in the absence of a dose form (like "Tylenol"), ChEBI does assert that "Tylenol" is a `KEGG DRUG` synonym for `obo:CHEBI_46195` ("paracetamol"). `KEGG COMPOUND` is the source of the "Acetaminophen" synonym that is asserted as the `rdfs:label` of `obo:CHEBI_46195` in `dron-ingredient.owl`. ("paracetamol" is asserted as the label in `dron-chebi.owl`)
 
 Because ChEBI classes can have many related synonyms, and because some of the sources may not be very useful for mapping to DrOn, some triage might be beneficial.
 
@@ -358,11 +359,26 @@ select ?authPred ?s ?eVsR ?o where {
         }
     } limit 100
 
-## DrOn terms that don't appear in the new labeled __active ingredient__ mappings
+## DrOn terms that don't appear in the new labeled _active ingredient_ mappings
 
 There's ~ 700 when labels are only extracted for DrOn terms that satisfy the rigid active ingredient query above.
 
 Removing the active ingredient constraint brings it down to 32
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    select ?ingredient ?ingLab
+    where {
+        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
+            ?ingredient rdfs:label ?ingLab   
+        }
+        minus {
+            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
+                ?ingredient rdfs:label ?chebiLab   
+            }  
+        }
+    }
+
+----
 
     ChEBI_to_DrOn_BpMappingsFromTermList_out <-
       read_delim(
@@ -468,21 +484,6 @@ Removing the active ingredient constraint brings it down to 32
 
     setdiff(ChEBI_to_DrOn_BpMappingsFromTermList_out$dest.term,
             joined$dest.term)
-
-----
-
-    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    select ?ingredient ?ingLab
-    where {
-        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
-            ?ingredient rdfs:label ?ingLab   
-        }
-        minus {
-            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
-                ?ingredient rdfs:label ?chebiLab   
-            }  
-        }
-    }
     
 ----
     
