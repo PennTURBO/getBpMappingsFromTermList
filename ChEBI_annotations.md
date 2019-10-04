@@ -154,18 +154,18 @@ select ?authPred ?s ?eVsR ?o where {
 
 ## DrOn label query
 
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    select ?ingredient ?ingLab
-    where {
-        graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
-            ?ingredient rdfs:label ?ingLab   
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        select ?ingredient ?ingLab
+        where {
+            graph <http://purl.obolibrary.org/obo/dron/dron-ingredient.owl> {
+                ?ingredient rdfs:label ?ingLab   
+            }
+            minus {
+                graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
+                    ?ingredient rdfs:label ?chebiLab   
+                }  
+            }
         }
-        minus {
-            graph <http://purl.obolibrary.org/obo/dron/dron-chebi.owl> {
-                ?ingredient rdfs:label ?chebiLab   
-            }  
-        }
-    }
 
 ## Merging the BioPortal mappings with the ChEBI and DrOn labels
 
